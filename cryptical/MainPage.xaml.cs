@@ -95,21 +95,30 @@ namespace cryptical
 //  c.price = double.Parse(token.SelectToken(String.Format("RAW.{}.EUR.PRICE", c.name) ).ToString());
                  //   c.price = double.Parse(token.SelectToken("PRICE").ToString());
                     c.price =(double)double.Parse(token.SelectToken(String.Format("RAW.{0}.EUR.PRICE", c.name)).ToString());
-
+                    c.high24hr = (double)double.Parse(token.SelectToken(String.Format("RAW.{0}.EUR.HIGH24HOUR", c.name)).ToString());
+                    c.low24hr = (double)double.Parse(token.SelectToken(String.Format("RAW.{0}.EUR.LOW24HOUR", c.name)).ToString());
                     // Populate textboxes to display to user
                     switch (c.name)
                     {
                         case "ETH":
                             ETHPriceText.Text = String.Format("{0:0.00}", c.price);
+                            ETHhigh24hr.Text = String.Format("24 Hour High: {0:0.00}", c.high24hr);
+                            ETHlow24hr.Text = String.Format("24 Hour Low: {0:0.00}", c.low24hr);
                             break;
                         case "BTC":
                             BTCPriceText.Text = String.Format("{0:0.00}", c.price);
+                            BTChigh24hr.Text = String.Format("24 Hour High: {0:0.00}", c.high24hr);
+                            BTClow24hr.Text = String.Format("24 Hour Low: {0:0.00}", c.low24hr);
                             break;
                         case "BCH":
                             BCHPriceText.Text = String.Format("{0:0.00}", c.price);
+                            BCHhigh24hr.Text = String.Format("24 Hour High: {0:0.00}", c.high24hr);
+                            BCHlow24hr.Text = String.Format("24 Hour Low: {0:0.00}", c.low24hr);
                             break;
                         case "LTC":
                             LTCPriceText.Text = String.Format("{0:0.00}", c.price);
+                            LTChigh24hr.Text = String.Format("24 Hour High: {0:0.00}", c.high24hr);
+                            LTClow24hr.Text = String.Format("24 Hour Low: {0:0.00}", c.low24hr);
                             break;
                         default:
                             break;

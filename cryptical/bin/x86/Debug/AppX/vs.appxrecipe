@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-23T16:18:46.804</Modified>
+      <Modified>2018-02-23T17:46:55.776</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\cryptical.exe">
       <PackagePath>entrypoint\cryptical.exe</PackagePath>
-      <Modified>2018-02-23T16:18:46.426</Modified>
+      <Modified>2018-02-23T17:46:55.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -501,11 +501,11 @@
     <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-23T14:51:59.724</Modified>
+      <Modified>2018-02-23T17:45:23.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\Core\cryptical.exe">
       <PackagePath>cryptical.exe</PackagePath>
-      <Modified>2018-02-23T16:18:46.794</Modified>
+      <Modified>2018-02-23T17:46:55.769</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
