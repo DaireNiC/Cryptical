@@ -28,7 +28,7 @@ namespace cryptical
                 string result = response.Content.ReadAsStringAsync().Result;
                 Debug.WriteLine("Result: " + result);
                 JToken token = JObject.Parse(result);
-                double price = (double)double.Parse(token.SelectToken("EUR").ToString());
+                double price = double.Parse(token.SelectToken("EUR").ToString());
                 Debug.WriteLine("Price: " + price);
                 convertedTextbox.Text = String.Format("{0:0.00}", price);
             }

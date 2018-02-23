@@ -8,6 +8,9 @@ namespace cryptical
 {
     class Coin
     {
-
+        public string name { get; set; }
+        public double price { get; set; }
+        public string high24hr { get; set; }
+        public string low24hr { get; set; }
     }
 }
