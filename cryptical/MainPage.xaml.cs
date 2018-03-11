@@ -68,9 +68,6 @@ namespace cryptical
          * Refreshes & gets katest vals every minute
          * Returns the list of coins populated with the most recent data from API */
         private List<Coin> getCoinData(List<Coin> cryptoCoins) {
-            // Get data for the cryptocurrencies in coin list
-            int NUM_COINS = 4;
-
             //init HTTP client
             using (var client = new HttpClient(new HttpClientHandler { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate }))
             {
