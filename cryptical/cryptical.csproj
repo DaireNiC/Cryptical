@@ -108,6 +108,22 @@
     <None Include="cryptical_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\bitcoincash_100.png" />
+    <Content Include="Images\bitcoincash_140.png" />
+    <Content Include="Images\bitcoincash_180.png" />
+    <Content Include="Images\bitcoincash_200.png" />
+    <Content Include="Images\bitcoin_100.png" />
+    <Content Include="Images\bitcoin_140.png" />
+    <Content Include="Images\bitcoin_180.png" />
+    <Content Include="Images\bitcoin_200.png" />
+    <Content Include="Images\eth_100.png" />
+    <Content Include="Images\eth_140.png" />
+    <Content Include="Images\eth_180.png" />
+    <Content Include="Images\eth_200.png" />
+    <Content Include="Images\litecoin_100.png" />
+    <Content Include="Images\litecoin_140.png" />
+    <Content Include="Images\litecoin_180.png" />
+    <Content Include="Images\litecoin_200.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -127,6 +143,7 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

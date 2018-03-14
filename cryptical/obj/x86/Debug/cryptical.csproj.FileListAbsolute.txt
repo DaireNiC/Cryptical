@@ -383,3 +383,5 @@ C:\Users\User\Desktop\windows_app\Cryptical\cryptical\obj\x86\Debug\qualifiers.t
 C:\Users\User\Desktop\windows_app\Cryptical\cryptical\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\User\Desktop\windows_app\Cryptical\cryptical\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\User\Desktop\windows_app\Cryptical\cryptical\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\User\Desktop\windows_app\Cryptical\cryptical\obj\x86\Debug\cryptical.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\windows_app\Cryptical\cryptical\obj\x86\Debug\cryptical.csproj.CopyComplete

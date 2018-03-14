@@ -23,6 +23,7 @@
         <Border Grid.Row="2" Grid.ColumnSpan="2" Background="#152951"/>
 
         <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" >
+            <Image Width="100" Source="Images/eth_180.png"/>
             <TextBlock x:ConnectionId='13' x:Name ="ETHTitle" Foreground="White" FontSize="18" Margin ="10,10,42,10" Text="Ethereum" />
             <TextBlock x:ConnectionId='14' x:Name="ETHPriceText"  Foreground="White" FontSize="18" Margin ="10,0,42,10" Text="0.00" />
             <TextBlock x:ConnectionId='15' x:Name="ETHhigh24hr" Foreground="White" FontSize="15" Text="24 Hour High" Margin ="10,0,42,10"/>
@@ -30,18 +31,21 @@
 
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.ColumnSpan="1" VerticalAlignment="Center">
+            <Image Width="100" Source="Images/bitcoin_180.png"/>
             <TextBlock x:ConnectionId='9' x:Name ="BTCTitle" Foreground="White" FontSize="18" Margin ="10,10,42,10" Text="Bitcoin" />
             <TextBlock x:ConnectionId='10' x:Name="BTCPriceText"  Foreground="White" FontSize="18" Margin ="10,0,42,10" Text="0.00" />
             <TextBlock x:ConnectionId='11' x:Name="BTChigh24hr" Foreground="White" FontSize="15" Text="24 Hour High" Margin ="10,0,42,10"/>
             <TextBlock x:ConnectionId='12' x:Name="BTClow24hr" Foreground="White" FontSize="15" Text="24 Hour Low" Margin ="10,0,42,10"/>
         </StackPanel>
         <StackPanel Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" >
+            <Image Width="100" Source="Images/litecoin_180.png"/>
             <TextBlock x:ConnectionId='5' x:Name ="LTCTitle" Foreground="White" FontSize="18" Margin ="10,10,42,10" Text="Litecoin" />
             <TextBlock x:ConnectionId='6' x:Name="LTCPriceText"  Foreground="White" FontSize="18" Margin ="10,0,42,10" Text="0.00" />
             <TextBlock x:ConnectionId='7' x:Name="LTChigh24hr" Foreground="White" FontSize="15" Text="24 Hour High" Margin ="10,0,42,10"/>
             <TextBlock x:ConnectionId='8' x:Name="LTClow24hr" Foreground="White" FontSize="15" Text="24 Hour Low" Margin ="10,0,42,10"/>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.ColumnSpan="1" VerticalAlignment="Center">
+            <Image Width="100" Source="Images/bitcoin_180.png"/>
             <TextBlock x:ConnectionId='1' x:Name ="BCHTitle" Foreground="White" FontSize="18" Margin ="10,10,42,10" Text="Bitcoin Cash" />
             <TextBlock x:ConnectionId='2' x:Name="BCHPriceText"  Foreground="White" FontSize="18" Margin ="10,0,42,10" Text="0.00" />
             <TextBlock x:ConnectionId='3' x:Name="BCHhigh24hr" Foreground="White" FontSize="15" Text="24 Hour High" Margin ="10,0,42,10"/>
