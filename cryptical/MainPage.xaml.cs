@@ -18,7 +18,7 @@ namespace cryptical
     {
         public MainPage()
         {
-            this.InitializeComponent();
+            this.InitializeComponent(); 
             //initialise 
             List<Coin> cryptoCoins = initCoins();
             cryptoCoins = getCoinData(cryptoCoins);
