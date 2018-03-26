@@ -1,1 +1,1 @@
-c:\users\user\source\Cryptical\Cryptical\Cryptical.csproj;x86
+C:\Users\User\source\Cryptical\Cryptical\Cryptical.csproj;x86

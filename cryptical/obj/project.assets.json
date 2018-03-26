@@ -28808,11 +28808,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\user\\source\\Cryptical\\Cryptical\\Cryptical.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\Cryptical\\Cryptical\\Cryptical.csproj",
       "projectName": "Cryptical",
-      "projectPath": "c:\\users\\user\\source\\Cryptical\\Cryptical\\Cryptical.csproj",
+      "projectPath": "C:\\Users\\User\\source\\Cryptical\\Cryptical\\Cryptical.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\user\\source\\Cryptical\\Cryptical\\obj\\",
+      "outputPath": "C:\\Users\\User\\source\\Cryptical\\Cryptical\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
