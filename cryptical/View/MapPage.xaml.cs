@@ -24,7 +24,7 @@ namespace navigationTester.View
     {
         public MapPage()
         {
-            this.InitializeComponent();
+           // this.InitializeComponent();
         }
     }
 }

@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>909F73296CA37A1CF79ED2925F6A7A40B404996AB1A9BF25602B3F5F2BB677BD</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>0341A21EB5A555DB8D00009077E900494CF99C1777F45C6C5D1C8E9026AF9320</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>f1cecb6f-009a-4499-80d1-e46e7cce9b24_1.0.0.0_x86__4sdaedqydyjdm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>f1cecb6f-009a-4499-80d1-e46e7cce9b24_4sdaedqydyjdm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>f1cecb6f-009a-4499-80d1-e46e7cce9b24</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-26T20:00:40.944</Modified>
+      <Modified>2018-03-26T20:47:49.896</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\navigationTester.exe">
-      <PackagePath>entrypoint\navigationTester.exe</PackagePath>
-      <Modified>2018-03-26T20:00:36.118</Modified>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\Cryptical.exe">
+      <PackagePath>entrypoint\Cryptical.exe</PackagePath>
+      <Modified>2018-03-26T20:47:47.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\colorcode.core\2.0.3\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -617,9 +617,9 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-03-12T16:15:44.597</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\navigationTester.xr.xml">
-      <PackagePath>navigationTester.xr.xml</PackagePath>
-      <Modified>2018-03-26T19:24:13.072</Modified>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\Cryptical.xr.xml">
+      <PackagePath>Cryptical.xr.xml</PackagePath>
+      <Modified>2018-03-26T20:30:34.370</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -788,11 +788,11 @@
     <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-26T20:00:37.916</Modified>
+      <Modified>2018-03-26T20:30:35.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\Core\navigationTester.exe">
-      <PackagePath>navigationTester.exe</PackagePath>
-      <Modified>2018-03-26T20:00:40.934</Modified>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\Core\Cryptical.exe">
+      <PackagePath>Cryptical.exe</PackagePath>
+      <Modified>2018-03-26T20:47:49.891</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

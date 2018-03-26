@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace navigationTester.NewFolder2
+namespace Cryptical.View
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -24,12 +24,7 @@ namespace navigationTester.NewFolder2
     {
         public BlankPage1()
         {
-            this.InitializeComponent();
-        }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
         }
     }
 }

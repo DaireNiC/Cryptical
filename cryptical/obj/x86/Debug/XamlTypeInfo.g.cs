@@ -9,11 +9,11 @@
 
 
 
-namespace navigationTester
+namespace Cryptical
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-    private global::navigationTester.navigationTester_XamlTypeInfo.XamlTypeInfoProvider _provider;
+    private global::Cryptical.Cryptical_XamlTypeInfo.XamlTypeInfoProvider _provider;
 
         /// <summary>
         /// GetXamlType(Type)
@@ -22,7 +22,7 @@ namespace navigationTester
         {
             if(_provider == null)
             {
-                _provider = new global::navigationTester.navigationTester_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::Cryptical.Cryptical_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByType(type);
         }
@@ -34,7 +34,7 @@ namespace navigationTester
         {
             if(_provider == null)
             {
-                _provider = new global::navigationTester.navigationTester_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::Cryptical.Cryptical_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByName(fullName);
         }
@@ -49,7 +49,7 @@ namespace navigationTester
     }
 }
 
-namespace navigationTester.navigationTester_XamlTypeInfo
+namespace Cryptical.Cryptical_XamlTypeInfo
 {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -67,7 +67,7 @@ namespace navigationTester.navigationTester_XamlTypeInfo
             {
                 xamlType = CreateXamlType(typeIndex);
             }
-            var userXamlType = xamlType as global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType;
+            var userXamlType = xamlType as global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType;
             if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
             {
                 global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForType(type);
@@ -103,7 +103,7 @@ namespace navigationTester.navigationTester_XamlTypeInfo
             {
                 xamlType = CreateXamlType(typeIndex);
             }
-            var userXamlType = xamlType as global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType;
+            var userXamlType = xamlType as global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType;
             if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
             {
                 global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForName(typeName);
@@ -156,7 +156,7 @@ namespace navigationTester.navigationTester_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[20];
+            _typeNameTable = new string[22];
             _typeNameTable[0] = "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.ContentControl";
             _typeNameTable[2] = "Windows.UI.Xaml.Media.Brush";
@@ -171,14 +171,16 @@ namespace navigationTester.navigationTester_XamlTypeInfo
             _typeNameTable[11] = "Windows.UI.Xaml.Controls.SplitViewPanePlacement";
             _typeNameTable[12] = "Windows.UI.Xaml.Controls.SplitViewDisplayMode";
             _typeNameTable[13] = "Boolean";
-            _typeNameTable[14] = "navigationTester.MainPage";
+            _typeNameTable[14] = "Cryptical.MainPage";
             _typeNameTable[15] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[16] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[17] = "navigationTester.View.BlankPage1";
-            _typeNameTable[18] = "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions";
-            _typeNameTable[19] = "Windows.UI.Xaml.Controls.NavigationView";
+            _typeNameTable[17] = "Cryptical.View.BlankPage1";
+            _typeNameTable[18] = "Cryptical.View.CurrencyPage";
+            _typeNameTable[19] = "Cryptical.View.MapPage";
+            _typeNameTable[20] = "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions";
+            _typeNameTable[21] = "Windows.UI.Xaml.Controls.NavigationView";
 
-            _typeTable = new global::System.Type[20];
+            _typeTable = new global::System.Type[22];
             _typeTable[0] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Media.Brush);
@@ -193,12 +195,14 @@ namespace navigationTester.navigationTester_XamlTypeInfo
             _typeTable[11] = typeof(global::Windows.UI.Xaml.Controls.SplitViewPanePlacement);
             _typeTable[12] = typeof(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode);
             _typeTable[13] = typeof(global::System.Boolean);
-            _typeTable[14] = typeof(global::navigationTester.MainPage);
+            _typeTable[14] = typeof(global::Cryptical.MainPage);
             _typeTable[15] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[16] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[17] = typeof(global::navigationTester.View.BlankPage1);
-            _typeTable[18] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions);
-            _typeTable[19] = typeof(global::Windows.UI.Xaml.Controls.NavigationView);
+            _typeTable[17] = typeof(global::Cryptical.View.BlankPage1);
+            _typeTable[18] = typeof(global::Cryptical.View.CurrencyPage);
+            _typeTable[19] = typeof(global::Cryptical.View.MapPage);
+            _typeTable[20] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions);
+            _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.NavigationView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -234,14 +238,16 @@ namespace navigationTester.navigationTester_XamlTypeInfo
         }
 
         private object Activate_0_HamburgerMenu() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu(); }
-        private object Activate_14_MainPage() { return new global::navigationTester.MainPage(); }
-        private object Activate_17_BlankPage1() { return new global::navigationTester.View.BlankPage1(); }
-        private object Activate_18_NavigationViewExtensions() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions(); }
+        private object Activate_14_MainPage() { return new global::Cryptical.MainPage(); }
+        private object Activate_17_BlankPage1() { return new global::Cryptical.View.BlankPage1(); }
+        private object Activate_18_CurrencyPage() { return new global::Cryptical.View.CurrencyPage(); }
+        private object Activate_19_MapPage() { return new global::Cryptical.View.MapPage(); }
+        private object Activate_20_NavigationViewExtensions() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
-            global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType xamlType = null;
-            global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType userType;
+            global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType xamlType = null;
+            global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType userType;
             string typeName = _typeNameTable[typeIndex];
             global::System.Type type = _typeTable[typeIndex];
 
@@ -249,7 +255,7 @@ namespace navigationTester.navigationTester_XamlTypeInfo
             {
 
             case 0:   //  Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu
-                userType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
                 userType.Activator = Activate_0_HamburgerMenu;
                 userType.AddMemberName("PaneBackground");
                 userType.AddMemberName("ItemTemplate");
@@ -281,90 +287,104 @@ namespace navigationTester.navigationTester_XamlTypeInfo
                 break;
 
             case 1:   //  Windows.UI.Xaml.Controls.ContentControl
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 2:   //  Windows.UI.Xaml.Media.Brush
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 3:   //  Windows.UI.Xaml.DataTemplate
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 4:   //  Double
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 5:   //  Windows.UI.Xaml.Thickness
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 6:   //  Windows.UI.Xaml.Visibility
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 7:   //  Object
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 8:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 9:   //  Windows.UI.Xaml.Controls.ItemCollection
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 10:   //  Int32
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 11:   //  Windows.UI.Xaml.Controls.SplitViewPanePlacement
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 12:   //  Windows.UI.Xaml.Controls.SplitViewDisplayMode
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 13:   //  Boolean
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 14:   //  navigationTester.MainPage
-                userType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+            case 14:   //  Cryptical.MainPage
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_14_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
             case 15:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 16:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 17:   //  navigationTester.View.BlankPage1
-                userType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+            case 17:   //  Cryptical.View.BlankPage1
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_17_BlankPage1;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions
-                userType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_18_NavigationViewExtensions;
+            case 18:   //  Cryptical.View.CurrencyPage
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_18_CurrencyPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 19:   //  Cryptical.View.MapPage
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_19_MapPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 20:   //  Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_20_NavigationViewExtensions;
                 userType.AddMemberName("SelectedIndex");
                 userType.AddMemberName("CollapseOnClick");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 19:   //  Windows.UI.Xaml.Controls.NavigationView
-                xamlType = new global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 21:   //  Windows.UI.Xaml.Controls.NavigationView
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
             return xamlType;
@@ -696,202 +716,202 @@ namespace navigationTester.navigationTester_XamlTypeInfo
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
-            global::navigationTester.navigationTester_XamlTypeInfo.XamlMember xamlMember = null;
-            global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType userType;
+            global::Cryptical.Cryptical_XamlTypeInfo.XamlMember xamlMember = null;
+            global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType userType;
 
             switch (longMemberName)
             {
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.PaneBackground":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "PaneBackground", "Windows.UI.Xaml.Media.Brush");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "PaneBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_0_HamburgerMenu_PaneBackground;
                 xamlMember.Setter = set_0_HamburgerMenu_PaneBackground;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.ItemTemplate":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "ItemTemplate", "Windows.UI.Xaml.DataTemplate");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ItemTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_1_HamburgerMenu_ItemTemplate;
                 xamlMember.Setter = set_1_HamburgerMenu_ItemTemplate;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OptionsItemTemplate":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "OptionsItemTemplate", "Windows.UI.Xaml.DataTemplate");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "OptionsItemTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_2_HamburgerMenu_OptionsItemTemplate;
                 xamlMember.Setter = set_2_HamburgerMenu_OptionsItemTemplate;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.HamburgerMenuTemplate":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "HamburgerMenuTemplate", "Windows.UI.Xaml.DataTemplate");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "HamburgerMenuTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_3_HamburgerMenu_HamburgerMenuTemplate;
                 xamlMember.Setter = set_3_HamburgerMenu_HamburgerMenuTemplate;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.HamburgerWidth":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "HamburgerWidth", "Double");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "HamburgerWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_4_HamburgerMenu_HamburgerWidth;
                 xamlMember.Setter = set_4_HamburgerMenu_HamburgerWidth;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.HamburgerHeight":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "HamburgerHeight", "Double");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "HamburgerHeight", "Double");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_5_HamburgerMenu_HamburgerHeight;
                 xamlMember.Setter = set_5_HamburgerMenu_HamburgerHeight;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.HamburgerMargin":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "HamburgerMargin", "Windows.UI.Xaml.Thickness");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "HamburgerMargin", "Windows.UI.Xaml.Thickness");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_6_HamburgerMenu_HamburgerMargin;
                 xamlMember.Setter = set_6_HamburgerMenu_HamburgerMargin;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.HamburgerVisibility":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "HamburgerVisibility", "Windows.UI.Xaml.Visibility");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "HamburgerVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_7_HamburgerMenu_HamburgerVisibility;
                 xamlMember.Setter = set_7_HamburgerMenu_HamburgerVisibility;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OptionsItemsSource":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "OptionsItemsSource", "Object");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "OptionsItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_8_HamburgerMenu_OptionsItemsSource;
                 xamlMember.Setter = set_8_HamburgerMenu_OptionsItemsSource;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OptionsItemTemplateSelector":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "OptionsItemTemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "OptionsItemTemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_9_HamburgerMenu_OptionsItemTemplateSelector;
                 xamlMember.Setter = set_9_HamburgerMenu_OptionsItemTemplateSelector;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OptionsItems":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "OptionsItems", "Windows.UI.Xaml.Controls.ItemCollection");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "OptionsItems", "Windows.UI.Xaml.Controls.ItemCollection");
                 xamlMember.Getter = get_10_HamburgerMenu_OptionsItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OptionsVisibility":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "OptionsVisibility", "Windows.UI.Xaml.Visibility");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "OptionsVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_11_HamburgerMenu_OptionsVisibility;
                 xamlMember.Setter = set_11_HamburgerMenu_OptionsVisibility;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.SelectedOptionsItem":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "SelectedOptionsItem", "Object");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "SelectedOptionsItem", "Object");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_12_HamburgerMenu_SelectedOptionsItem;
                 xamlMember.Setter = set_12_HamburgerMenu_SelectedOptionsItem;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.SelectedOptionsIndex":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "SelectedOptionsIndex", "Int32");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "SelectedOptionsIndex", "Int32");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_13_HamburgerMenu_SelectedOptionsIndex;
                 xamlMember.Setter = set_13_HamburgerMenu_SelectedOptionsIndex;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OpenPaneLength":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "OpenPaneLength", "Double");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "OpenPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_14_HamburgerMenu_OpenPaneLength;
                 xamlMember.Setter = set_14_HamburgerMenu_OpenPaneLength;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.PanePlacement":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "PanePlacement", "Windows.UI.Xaml.Controls.SplitViewPanePlacement");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "PanePlacement", "Windows.UI.Xaml.Controls.SplitViewPanePlacement");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_15_HamburgerMenu_PanePlacement;
                 xamlMember.Setter = set_15_HamburgerMenu_PanePlacement;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.DisplayMode":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "DisplayMode", "Windows.UI.Xaml.Controls.SplitViewDisplayMode");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "DisplayMode", "Windows.UI.Xaml.Controls.SplitViewDisplayMode");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_16_HamburgerMenu_DisplayMode;
                 xamlMember.Setter = set_16_HamburgerMenu_DisplayMode;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.CompactPaneLength":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "CompactPaneLength", "Double");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "CompactPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_17_HamburgerMenu_CompactPaneLength;
                 xamlMember.Setter = set_17_HamburgerMenu_CompactPaneLength;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.PaneForeground":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "PaneForeground", "Windows.UI.Xaml.Media.Brush");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "PaneForeground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_18_HamburgerMenu_PaneForeground;
                 xamlMember.Setter = set_18_HamburgerMenu_PaneForeground;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.IsPaneOpen":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "IsPaneOpen", "Boolean");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "IsPaneOpen", "Boolean");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_19_HamburgerMenu_IsPaneOpen;
                 xamlMember.Setter = set_19_HamburgerMenu_IsPaneOpen;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.ItemsSource":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "ItemsSource", "Object");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_20_HamburgerMenu_ItemsSource;
                 xamlMember.Setter = set_20_HamburgerMenu_ItemsSource;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.ItemTemplateSelector":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "ItemTemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ItemTemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_21_HamburgerMenu_ItemTemplateSelector;
                 xamlMember.Setter = set_21_HamburgerMenu_ItemTemplateSelector;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.Items":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "Items", "Windows.UI.Xaml.Controls.ItemCollection");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Items", "Windows.UI.Xaml.Controls.ItemCollection");
                 xamlMember.Getter = get_22_HamburgerMenu_Items;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.SelectedItem":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_23_HamburgerMenu_SelectedItem;
                 xamlMember.Setter = set_23_HamburgerMenu_SelectedItem;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.SelectedIndex":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_24_HamburgerMenu_SelectedIndex;
                 xamlMember.Setter = set_24_HamburgerMenu_SelectedIndex;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.UseNavigationViewWhenPossible":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "UseNavigationViewWhenPossible", "Boolean");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "UseNavigationViewWhenPossible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_25_HamburgerMenu_UseNavigationViewWhenPossible;
                 xamlMember.Setter = set_25_HamburgerMenu_UseNavigationViewWhenPossible;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.SelectedIndex":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.Controls.NavigationView");
                 xamlMember.SetIsAttachable();
                 xamlMember.Getter = get_26_NavigationViewExtensions_SelectedIndex;
                 xamlMember.Setter = set_26_NavigationViewExtensions_SelectedIndex;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.CollapseOnClick":
-                userType = (global::navigationTester.navigationTester_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions");
-                xamlMember = new global::navigationTester.navigationTester_XamlTypeInfo.XamlMember(this, "CollapseOnClick", "Boolean");
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "CollapseOnClick", "Boolean");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.Controls.NavigationView");
                 xamlMember.SetIsAttachable();
                 xamlMember.Getter = get_27_NavigationViewExtensions_CollapseOnClick;
@@ -951,9 +971,9 @@ namespace navigationTester.navigationTester_XamlTypeInfo
 
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class XamlUserType : global::navigationTester.navigationTester_XamlTypeInfo.XamlSystemBaseType
+    internal class XamlUserType : global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType
     {
-        global::navigationTester.navigationTester_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::Cryptical.Cryptical_XamlTypeInfo.XamlTypeInfoProvider _provider;
         global::Windows.UI.Xaml.Markup.IXamlType _baseType;
         bool _isArray;
         bool _isMarkupExtension;
@@ -967,7 +987,7 @@ namespace navigationTester.navigationTester_XamlTypeInfo
         global::System.Collections.Generic.Dictionary<string, string> _memberNames;
         global::System.Collections.Generic.Dictionary<string, object> _enumValues;
 
-        public XamlUserType(global::navigationTester.navigationTester_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
+        public XamlUserType(global::Cryptical.Cryptical_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
             :base(fullName, fullType)
         {
             _provider = provider;
@@ -1159,7 +1179,7 @@ namespace navigationTester.navigationTester_XamlTypeInfo
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
-        global::navigationTester.navigationTester_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::Cryptical.Cryptical_XamlTypeInfo.XamlTypeInfoProvider _provider;
         string _name;
         bool _isAttachable;
         bool _isDependencyProperty;
@@ -1168,7 +1188,7 @@ namespace navigationTester.navigationTester_XamlTypeInfo
         string _typeName;
         string _targetTypeName;
 
-        public XamlMember(global::navigationTester.navigationTester_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
+        public XamlMember(global::Cryptical.Cryptical_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
         {
             _name = name;
             _typeName = typeName;

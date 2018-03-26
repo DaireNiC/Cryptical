@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using Windows.UI.Xaml.Controls;
 
-namespace navigationTester
+namespace Cryptical
 {
     public sealed partial class MainPage : Page
     {
         public MainPage()
         {
             this.InitializeComponent();
+ 
 
             hamburgerMenuControl.ItemsSource = MenuItem.GetMainItems();
             hamburgerMenuControl.OptionsItemsSource = MenuItem.GetOptionsItems();
+            contentFrame.Navigate(typeof(View.CurrencyPage));
         }
 
         private void OnMenuItemClick(object sender, ItemClickEventArgs e)
@@ -30,7 +32,7 @@ namespace navigationTester
         public static List<MenuItem> GetMainItems()
         {
             var items = new List<MenuItem>();
-            items.Add(new MenuItem() { Icon = Symbol.Accept, Name = "MenuItem1", PageType = typeof(View.Currency) });
+            items.Add(new MenuItem() { Icon = Symbol.Accept, Name = "MenuItem1", PageType = typeof(View.CurrencyPage) });
             items.Add(new MenuItem() { Icon = Symbol.Send, Name = "MenuItem2", PageType = typeof(View.MapPage) });
             items.Add(new MenuItem() { Icon = Symbol.Shop, Name = "MenuItem3", PageType = typeof(View.BlankPage1) });
             return items;
@@ -39,7 +41,7 @@ namespace navigationTester
         public static List<MenuItem> GetOptionsItems()
         {
             var items = new List<MenuItem>();
-            items.Add(new MenuItem() { Icon = Symbol.Setting, Name = "OptionItem1", PageType = typeof(View.BlankPage1) });
+            items.Add(new MenuItem() { Icon = Symbol.Setting, Name = "OptionItem1", PageType = typeof(View.CurrencyPage) });
             return items;
         }
     }

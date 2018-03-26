@@ -28808,9 +28808,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\windows_app\\Cryptical\\cryptical\\navigationTester.csproj",
-      "projectName": "navigationTester",
-      "projectPath": "C:\\Users\\User\\Desktop\\windows_app\\Cryptical\\cryptical\\navigationTester.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\windows_app\\Cryptical\\cryptical\\Cryptical.csproj",
+      "projectName": "Cryptical",
+      "projectPath": "C:\\Users\\User\\Desktop\\windows_app\\Cryptical\\cryptical\\Cryptical.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\Desktop\\windows_app\\Cryptical\\cryptical\\obj\\",
       "projectStyle": "PackageReference",
