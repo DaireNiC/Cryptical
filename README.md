@@ -10,7 +10,7 @@ The application was designed with an emphasis on simplicty and clarity. Many app
 are extremely complex and cumbersome to the casual user. 
 
 ## Use
-The reason a user will return or copen the application more that once is for the following reasons:
+The reason a user will return or open the application more that once is for the following reasons:
 
 * Simple, elegant interface
 	The clean UI, makes the application approachable and user friendly. Reading the latest values is a breeze  
