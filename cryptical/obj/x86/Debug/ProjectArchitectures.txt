@@ -1,1 +1,1 @@
-C:\Users\User\Desktop\windows_app\Cryptical\cryptical\cryptical.csproj;x86
+C:\Users\User\Desktop\windows_app\Cryptical\cryptical\navigationTester.csproj;x86
