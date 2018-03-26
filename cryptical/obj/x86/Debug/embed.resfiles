@@ -1,5 +1,4 @@
 App.xbf
-MainPage.xbf
-View\BlankPage1.xbf
-View\CurrencyPage.xbf
-View\MapPage.xbf
+Views\CurrencyPage.xbf
+Views\MainPage.xbf
+Views\MapPage.xbf

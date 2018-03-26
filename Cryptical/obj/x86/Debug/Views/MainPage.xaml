@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="Cryptical.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:local="using:Cryptical.Views"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <DataTemplate x:Key="DefaultTemplate"                            >
+            <Grid x:ConnectionId='1' Width="240" Height="48">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="48" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <SymbolIcon x:ConnectionId='2' Grid.Column="0"                                     Foreground="White" />
+                <TextBlock x:ConnectionId='3' Grid.Column="1"                                   FontSize="16" VerticalAlignment="Center" Foreground="White" />
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <controls:HamburgerMenu x:ConnectionId='4' x:Name="hamburgerMenuControl"
+            PaneBackground="Black"
+            Foreground="White"
+            ItemTemplate="{StaticResource DefaultTemplate}"
+                                       
+            OptionsItemTemplate="{StaticResource DefaultTemplate}"
+                                              >
+
+            <Frame x:ConnectionId='5' x:Name="contentFrame" Foreground="Black"/>
+        </controls:HamburgerMenu>
+    </Grid>
+</Page>
+

@@ -8,24 +8,24 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
-    <PackageIdentityName>f1cecb6f-009a-4499-80d1-e46e7cce9b24</PackageIdentityName>
+    <PackageIdentityName>77aeef4e-06cd-4639-84b1-971fa7390799</PackageIdentityName>
     <PackageIdentityPublisher>CN=User</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\User\Desktop\windows_app\Cryptical\cryptical\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>c:\users\user\source\Cryptical\Cryptical\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>c:\users\user\source\Cryptical\Cryptical\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="c:\users\user\source\Cryptical\Cryptical\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\Cryptical.exe">
+    <AppxPackagedFile Include="c:\users\user\source\Cryptical\Cryptical\bin\x86\Debug\Cryptical.exe">
       <PackagePath>entrypoint\Cryptical.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\colorcode.core\2.0.3\lib\netstandard1.4\ColorCode.Core.dll">
@@ -433,37 +433,37 @@
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\win2d.uwp\1.21.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="c:\users\user\source\Cryptical\Cryptical\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="c:\users\user\source\Cryptical\Cryptical\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="c:\users\user\source\Cryptical\Cryptical\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="c:\users\user\source\Cryptical\Cryptical\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="c:\users\user\source\Cryptical\Cryptical\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="c:\users\user\source\Cryptical\Cryptical\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="c:\users\user\source\Cryptical\Cryptical\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="c:\users\user\source\Cryptical\Cryptical\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\Cryptical.xr.xml">
+    <AppxPackagedFile Include="c:\users\user\source\Cryptical\Cryptical\bin\x86\Debug\Cryptical.xr.xml">
       <PackagePath>Cryptical.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
@@ -589,11 +589,11 @@
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\microsoft.toolkit.uwp.ui.controls\2.2.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="c:\users\user\source\Cryptical\Cryptical\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\windows_app\Cryptical\cryptical\bin\x86\Debug\Core\Cryptical.exe">
+    <AppxPackagedFile Include="c:\users\user\source\Cryptical\Cryptical\bin\x86\Debug\Core\Cryptical.exe">
       <PackagePath>Cryptical.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

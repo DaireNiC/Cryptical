@@ -156,7 +156,7 @@ namespace Cryptical.Cryptical_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[22];
+            _typeNameTable = new string[21];
             _typeNameTable[0] = "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.ContentControl";
             _typeNameTable[2] = "Windows.UI.Xaml.Media.Brush";
@@ -171,16 +171,15 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             _typeNameTable[11] = "Windows.UI.Xaml.Controls.SplitViewPanePlacement";
             _typeNameTable[12] = "Windows.UI.Xaml.Controls.SplitViewDisplayMode";
             _typeNameTable[13] = "Boolean";
-            _typeNameTable[14] = "Cryptical.MainPage";
+            _typeNameTable[14] = "Cryptical.Views.MainPage";
             _typeNameTable[15] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[16] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[17] = "Cryptical.View.BlankPage1";
-            _typeNameTable[18] = "Cryptical.View.CurrencyPage";
-            _typeNameTable[19] = "Cryptical.View.MapPage";
-            _typeNameTable[20] = "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions";
-            _typeNameTable[21] = "Windows.UI.Xaml.Controls.NavigationView";
+            _typeNameTable[17] = "Cryptical.Views.CurrencyPage";
+            _typeNameTable[18] = "Cryptical.Views.MapPage";
+            _typeNameTable[19] = "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions";
+            _typeNameTable[20] = "Windows.UI.Xaml.Controls.NavigationView";
 
-            _typeTable = new global::System.Type[22];
+            _typeTable = new global::System.Type[21];
             _typeTable[0] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Media.Brush);
@@ -195,14 +194,13 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             _typeTable[11] = typeof(global::Windows.UI.Xaml.Controls.SplitViewPanePlacement);
             _typeTable[12] = typeof(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode);
             _typeTable[13] = typeof(global::System.Boolean);
-            _typeTable[14] = typeof(global::Cryptical.MainPage);
+            _typeTable[14] = typeof(global::Cryptical.Views.MainPage);
             _typeTable[15] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[16] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[17] = typeof(global::Cryptical.View.BlankPage1);
-            _typeTable[18] = typeof(global::Cryptical.View.CurrencyPage);
-            _typeTable[19] = typeof(global::Cryptical.View.MapPage);
-            _typeTable[20] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions);
-            _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.NavigationView);
+            _typeTable[17] = typeof(global::Cryptical.Views.CurrencyPage);
+            _typeTable[18] = typeof(global::Cryptical.Views.MapPage);
+            _typeTable[19] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions);
+            _typeTable[20] = typeof(global::Windows.UI.Xaml.Controls.NavigationView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -238,11 +236,10 @@ namespace Cryptical.Cryptical_XamlTypeInfo
         }
 
         private object Activate_0_HamburgerMenu() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu(); }
-        private object Activate_14_MainPage() { return new global::Cryptical.MainPage(); }
-        private object Activate_17_BlankPage1() { return new global::Cryptical.View.BlankPage1(); }
-        private object Activate_18_CurrencyPage() { return new global::Cryptical.View.CurrencyPage(); }
-        private object Activate_19_MapPage() { return new global::Cryptical.View.MapPage(); }
-        private object Activate_20_NavigationViewExtensions() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions(); }
+        private object Activate_14_MainPage() { return new global::Cryptical.Views.MainPage(); }
+        private object Activate_17_CurrencyPage() { return new global::Cryptical.Views.CurrencyPage(); }
+        private object Activate_18_MapPage() { return new global::Cryptical.Views.MapPage(); }
+        private object Activate_19_NavigationViewExtensions() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -338,7 +335,7 @@ namespace Cryptical.Cryptical_XamlTypeInfo
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 14:   //  Cryptical.MainPage
+            case 14:   //  Cryptical.Views.MainPage
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_14_MainPage;
                 userType.SetIsLocalType();
@@ -353,37 +350,30 @@ namespace Cryptical.Cryptical_XamlTypeInfo
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 17:   //  Cryptical.View.BlankPage1
+            case 17:   //  Cryptical.Views.CurrencyPage
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_BlankPage1;
+                userType.Activator = Activate_17_CurrencyPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  Cryptical.View.CurrencyPage
+            case 18:   //  Cryptical.Views.MapPage
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_CurrencyPage;
+                userType.Activator = Activate_18_MapPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  Cryptical.View.MapPage
-                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_MapPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 20:   //  Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions
+            case 19:   //  Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_20_NavigationViewExtensions;
+                userType.Activator = Activate_19_NavigationViewExtensions;
                 userType.AddMemberName("SelectedIndex");
                 userType.AddMemberName("CollapseOnClick");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 21:   //  Windows.UI.Xaml.Controls.NavigationView
+            case 20:   //  Windows.UI.Xaml.Controls.NavigationView
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
