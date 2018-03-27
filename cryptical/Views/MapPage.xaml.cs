@@ -14,32 +14,35 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Maps;
 
+//Resource (1): https://docs.microsoft.com/en-us/windows/uwp/maps-and-location/get-location
+
 namespace Cryptical.Views
 {
     public sealed partial class MapPage : Page
     {
-        // TODO WTS: Set your preferred default zoom level
+        // Setting map Zoom level & default (best practice according to dev docs)
         private const double DefaultZoomLevel = 17;
+        private double _zoomLevel;
 
+        //Adding the location service for cleaner code 
         private readonly LocationService _locationService;
 
-        // TODO WTS: Set your preferred default location if a geolock can't be found.
+        // set default location in case location fails
+        // co-ordinates for dublin city 
         private readonly BasicGeoposition _defaultPosition = new BasicGeoposition()
         {
             Latitude = 27.609425,
-            Longitude = -122.3417
+            Longitude = 22.3417
         };
-
-        private double _zoomLevel;
-
+        // get & set zoom
         public double ZoomLevel
         {
             get { return _zoomLevel; }
             set { Set(ref _zoomLevel, value); }
         }
 
+        // geo point is the default geo location
         private Geopoint _center;
-
         public Geopoint Center
         {
             get { return _center; }
@@ -55,7 +58,7 @@ namespace Cryptical.Views
             ZoomLevel = DefaultZoomLevel;
             InitializeComponent();
         }
-
+        //on page load...
         private async void MapPage_Loaded(object sender, RoutedEventArgs e)
         {
             await InitializeAsync();
@@ -68,45 +71,47 @@ namespace Cryptical.Views
 
         public async Task InitializeAsync()
         {
+            //access location service 
             if (_locationService != null)
             {
+                //alter geo co ordinates in event of change of position
                 _locationService.PositionChanged += LocationService_PositionChanged;
 
                 var initializationSuccessful = await _locationService.InitializeAsync();
 
                 if (initializationSuccessful)
                 {
-                    Debug.WriteLine("enter 1");
                     await _locationService.StartListeningAsync();
                 }
 
                 if (initializationSuccessful && _locationService.CurrentPosition != null)
                 {
-                    Debug.WriteLine("SHOUSKSKSl");
+                    //get the current location point 
                     Center = _locationService.CurrentPosition.Coordinate.Point;
                 }
                 else
                 {
+                    //if fails to get location --> make it the default co ordinates
                     Center = new Geopoint(_defaultPosition);
                 }
             }
 
             if (mapControl != null)
             {
-                Debug.WriteLine("Inside map control");
-                // TODO WTS: Set your map service token. If you don't have one, request at https://www.bingmapsportal.com/
-                mapControl.MapServiceToken = "y17BMedIEL9Y8XkAIHTT~0c72K3B_3x-Ffl7B3K3Otw~AlV5wgF2S4ocZBzmdGrantbUcfOa0p72Bk3zSSmlB10YoDcrPn6OQBo09pDXx7ZT";
+                //your map service token. Obtained from https://www.bingmapsportal.com/
+                mapControl.MapServiceToken = "y17BMedIEL9Y8XkAIHTT~0c72K3B_3xFfl7B3K3Otw~AlV5wgF2S4ocZBzmdGrantbUcfOa0p72Bk3zSSmlB10YoDcrPn6OQBo09pDXx7ZT";
 
                 // Set the map location.
                 mapControl.Center = Center;
-                Debug.WriteLine("geo loc: " + mapControl.Center.Position);
-
-                AddMapIcon(mapControl.Center, "Map_YourLocation");
+                Debug.WriteLine("geo loc: " + mapControl.Center.Position.ToString());
+                //add the icon to the map to display user locaiton
+                AddMapIcon(mapControl.Center, "Your Location");
                 Debug.WriteLine("center to str loc: " + Center.Position.ToString());
 
             }
         }
 
+        //gracefully stop location monitoring 
         public void Cleanup()
         {
             if (_locationService != null)
