@@ -73,6 +73,7 @@
     </RootType>
     <RootType FullName="Cryptical.Views.CurrencyPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
+      <RootProperty Name="MapServiceToken" />
       <RootProperty Name="ZoomLevel" />
       <RootProperty Name="Center" />
     </RootType>

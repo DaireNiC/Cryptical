@@ -9,7 +9,7 @@
     mc:Ignorable="d">
 
     <Grid>
-        <maps:MapControl
+        <maps:MapControl  MapServiceToken="y17BMedIEL9Y8XkAIHTT~0c72K3B_3x-Ffl7B3K3Otw~AlV5wgF2S4ocZBzmdGrantbUcfOa0p72Bk3zSSmlB10YoDcrPn6OQBo09pDXx7ZT"
             x:Name="mapControl"
             ZoomLevel="{x:Bind ZoomLevel, Mode=OneWay}"
             Center="{x:Bind Center, Mode=OneWay}"/>

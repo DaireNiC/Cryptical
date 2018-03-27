@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-27T15:17:55.675</Modified>
+      <Modified>2018-03-27T15:43:10.341</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Cryptical.exe">
       <PackagePath>entrypoint\Cryptical.exe</PackagePath>
-      <Modified>2018-03-27T15:17:54.617</Modified>
+      <Modified>2018-03-27T15:43:08.646</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\colorcode.core\2.0.3\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -619,7 +619,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Cryptical.xr.xml">
       <PackagePath>Cryptical.xr.xml</PackagePath>
-      <Modified>2018-03-27T12:37:08.228</Modified>
+      <Modified>2018-03-27T15:43:08.371</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -788,11 +788,11 @@
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-27T12:37:10.229</Modified>
+      <Modified>2018-03-27T15:43:09.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Core\Cryptical.exe">
       <PackagePath>Cryptical.exe</PackagePath>
-      <Modified>2018-03-27T15:17:55.663</Modified>
+      <Modified>2018-03-27T15:43:10.337</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -99,7 +99,7 @@ namespace Cryptical.Views
             if (mapControl != null)
             {
                 //your map service token. Obtained from https://www.bingmapsportal.com/
-                mapControl.MapServiceToken = "y17BMedIEL9Y8XkAIHTT~0c72K3B_3xFfl7B3K3Otw~AlV5wgF2S4ocZBzmdGrantbUcfOa0p72Bk3zSSmlB10YoDcrPn6OQBo09pDXx7ZT";
+                mapControl.MapServiceToken = "y17BMedIEL9Y8XkAIHTT~0c72K3B_3x-Ffl7B3K3Otw~AlV5wgF2S4ocZBzmdGrantbUcfOa0p72Bk3zSSmlB10YoDcrPn6OQBo09pDXx7ZT";
 
                 // Set the map location.
                 mapControl.Center = Center;
