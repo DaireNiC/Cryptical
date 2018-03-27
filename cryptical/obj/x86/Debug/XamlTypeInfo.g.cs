@@ -156,7 +156,7 @@ namespace Cryptical.Cryptical_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[21];
+            _typeNameTable = new string[22];
             _typeNameTable[0] = "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.ContentControl";
             _typeNameTable[2] = "Windows.UI.Xaml.Media.Brush";
@@ -176,10 +176,11 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             _typeNameTable[16] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[17] = "Cryptical.Views.CurrencyPage";
             _typeNameTable[18] = "Cryptical.Views.MapPage";
-            _typeNameTable[19] = "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions";
-            _typeNameTable[20] = "Windows.UI.Xaml.Controls.NavigationView";
+            _typeNameTable[19] = "Windows.Devices.Geolocation.Geopoint";
+            _typeNameTable[20] = "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions";
+            _typeNameTable[21] = "Windows.UI.Xaml.Controls.NavigationView";
 
-            _typeTable = new global::System.Type[21];
+            _typeTable = new global::System.Type[22];
             _typeTable[0] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Media.Brush);
@@ -199,8 +200,9 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             _typeTable[16] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[17] = typeof(global::Cryptical.Views.CurrencyPage);
             _typeTable[18] = typeof(global::Cryptical.Views.MapPage);
-            _typeTable[19] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions);
-            _typeTable[20] = typeof(global::Windows.UI.Xaml.Controls.NavigationView);
+            _typeTable[19] = typeof(global::Windows.Devices.Geolocation.Geopoint);
+            _typeTable[20] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions);
+            _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.NavigationView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -239,7 +241,7 @@ namespace Cryptical.Cryptical_XamlTypeInfo
         private object Activate_14_MainPage() { return new global::Cryptical.Views.MainPage(); }
         private object Activate_17_CurrencyPage() { return new global::Cryptical.Views.CurrencyPage(); }
         private object Activate_18_MapPage() { return new global::Cryptical.Views.MapPage(); }
-        private object Activate_19_NavigationViewExtensions() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions(); }
+        private object Activate_20_NavigationViewExtensions() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -360,20 +362,28 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             case 18:   //  Cryptical.Views.MapPage
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_18_MapPage;
+                userType.AddMemberName("ZoomLevel");
+                userType.AddMemberName("Center");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions
+            case 19:   //  Windows.Devices.Geolocation.Geopoint
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_19_NavigationViewExtensions;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 20:   //  Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_20_NavigationViewExtensions;
                 userType.AddMemberName("SelectedIndex");
                 userType.AddMemberName("CollapseOnClick");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 20:   //  Windows.UI.Xaml.Controls.NavigationView
+            case 21:   //  Windows.UI.Xaml.Controls.NavigationView
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -687,19 +697,39 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.UseNavigationViewWhenPossible = (global::System.Boolean)Value;
         }
-        private object get_26_NavigationViewExtensions_SelectedIndex(object instance)
+        private object get_26_MapPage_ZoomLevel(object instance)
+        {
+            var that = (global::Cryptical.Views.MapPage)instance;
+            return that.ZoomLevel;
+        }
+        private void set_26_MapPage_ZoomLevel(object instance, object Value)
+        {
+            var that = (global::Cryptical.Views.MapPage)instance;
+            that.ZoomLevel = (global::System.Double)Value;
+        }
+        private object get_27_MapPage_Center(object instance)
+        {
+            var that = (global::Cryptical.Views.MapPage)instance;
+            return that.Center;
+        }
+        private void set_27_MapPage_Center(object instance, object Value)
+        {
+            var that = (global::Cryptical.Views.MapPage)instance;
+            that.Center = (global::Windows.Devices.Geolocation.Geopoint)Value;
+        }
+        private object get_28_NavigationViewExtensions_SelectedIndex(object instance)
         {
             return global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.GetSelectedIndex((global::Windows.UI.Xaml.Controls.NavigationView)instance);
         }
-        private void set_26_NavigationViewExtensions_SelectedIndex(object instance, object Value)
+        private void set_28_NavigationViewExtensions_SelectedIndex(object instance, object Value)
         {
             global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.SetSelectedIndex((global::Windows.UI.Xaml.Controls.NavigationView)instance, (global::System.Int32)Value);
         }
-        private object get_27_NavigationViewExtensions_CollapseOnClick(object instance)
+        private object get_29_NavigationViewExtensions_CollapseOnClick(object instance)
         {
             return global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.GetCollapseOnClick((global::Windows.UI.Xaml.Controls.NavigationView)instance);
         }
-        private void set_27_NavigationViewExtensions_CollapseOnClick(object instance, object Value)
+        private void set_29_NavigationViewExtensions_CollapseOnClick(object instance, object Value)
         {
             global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.SetCollapseOnClick((global::Windows.UI.Xaml.Controls.NavigationView)instance, (global::System.Boolean)Value);
         }
@@ -891,21 +921,33 @@ namespace Cryptical.Cryptical_XamlTypeInfo
                 xamlMember.Getter = get_25_HamburgerMenu_UseNavigationViewWhenPossible;
                 xamlMember.Setter = set_25_HamburgerMenu_UseNavigationViewWhenPossible;
                 break;
+            case "Cryptical.Views.MapPage.ZoomLevel":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.Views.MapPage");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ZoomLevel", "Double");
+                xamlMember.Getter = get_26_MapPage_ZoomLevel;
+                xamlMember.Setter = set_26_MapPage_ZoomLevel;
+                break;
+            case "Cryptical.Views.MapPage.Center":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.Views.MapPage");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Center", "Windows.Devices.Geolocation.Geopoint");
+                xamlMember.Getter = get_27_MapPage_Center;
+                xamlMember.Setter = set_27_MapPage_Center;
+                break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.SelectedIndex":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.Controls.NavigationView");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_26_NavigationViewExtensions_SelectedIndex;
-                xamlMember.Setter = set_26_NavigationViewExtensions_SelectedIndex;
+                xamlMember.Getter = get_28_NavigationViewExtensions_SelectedIndex;
+                xamlMember.Setter = set_28_NavigationViewExtensions_SelectedIndex;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.CollapseOnClick":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "CollapseOnClick", "Boolean");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.Controls.NavigationView");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_27_NavigationViewExtensions_CollapseOnClick;
-                xamlMember.Setter = set_27_NavigationViewExtensions_CollapseOnClick;
+                xamlMember.Getter = get_29_NavigationViewExtensions_CollapseOnClick;
+                xamlMember.Setter = set_29_NavigationViewExtensions_CollapseOnClick;
                 break;
             }
             return xamlMember;

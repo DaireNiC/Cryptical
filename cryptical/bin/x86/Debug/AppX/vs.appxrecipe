@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>EB352831E2E1FB6B8D0FE2A11F9F0187331732118ABFBA726F085082F9A076ED</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>8F70A1EA9A38DAB4EF1C1C9EE4A616AD27B8AC9D2183A0CDC79272D799979B48</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>77aeef4e-06cd-4639-84b1-971fa7390799_1.0.0.0_x86__4sdaedqydyjdm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>77aeef4e-06cd-4639-84b1-971fa7390799_4sdaedqydyjdm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>77aeef4e-06cd-4639-84b1-971fa7390799</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-26T22:57:39.760</Modified>
+      <Modified>2018-03-27T12:45:29.814</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Cryptical.exe">
       <PackagePath>entrypoint\Cryptical.exe</PackagePath>
-      <Modified>2018-03-26T22:57:38.732</Modified>
+      <Modified>2018-03-27T12:45:28.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\colorcode.core\2.0.3\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -619,7 +619,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Cryptical.xr.xml">
       <PackagePath>Cryptical.xr.xml</PackagePath>
-      <Modified>2018-03-26T22:57:38.467</Modified>
+      <Modified>2018-03-27T12:37:08.228</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -788,11 +788,11 @@
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-26T22:57:39.199</Modified>
+      <Modified>2018-03-27T12:37:10.229</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Core\Cryptical.exe">
       <PackagePath>Cryptical.exe</PackagePath>
-      <Modified>2018-03-26T22:57:39.756</Modified>
+      <Modified>2018-03-27T12:45:29.803</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

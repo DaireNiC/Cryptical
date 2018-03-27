@@ -5,9 +5,14 @@
     xmlns:local="using:Cryptical.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:maps="using:Windows.UI.Xaml.Controls.Maps"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid>
+        <maps:MapControl
+            x:Name="mapControl"
+            ZoomLevel="{x:Bind ZoomLevel, Mode=OneWay}"
+            Center="{x:Bind Center, Mode=OneWay}"/>
+        <TickBar/>
     </Grid>
 </Page>

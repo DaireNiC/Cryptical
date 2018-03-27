@@ -72,6 +72,11 @@
       <RootProperty Name="Source" />
     </RootType>
     <RootType FullName="Cryptical.Views.CurrencyPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
+      <RootProperty Name="ZoomLevel" />
+      <RootProperty Name="Center" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.TickBar" />
     <RootType FullName="Cryptical.Views.MapPage" />
   </Roots.RootTypes>
 </Roots>
