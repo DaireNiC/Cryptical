@@ -362,8 +362,8 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             case 18:   //  Cryptical.Views.MapPage
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_18_MapPage;
-                userType.AddMemberName("ZoomLevel");
                 userType.AddMemberName("Center");
+                userType.AddMemberName("ZoomLevel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -697,25 +697,15 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.UseNavigationViewWhenPossible = (global::System.Boolean)Value;
         }
-        private object get_26_MapPage_ZoomLevel(object instance)
-        {
-            var that = (global::Cryptical.Views.MapPage)instance;
-            return that.ZoomLevel;
-        }
-        private void set_26_MapPage_ZoomLevel(object instance, object Value)
-        {
-            var that = (global::Cryptical.Views.MapPage)instance;
-            that.ZoomLevel = (global::System.Double)Value;
-        }
-        private object get_27_MapPage_Center(object instance)
+        private object get_26_MapPage_Center(object instance)
         {
             var that = (global::Cryptical.Views.MapPage)instance;
             return that.Center;
         }
-        private void set_27_MapPage_Center(object instance, object Value)
+        private object get_27_MapPage_ZoomLevel(object instance)
         {
             var that = (global::Cryptical.Views.MapPage)instance;
-            that.Center = (global::Windows.Devices.Geolocation.Geopoint)Value;
+            return that.ZoomLevel;
         }
         private object get_28_NavigationViewExtensions_SelectedIndex(object instance)
         {
@@ -921,17 +911,17 @@ namespace Cryptical.Cryptical_XamlTypeInfo
                 xamlMember.Getter = get_25_HamburgerMenu_UseNavigationViewWhenPossible;
                 xamlMember.Setter = set_25_HamburgerMenu_UseNavigationViewWhenPossible;
                 break;
-            case "Cryptical.Views.MapPage.ZoomLevel":
-                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.Views.MapPage");
-                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ZoomLevel", "Double");
-                xamlMember.Getter = get_26_MapPage_ZoomLevel;
-                xamlMember.Setter = set_26_MapPage_ZoomLevel;
-                break;
             case "Cryptical.Views.MapPage.Center":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.Views.MapPage");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Center", "Windows.Devices.Geolocation.Geopoint");
-                xamlMember.Getter = get_27_MapPage_Center;
-                xamlMember.Setter = set_27_MapPage_Center;
+                xamlMember.Getter = get_26_MapPage_Center;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Cryptical.Views.MapPage.ZoomLevel":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.Views.MapPage");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ZoomLevel", "Double");
+                xamlMember.Getter = get_27_MapPage_ZoomLevel;
+                xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.SelectedIndex":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions");

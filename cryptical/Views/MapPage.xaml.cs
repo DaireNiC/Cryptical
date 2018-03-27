@@ -27,6 +27,9 @@ namespace Cryptical.Views
         //Adding the location service for cleaner code 
         private readonly LocationService _locationService;
 
+        public Geopoint Center { get; private set; }
+        public double ZoomLevel { get; private set; }
+
         // set default location in case location fails
         // co-ordinates for dublin city 
         private readonly BasicGeoposition _defaultPosition = new BasicGeoposition()
@@ -34,20 +37,6 @@ namespace Cryptical.Views
             Latitude = 27.609425,
             Longitude = 22.3417
         };
-        // get & set zoom
-        public double ZoomLevel
-        {
-            get { return _zoomLevel; }
-            set { Set(ref _zoomLevel, value); }
-        }
-
-        // geo point is the default geo location
-        private Geopoint _center;
-        public Geopoint Center
-        {
-            get { return _center; }
-            set { Set(ref _center, value); }
-        }
 
         public MapPage()
         {
@@ -110,6 +99,21 @@ namespace Cryptical.Views
 
             }
         }
+        //metho to plot all the locations of business in Ireland that allow for payment in Bitcoin/Cryptocurrencies
+        public void plotCryptoLocations()
+        {
+            //adding a new location to plot
+            BasicGeoposition point = new BasicGeoposition();
+            point.Latitude = 53.3;
+            point.Longitude = -6.80;
+            Geopoint point_one = new Geopoint(point);
+
+            AddMapIcon(point_one, "second_locaction");
+
+        }
+
+
+
 
         //gracefully stop location monitoring 
         public void Cleanup()
@@ -134,28 +138,12 @@ namespace Cryptical.Views
             MapIcon mapIcon = new MapIcon()
             {
                 Location = position,
-                NormalizedAnchorPoint = new Point(0.5, 1.0),
+               //NormalizedAnchorPoint = new Point(0.5, 1.0),
                 Title = title,
                 Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/map.png")),
                 ZIndex = 0
             };
             mapControl.MapElements.Add(mapIcon);
         }
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void Set<T>(ref T storage, T value, [CallerMemberName]string propertyName = null)
-        {
-            if (Equals(storage, value))
-            {
-                return;
-            }
-
-            storage = value;
-            OnPropertyChanged(propertyName);
-        }
-
-        private void OnPropertyChanged(string propertyName) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-
-
     }
 }

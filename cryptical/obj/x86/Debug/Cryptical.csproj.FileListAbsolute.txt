@@ -261,4 +261,3 @@ c:\users\user\source\Cryptical\Cryptical\obj\x86\Debug\Microsoft.Toolkit.Uwp.UI.
 c:\users\user\source\Cryptical\Cryptical\obj\x86\Debug\Microsoft.Xaml.Interactions.pri.xml
 c:\users\user\source\Cryptical\Cryptical\obj\x86\Debug\Microsoft.Xaml.Interactivity.pri.xml
 c:\users\user\source\Cryptical\Cryptical\obj\x86\Debug\ProjectArchitectures.txt
-c:\users\user\source\Cryptical\Cryptical\obj\x86\Debug\Cryptical.csprojResolveAssemblyReference.cache
