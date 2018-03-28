@@ -1,0 +1,15 @@
+﻿[
+	{	"title" : "The Ring Farmhouse", 
+		"Latitude" : "53.0810622",
+		"Longitude" : "-7.8852648"},
+
+	{	"title" : "Killeena House Self Catering Apartments", 
+		"Latitude" : "51.5192564",
+		"Longitude" : "-9.3425804"},
+
+	{	"title" : "Crypto Cafe Dublin", 
+		"Latitude" : "53.3398101",
+		"Longitude" : "-6.2677874"}
+]
+
+

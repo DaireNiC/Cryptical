@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
@@ -6,9 +7,11 @@ using System.Threading.Tasks;
 
 
 using Cryptical.Services;
-
+using Windows.ApplicationModel;
+using Windows.Data.Json;
 using Windows.Devices.Geolocation;
 using Windows.Foundation;
+using Windows.Storage;
 using Windows.Storage.Streams;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -50,7 +53,10 @@ namespace Cryptical.Views
         //on page load...
         private async void MapPage_Loaded(object sender, RoutedEventArgs e)
         {
+            //first get user's current location and permission to access location
             await InitializeAsync();
+            //read in the list of locations from file & parse JSON data into locations
+            await plotCryptoLocationsAsync();
         }
 
         private void MapPage_Unloaded(object sender, RoutedEventArgs e)
@@ -100,21 +106,48 @@ namespace Cryptical.Views
             }
         }
         //metho to plot all the locations of business in Ireland that allow for payment in Bitcoin/Cryptocurrencies
-        public void plotCryptoLocations()
+        private async Task plotCryptoLocationsAsync()
         {
-            //adding a new location to plot
-            BasicGeoposition point = new BasicGeoposition();
-            point.Latitude = 53.3;
-            point.Longitude = -6.80;
-            Geopoint point_one = new Geopoint(point);
+            //load in the data from storage
+            var locationsFile = await Package.Current.InstalledLocation.GetFileAsync("Data\\locations.txt");
+            var fileContents = await FileIO.ReadTextAsync(locationsFile);
+            var locationsJSON = JsonArray.Parse(fileContents);
 
-            AddMapIcon(point_one, "second_locaction");
+            foreach (var item in locationsJSON)
+            {
 
+                //get the object
+                var obj = item.GetObject();
+                BasicGeoposition poi = new BasicGeoposition();
+                String poiName = "";
+                foreach (var key in obj.Keys)
+                {
+                    IJsonValue value;
+                    if (!obj.TryGetValue(key, out value))
+                    {
+                        continue;
+                    }
+
+                    switch (key)
+                    {
+                        case "title":
+                            poiName = value.GetString();
+                            break;
+                        case "Latitude":
+                            //covnert string value to double for latitude
+                            poi.Latitude = Convert.ToDouble(value.GetString());
+                            break;
+                        case "Longitude":
+                            //covnert string value to double for latitude
+                            poi.Longitude = Convert.ToDouble(value.GetString());
+                            break;
+                    }
+                    Geopoint cryptoLocation = new Geopoint(poi);
+                    //plot on msp for user to view
+                    AddMapIcon(cryptoLocation, poiName);
+                }
+            }
         }
-
-
-
-
         //gracefully stop location monitoring 
         public void Cleanup()
         {
@@ -133,12 +166,13 @@ namespace Cryptical.Views
             }
         }
 
+        //using a geopoint & title for poi --> plot it on the map
         private void AddMapIcon(Geopoint position, string title)
         {
             MapIcon mapIcon = new MapIcon()
             {
                 Location = position,
-               //NormalizedAnchorPoint = new Point(0.5, 1.0),
+                //NormalizedAnchorPoint = new Point(0.5, 1.0),
                 Title = title,
                 Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/map.png")),
                 ZIndex = 0
