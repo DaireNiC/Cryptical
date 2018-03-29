@@ -18,7 +18,7 @@ namespace Cryptical.Views
 
             hamburgerMenuControl.ItemsSource = MenuItem.GetMainItems();
             hamburgerMenuControl.OptionsItemsSource = MenuItem.GetOptionsItems();
-            contentFrame.Navigate(typeof(Views.CurrencyPage));
+            contentFrame.Navigate(typeof(Views.NewsPage));
         }
 
         private void OnMenuItemClick(object sender, ItemClickEventArgs e)
@@ -39,15 +39,16 @@ namespace Cryptical.Views
         public static List<MenuItem> GetMainItems()
         {
             var items = new List<MenuItem>();
-            items.Add(new MenuItem() { Icon = Symbol.Accept, Name = "MenuItem1", PageType = typeof(Views.CurrencyPage) });
-            items.Add(new MenuItem() { Icon = Symbol.Send, Name = "MenuItem2", PageType = typeof(Views.MapPage) });
+            items.Add(new MenuItem() { Icon = Symbol.Globe, Name = "Crypto Market", PageType = typeof(Views.CurrencyPage) });
+            items.Add(new MenuItem() { Icon = Symbol.BrowsePhotos, Name = "Crypto News", PageType = typeof(Views.NewsPage) });
+            items.Add(new MenuItem() { Icon = Symbol.Map, Name = "Pay with Crypto", PageType = typeof(Views.MapPage) });
             return items;
         }
 
         public static List<MenuItem> GetOptionsItems()
         {
             var items = new List<MenuItem>();
-            items.Add(new MenuItem() { Icon = Symbol.Setting, Name = "OptionItem1", PageType = typeof(Views.CurrencyPage) });
+            items.Add(new MenuItem() { Icon = Symbol.Setting, Name = "Settings", PageType = typeof(Views.CurrencyPage) });
             return items;
         }
 

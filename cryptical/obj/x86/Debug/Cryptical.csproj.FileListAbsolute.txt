@@ -262,3 +262,10 @@ c:\users\user\source\Cryptical\Cryptical\obj\x86\Debug\Microsoft.Xaml.Interactio
 c:\users\user\source\Cryptical\Cryptical\obj\x86\Debug\Microsoft.Xaml.Interactivity.pri.xml
 c:\users\user\source\Cryptical\Cryptical\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\User\source\Cryptical\Cryptical\obj\x86\Debug\Cryptical.csprojResolveAssemblyReference.cache
+C:\Users\User\source\Cryptical\Cryptical\obj\x86\Debug\Views\NewsPage.g.i.cs
+C:\Users\User\source\Cryptical\Cryptical\obj\x86\Debug\Views\NewsPage.g.cs
+C:\Users\User\source\Cryptical\Cryptical\obj\x86\Debug\Views\NewsPage.xaml
+C:\Users\User\source\Cryptical\Cryptical\obj\x86\Debug\Views\NewsPage.xbf
+C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Views\NewsPage.xbf
+C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\NewsAPI.dll
+C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Hassie.NET.API.NewsAPI.dll

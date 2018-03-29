@@ -27,6 +27,19 @@
           "lib/uap10.0/ColorCode.UWP.dll": {}
         }
       },
+      "Hassie.NET.API.NewsAPI/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -500,6 +513,18 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NewsAPI/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/NewsAPI.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/NewsAPI.dll": {}
         }
       },
       "Newtonsoft.Json/10.0.3": {
@@ -2681,6 +2706,19 @@
           "lib/uap10.0/ColorCode.UWP.dll": {}
         }
       },
+      "Hassie.NET.API.NewsAPI/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3103,6 +3141,18 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NewsAPI/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/NewsAPI.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/NewsAPI.dll": {}
         }
       },
       "Newtonsoft.Json/10.0.3": {
@@ -5328,6 +5378,19 @@
           "lib/uap10.0/ColorCode.UWP.dll": {}
         }
       },
+      "Hassie.NET.API.NewsAPI/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -5751,6 +5814,18 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NewsAPI/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/NewsAPI.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/NewsAPI.dll": {}
         }
       },
       "Newtonsoft.Json/10.0.3": {
@@ -8011,6 +8086,19 @@
           "lib/uap10.0/ColorCode.UWP.dll": {}
         }
       },
+      "Hassie.NET.API.NewsAPI/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -8436,6 +8524,18 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NewsAPI/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/NewsAPI.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/NewsAPI.dll": {}
         }
       },
       "Newtonsoft.Json/10.0.3": {
@@ -10667,6 +10767,19 @@
           "lib/uap10.0/ColorCode.UWP.dll": {}
         }
       },
+      "Hassie.NET.API.NewsAPI/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -11093,6 +11206,18 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NewsAPI/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/NewsAPI.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/NewsAPI.dll": {}
         }
       },
       "Newtonsoft.Json/10.0.3": {
@@ -13359,6 +13484,19 @@
           "lib/uap10.0/ColorCode.UWP.dll": {}
         }
       },
+      "Hassie.NET.API.NewsAPI/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -13784,6 +13922,18 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NewsAPI/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/NewsAPI.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/NewsAPI.dll": {}
         }
       },
       "Newtonsoft.Json/10.0.3": {
@@ -16015,6 +16165,19 @@
           "lib/uap10.0/ColorCode.UWP.dll": {}
         }
       },
+      "Hassie.NET.API.NewsAPI/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -16441,6 +16604,18 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NewsAPI/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/NewsAPI.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/NewsAPI.dll": {}
         }
       },
       "Newtonsoft.Json/10.0.3": {
@@ -18704,6 +18879,16 @@
         "lib/uap10.0/ColorCode.UWP.dll",
         "lib/uap10.0/ColorCode.UWP.pdb",
         "lib/uap10.0/ColorCode.UWP.pri"
+      ]
+    },
+    "Hassie.NET.API.NewsAPI/2.2.0": {
+      "sha512": "ZW+Ej0UhKSusBg4AlKJTXxvkbEs8DrlgrDHowt5fa2HQYKcI+QVp/TW2BkDQeLEuWV5ilMnUj1EEevszDom9lw==",
+      "type": "package",
+      "path": "hassie.net.api.newsapi/2.2.0",
+      "files": [
+        "hassie.net.api.newsapi.2.2.0.nupkg.sha512",
+        "hassie.net.api.newsapi.nuspec",
+        "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll"
       ]
     },
     "Microsoft.CSharp/4.3.0": {
@@ -21542,6 +21727,17 @@
         "NETStandard.Library.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt"
+      ]
+    },
+    "NewsAPI/0.5.0": {
+      "sha512": "e2SIFfVa3CayeFKdGl6XD7Bmtcmom7LPmYA6gfI+sUOQtZxdcrbCBcejWqGxmrWHcBCM/jDcC/F3YE0pZZRryQ==",
+      "type": "package",
+      "path": "newsapi/0.5.0",
+      "files": [
+        "lib/portable45-net45+win8+wpa81/NewsAPI.XML",
+        "lib/portable45-net45+win8+wpa81/NewsAPI.dll",
+        "newsapi.0.5.0.nupkg.sha512",
+        "newsapi.nuspec"
       ]
     },
     "Newtonsoft.Json/10.0.3": {
@@ -28796,8 +28992,10 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.10586": [
+      "Hassie.NET.API.NewsAPI >= 2.2.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.8",
-      "Microsoft.Toolkit.Uwp.UI.Controls >= 2.2.0"
+      "Microsoft.Toolkit.Uwp.UI.Controls >= 2.2.0",
+      "NewsAPI >= 0.5.0"
     ]
   },
   "packageFolders": {
@@ -28840,6 +29038,10 @@
     "frameworks": {
       "uap10.0.10586": {
         "dependencies": {
+          "Hassie.NET.API.NewsAPI": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[6.0.8, )"
@@ -28847,6 +29049,10 @@
           "Microsoft.Toolkit.Uwp.UI.Controls": {
             "target": "Package",
             "version": "[2.2.0, )"
+          },
+          "NewsAPI": {
+            "target": "Package",
+            "version": "[0.5.0, )"
           }
         }
       }
