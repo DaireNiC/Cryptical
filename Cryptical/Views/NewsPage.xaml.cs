@@ -11,8 +11,9 @@ using Hassie.NET.API.NewsAPI.Models;
 
 using System.Threading.Tasks;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
-
+/* News Api in use: https://newsapi.org/
+ * News APi wrapper for .NET :  https://github.com/hassie-dash/NewsAPI.NET
+*/
 namespace Cryptical.Views
 {
     /// <summary>
@@ -37,7 +38,7 @@ namespace Cryptical.Views
         public async Task InitializeAsync()
         {
             Debug.WriteLine("init method");
-
+           
             INewsClient newsClient = new ClientBuilder()
             {
                 ApiKey = "5fe4eb7f64af4875a48ab4ea5e50e875" 
@@ -46,10 +47,7 @@ namespace Cryptical.Views
             //todo: improve query
             INewsArticles newsArticles = await newsClient.GetEverything(new EverythingBuilder()
             .WithSearchQuery("bitcoin")
-            .WithSearchQuery("ethereum")
-            .WithSearchQuery("crypto currency")
             .WithSortOrder(SortOrder.PUBLISHED_AT)
-            .WithSourcesQuery(Source.CRYPTO_COINS_NEWS, Source.FINANCIAL_POST, Source.HACKER_NEWS)
             .Build());
 
                 // here's the first 20
