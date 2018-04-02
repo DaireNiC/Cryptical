@@ -34,7 +34,7 @@
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\colorcode.uwp\2.0.3\lib\uap10.0\ColorCode.UWP.dll">
       <PackagePath>ColorCode.UWP.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\hassie.net.api.newsapi\2.2.0\lib\netstandard1.1\Hassie.NET.API.NewsAPI.dll">
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\hassie.net.api.newsapi\2.2.1\lib\netstandard1.1\Hassie.NET.API.NewsAPI.dll">
       <PackagePath>Hassie.NET.API.NewsAPI.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\microsoft.csharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">

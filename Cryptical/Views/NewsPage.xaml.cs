@@ -62,7 +62,6 @@ namespace Cryptical.Views
                     // url
                     Debug.WriteLine(article.URL);
                     // image
-
                     Debug.WriteLine(article.ImageURL);
                     // published at
                     Debug.WriteLine(article.PublishTime);

@@ -27,7 +27,7 @@
           "lib/uap10.0/ColorCode.UWP.dll": {}
         }
       },
-      "Hassie.NET.API.NewsAPI/2.2.0": {
+      "Hassie.NET.API.NewsAPI/2.2.1": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -2706,7 +2706,7 @@
           "lib/uap10.0/ColorCode.UWP.dll": {}
         }
       },
-      "Hassie.NET.API.NewsAPI/2.2.0": {
+      "Hassie.NET.API.NewsAPI/2.2.1": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -5378,7 +5378,7 @@
           "lib/uap10.0/ColorCode.UWP.dll": {}
         }
       },
-      "Hassie.NET.API.NewsAPI/2.2.0": {
+      "Hassie.NET.API.NewsAPI/2.2.1": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -8086,7 +8086,7 @@
           "lib/uap10.0/ColorCode.UWP.dll": {}
         }
       },
-      "Hassie.NET.API.NewsAPI/2.2.0": {
+      "Hassie.NET.API.NewsAPI/2.2.1": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -10767,7 +10767,7 @@
           "lib/uap10.0/ColorCode.UWP.dll": {}
         }
       },
-      "Hassie.NET.API.NewsAPI/2.2.0": {
+      "Hassie.NET.API.NewsAPI/2.2.1": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -13484,7 +13484,7 @@
           "lib/uap10.0/ColorCode.UWP.dll": {}
         }
       },
-      "Hassie.NET.API.NewsAPI/2.2.0": {
+      "Hassie.NET.API.NewsAPI/2.2.1": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -16165,7 +16165,7 @@
           "lib/uap10.0/ColorCode.UWP.dll": {}
         }
       },
-      "Hassie.NET.API.NewsAPI/2.2.0": {
+      "Hassie.NET.API.NewsAPI/2.2.1": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -18881,12 +18881,12 @@
         "lib/uap10.0/ColorCode.UWP.pri"
       ]
     },
-    "Hassie.NET.API.NewsAPI/2.2.0": {
-      "sha512": "ZW+Ej0UhKSusBg4AlKJTXxvkbEs8DrlgrDHowt5fa2HQYKcI+QVp/TW2BkDQeLEuWV5ilMnUj1EEevszDom9lw==",
+    "Hassie.NET.API.NewsAPI/2.2.1": {
+      "sha512": "u6nqh2L3oGZLb1p9LWWB7kikIMJT1+9lHpNvhp3kTHeFOK7ZsB3grmZoKaR3PDUIvlZ1H4XkA6K2SEfNFeGf1Q==",
       "type": "package",
-      "path": "hassie.net.api.newsapi/2.2.0",
+      "path": "hassie.net.api.newsapi/2.2.1",
       "files": [
-        "hassie.net.api.newsapi.2.2.0.nupkg.sha512",
+        "hassie.net.api.newsapi.2.2.1.nupkg.sha512",
         "hassie.net.api.newsapi.nuspec",
         "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll"
       ]
@@ -28992,7 +28992,7 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.10586": [
-      "Hassie.NET.API.NewsAPI >= 2.2.0",
+      "Hassie.NET.API.NewsAPI >= 2.2.1",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.8",
       "Microsoft.Toolkit.Uwp.UI.Controls >= 2.2.0",
       "NewsAPI >= 0.5.0"
@@ -29040,7 +29040,7 @@
         "dependencies": {
           "Hassie.NET.API.NewsAPI": {
             "target": "Package",
-            "version": "[2.2.0, )"
+            "version": "[2.2.1, )"
           },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
