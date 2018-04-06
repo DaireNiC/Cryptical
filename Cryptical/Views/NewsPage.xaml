@@ -5,27 +5,22 @@
     xmlns:local="using:Cryptical.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cryptical="using:Cryptical"
     mc:Ignorable="d">
-    <Grid
-        x:Name="ContentArea">
 
-        <DataTemplate x:Key="ImageGridView_MobileItemTemplate"
-              x:DataType="local:ImageFileInfo">
-
-            <!-- Create image grid -->
-            <Grid Height="{Binding ItemSize, ElementName=page}"
-          Width="{Binding ItemSize, ElementName=page}">
-
-                <!-- Place image in grid, stretching it to fill the pane-->
-                <Image x:Name="ItemImage"
-               Source="{x:Bind ImagePreview}"
-               Stretch="UniformToFill">
-                </Image>
-
-            </Grid>
-        </DataTemplate>
-
-
+    <Grid x:Name="ContentArea">
+        <GridView ItemsSource="{x:Bind NewsItems}">
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="cryptical:NewsItem">
+                    <StackPanel Height="100" Width="100" Background="OrangeRed">
+                        <TextBlock Text="{x:Bind Title}"/>
+                        <TextBlock Text="{x:Bind Subtitle}" x:Phase="1"/>
+                        <TextBlock Text="{x:Bind Description}" x:Phase="2"/>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
     </Grid>
+ 
 
 </Page>

@@ -156,7 +156,7 @@ namespace Cryptical.Cryptical_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[23];
+            _typeNameTable = new string[27];
             _typeNameTable[0] = "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.ContentControl";
             _typeNameTable[2] = "Windows.UI.Xaml.Media.Brush";
@@ -178,10 +178,14 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             _typeNameTable[18] = "Cryptical.Views.MapPage";
             _typeNameTable[19] = "Windows.Devices.Geolocation.Geopoint";
             _typeNameTable[20] = "Cryptical.Views.NewsPage";
-            _typeNameTable[21] = "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions";
-            _typeNameTable[22] = "Windows.UI.Xaml.Controls.NavigationView";
+            _typeNameTable[21] = "System.Collections.ObjectModel.ObservableCollection`1<Cryptical.NewsItem>";
+            _typeNameTable[22] = "System.Collections.ObjectModel.Collection`1<Cryptical.NewsItem>";
+            _typeNameTable[23] = "Cryptical.NewsItem";
+            _typeNameTable[24] = "String";
+            _typeNameTable[25] = "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions";
+            _typeNameTable[26] = "Windows.UI.Xaml.Controls.NavigationView";
 
-            _typeTable = new global::System.Type[23];
+            _typeTable = new global::System.Type[27];
             _typeTable[0] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Media.Brush);
@@ -203,8 +207,12 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             _typeTable[18] = typeof(global::Cryptical.Views.MapPage);
             _typeTable[19] = typeof(global::Windows.Devices.Geolocation.Geopoint);
             _typeTable[20] = typeof(global::Cryptical.Views.NewsPage);
-            _typeTable[21] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions);
-            _typeTable[22] = typeof(global::Windows.UI.Xaml.Controls.NavigationView);
+            _typeTable[21] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Cryptical.NewsItem>);
+            _typeTable[22] = typeof(global::System.Collections.ObjectModel.Collection<global::Cryptical.NewsItem>);
+            _typeTable[23] = typeof(global::Cryptical.NewsItem);
+            _typeTable[24] = typeof(global::System.String);
+            _typeTable[25] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions);
+            _typeTable[26] = typeof(global::Windows.UI.Xaml.Controls.NavigationView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -244,7 +252,22 @@ namespace Cryptical.Cryptical_XamlTypeInfo
         private object Activate_17_CurrencyPage() { return new global::Cryptical.Views.CurrencyPage(); }
         private object Activate_18_MapPage() { return new global::Cryptical.Views.MapPage(); }
         private object Activate_20_NewsPage() { return new global::Cryptical.Views.NewsPage(); }
-        private object Activate_21_NavigationViewExtensions() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions(); }
+        private object Activate_21_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Cryptical.NewsItem>(); }
+        private object Activate_22_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Cryptical.NewsItem>(); }
+        private object Activate_23_NewsItem() { return new global::Cryptical.NewsItem(); }
+        private object Activate_25_NavigationViewExtensions() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions(); }
+        private void VectorAdd_21_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Cryptical.NewsItem>)instance;
+            var newItem = (global::Cryptical.NewsItem)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_22_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Cryptical.NewsItem>)instance;
+            var newItem = (global::Cryptical.NewsItem)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -380,20 +403,49 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             case 20:   //  Cryptical.Views.NewsPage
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_20_NewsPage;
+                userType.AddMemberName("NewsItems");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 21:   //  Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions
+            case 21:   //  System.Collections.ObjectModel.ObservableCollection`1<Cryptical.NewsItem>
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Cryptical.NewsItem>"));
+                userType.CollectionAdd = VectorAdd_21_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 22:   //  System.Collections.ObjectModel.Collection`1<Cryptical.NewsItem>
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_21_NavigationViewExtensions;
+                userType.Activator = Activate_22_Collection;
+                userType.CollectionAdd = VectorAdd_22_Collection;
+                xamlType = userType;
+                break;
+
+            case 23:   //  Cryptical.NewsItem
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_23_NewsItem;
+                userType.AddMemberName("Title");
+                userType.AddMemberName("Subtitle");
+                userType.AddMemberName("Description");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 24:   //  String
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 25:   //  Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_25_NavigationViewExtensions;
                 userType.AddMemberName("SelectedIndex");
                 userType.AddMemberName("CollapseOnClick");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 22:   //  Windows.UI.Xaml.Controls.NavigationView
+            case 26:   //  Windows.UI.Xaml.Controls.NavigationView
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -717,19 +769,54 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             var that = (global::Cryptical.Views.MapPage)instance;
             return that.ZoomLevel;
         }
-        private object get_28_NavigationViewExtensions_SelectedIndex(object instance)
+        private object get_28_NewsPage_NewsItems(object instance)
+        {
+            var that = (global::Cryptical.Views.NewsPage)instance;
+            return that.NewsItems;
+        }
+        private object get_29_NewsItem_Title(object instance)
+        {
+            var that = (global::Cryptical.NewsItem)instance;
+            return that.Title;
+        }
+        private void set_29_NewsItem_Title(object instance, object Value)
+        {
+            var that = (global::Cryptical.NewsItem)instance;
+            that.Title = (global::System.String)Value;
+        }
+        private object get_30_NewsItem_Subtitle(object instance)
+        {
+            var that = (global::Cryptical.NewsItem)instance;
+            return that.Subtitle;
+        }
+        private void set_30_NewsItem_Subtitle(object instance, object Value)
+        {
+            var that = (global::Cryptical.NewsItem)instance;
+            that.Subtitle = (global::System.String)Value;
+        }
+        private object get_31_NewsItem_Description(object instance)
+        {
+            var that = (global::Cryptical.NewsItem)instance;
+            return that.Description;
+        }
+        private void set_31_NewsItem_Description(object instance, object Value)
+        {
+            var that = (global::Cryptical.NewsItem)instance;
+            that.Description = (global::System.String)Value;
+        }
+        private object get_32_NavigationViewExtensions_SelectedIndex(object instance)
         {
             return global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.GetSelectedIndex((global::Windows.UI.Xaml.Controls.NavigationView)instance);
         }
-        private void set_28_NavigationViewExtensions_SelectedIndex(object instance, object Value)
+        private void set_32_NavigationViewExtensions_SelectedIndex(object instance, object Value)
         {
             global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.SetSelectedIndex((global::Windows.UI.Xaml.Controls.NavigationView)instance, (global::System.Int32)Value);
         }
-        private object get_29_NavigationViewExtensions_CollapseOnClick(object instance)
+        private object get_33_NavigationViewExtensions_CollapseOnClick(object instance)
         {
             return global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.GetCollapseOnClick((global::Windows.UI.Xaml.Controls.NavigationView)instance);
         }
-        private void set_29_NavigationViewExtensions_CollapseOnClick(object instance, object Value)
+        private void set_33_NavigationViewExtensions_CollapseOnClick(object instance, object Value)
         {
             global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.SetCollapseOnClick((global::Windows.UI.Xaml.Controls.NavigationView)instance, (global::System.Boolean)Value);
         }
@@ -933,21 +1020,45 @@ namespace Cryptical.Cryptical_XamlTypeInfo
                 xamlMember.Getter = get_27_MapPage_ZoomLevel;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "Cryptical.Views.NewsPage.NewsItems":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.Views.NewsPage");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "NewsItems", "System.Collections.ObjectModel.ObservableCollection`1<Cryptical.NewsItem>");
+                xamlMember.Getter = get_28_NewsPage_NewsItems;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Cryptical.NewsItem.Title":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.NewsItem");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Title", "String");
+                xamlMember.Getter = get_29_NewsItem_Title;
+                xamlMember.Setter = set_29_NewsItem_Title;
+                break;
+            case "Cryptical.NewsItem.Subtitle":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.NewsItem");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Subtitle", "String");
+                xamlMember.Getter = get_30_NewsItem_Subtitle;
+                xamlMember.Setter = set_30_NewsItem_Subtitle;
+                break;
+            case "Cryptical.NewsItem.Description":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.NewsItem");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Description", "String");
+                xamlMember.Getter = get_31_NewsItem_Description;
+                xamlMember.Setter = set_31_NewsItem_Description;
+                break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.SelectedIndex":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.Controls.NavigationView");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_28_NavigationViewExtensions_SelectedIndex;
-                xamlMember.Setter = set_28_NavigationViewExtensions_SelectedIndex;
+                xamlMember.Getter = get_32_NavigationViewExtensions_SelectedIndex;
+                xamlMember.Setter = set_32_NavigationViewExtensions_SelectedIndex;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.CollapseOnClick":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "CollapseOnClick", "Boolean");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.Controls.NavigationView");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_29_NavigationViewExtensions_CollapseOnClick;
-                xamlMember.Setter = set_29_NavigationViewExtensions_CollapseOnClick;
+                xamlMember.Getter = get_33_NavigationViewExtensions_CollapseOnClick;
+                xamlMember.Setter = set_33_NavigationViewExtensions_CollapseOnClick;
                 break;
             }
             return xamlMember;

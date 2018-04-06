@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-02T15:41:29.954</Modified>
+      <Modified>2018-04-06T09:28:56.993</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Cryptical.exe">
       <PackagePath>entrypoint\Cryptical.exe</PackagePath>
-      <Modified>2018-04-02T15:41:26.601</Modified>
+      <Modified>2018-04-06T09:28:55.847</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\colorcode.core\2.0.3\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -589,7 +589,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Data\locations.txt">
       <PackagePath>Data\locations.txt</PackagePath>
-      <Modified>2018-03-28T00:03:51.519</Modified>
+      <Modified>2018-04-02T16:14:32.676</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -631,7 +631,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Cryptical.xr.xml">
       <PackagePath>Cryptical.xr.xml</PackagePath>
-      <Modified>2018-04-02T15:39:17.306</Modified>
+      <Modified>2018-04-06T09:14:33.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -800,11 +800,11 @@
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-02T15:41:27.119</Modified>
+      <Modified>2018-04-06T09:17:14.279</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Core\Cryptical.exe">
       <PackagePath>Cryptical.exe</PackagePath>
-      <Modified>2018-04-02T15:41:29.948</Modified>
+      <Modified>2018-04-06T09:28:56.981</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

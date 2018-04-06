@@ -10,6 +10,7 @@ using Hassie.NET.API.NewsAPI.API.v2;
 using Hassie.NET.API.NewsAPI.Models;
 
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 
 /* News Api in use: https://newsapi.org/
  * News APi wrapper for .NET :  https://github.com/hassie-dash/NewsAPI.NET
@@ -20,9 +21,14 @@ namespace Cryptical.Views
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class NewsPage : Page
+
     {
+        private ObservableCollection<NewsItem> newsItems = new ObservableCollection<NewsItem>();
+        public ObservableCollection<NewsItem> NewsItems { get { return this.newsItems; } }
+
         public NewsPage()
         {
+           // LoadNewsItems();
             this.InitializeComponent();
             Debug.WriteLine("init componnt executed");
             Loaded += NewsPage_LoadedAsync;
@@ -35,6 +41,20 @@ namespace Cryptical.Views
             //first get top 20 news articles relating to crypto currencies
             await InitializeAsync();
         }
+     /*   public void LoadNewsItems() {
+
+            for (int i = 1; i < 10; i++)
+            {
+                this.newsItems.Add(new NewsItem()
+                {
+                    Title = "Title: " + i.ToString(),
+                    Subtitle = "Sub: " + i.ToString(),
+                    Description = "Desc: " + i.ToString()
+                });
+            }
+        }
+        */
+            
         public async Task InitializeAsync()
         {
             Debug.WriteLine("init method");
@@ -48,13 +68,20 @@ namespace Cryptical.Views
             INewsArticles newsArticles = await newsClient.GetEverything(new EverythingBuilder()
             .WithSearchQuery("bitcoin")
             .WithSortOrder(SortOrder.PUBLISHED_AT)
+            .WithLanguageQuery(Hassie.NET.API.NewsAPI.API.v2.Language.EN)
             .Build());
 
                 // here's the first 20
                 foreach (INewsArticle article in newsArticles)
                 {
-                    // title
-                    Debug.WriteLine(article.Title);
+                    this.newsItems.Add(new NewsItem()
+                    {
+                        Title = article.Title,
+                        Subtitle = article.Author,
+                        Description = article.Description
+                    });
+                // title
+                Debug.WriteLine(article.Title);
                     // author
                     Debug.WriteLine(article.Author);
                     // description
@@ -69,5 +96,6 @@ namespace Cryptical.Views
 
         
         }
+
     }
 }

@@ -1,14 +1,27 @@
-﻿<Page
+﻿<Page x:ConnectionId='1'
     x:Class="Cryptical.Views.NewsPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Cryptical.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cryptical="using:Cryptical"
     mc:Ignorable="d">
-    <Grid x:ConnectionId='1'
-        x:Name="ContentArea">
+
+    <Grid x:ConnectionId='2' x:Name="ContentArea">
+        <GridView x:ConnectionId='3'                                 >
+            <GridView.ItemTemplate>
+                <DataTemplate                                >
+                    <StackPanel x:ConnectionId='4' Height="100" Width="100" Background="OrangeRed">
+                        <TextBlock x:ConnectionId='5'                      />
+                        <TextBlock x:ConnectionId='6'                                     />
+                        <TextBlock x:ConnectionId='7'                                        />
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
     </Grid>
+ 
 
 </Page>
 
