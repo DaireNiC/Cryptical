@@ -14,7 +14,6 @@ namespace Cryptical.Views
         public MainPage()
         {
             this.InitializeComponent();
-     
 
             hamburgerMenuControl.ItemsSource = MenuItem.GetMainItems();
             hamburgerMenuControl.OptionsItemsSource = MenuItem.GetOptionsItems();

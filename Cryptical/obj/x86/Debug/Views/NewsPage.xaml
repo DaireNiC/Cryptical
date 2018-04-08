@@ -9,19 +9,22 @@
     mc:Ignorable="d">
 
     <Grid x:ConnectionId='2' x:Name="ContentArea">
-        <GridView x:ConnectionId='3'                                 >
+        <GridView x:ConnectionId='3'                                                                  IsItemClickEnabled="True">
             <GridView.ItemTemplate>
-                <DataTemplate                                >
-                    <StackPanel x:ConnectionId='4' Height="100" Width="100" Background="OrangeRed">
-                        <TextBlock x:ConnectionId='5'                      />
-                        <TextBlock x:ConnectionId='6'                                     />
-                        <TextBlock x:ConnectionId='7'                                        />
-                    </StackPanel>
+                <DataTemplate x:Name="ImageOverlayDataTemplate"                                 >
+                    <Grid x:ConnectionId='4' Height="180" Width="320"                                           >
+                        <Image Source="{Binding ThumbImage.Source}" Stretch="UniformToFill">
+                            
+                        </Image>
+                        <StackPanel Orientation="Vertical" Height="60" VerticalAlignment="Bottom" Background="{ThemeResource SystemBaseLowColor}" Padding="12">
+                            <TextBlock x:ConnectionId='5'                      />
+                            <TextBlock x:ConnectionId='6'                                      Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseMediumBrush}"/>
+                        </StackPanel>
+                    </Grid>
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
     </Grid>
- 
 
 </Page>
 

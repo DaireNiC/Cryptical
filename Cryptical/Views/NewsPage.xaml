@@ -9,18 +9,21 @@
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
-        <GridView ItemsSource="{x:Bind NewsItems}">
+        <GridView ItemsSource="{x:Bind NewsItems}" ItemClick="NewsItem_clickAsync" IsItemClickEnabled="True">
             <GridView.ItemTemplate>
-                <DataTemplate x:DataType="cryptical:NewsItem">
-                    <StackPanel Height="100" Width="100" Background="OrangeRed">
-                        <TextBlock Text="{x:Bind Title}"/>
-                        <TextBlock Text="{x:Bind Subtitle}" x:Phase="1"/>
-                        <TextBlock Text="{x:Bind Description}" x:Phase="2"/>
-                    </StackPanel>
+                <DataTemplate x:Name="ImageOverlayDataTemplate"  x:DataType="cryptical:NewsItem">
+                    <Grid Height="180" Width="320" AutomationProperties.Name="{x:Bind Title}">
+                        <Image Source="{Binding ThumbImage.Source}" Stretch="UniformToFill">
+                            
+                        </Image>
+                        <StackPanel Orientation="Vertical" Height="60" VerticalAlignment="Bottom" Background="{ThemeResource SystemBaseLowColor}" Padding="12">
+                            <TextBlock Text="{x:Bind Title}"/>
+                            <TextBlock Text="{x:Bind Subtitle}" x:Phase="1" Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseMediumBrush}"/>
+                        </StackPanel>
+                    </Grid>
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
     </Grid>
- 
 
 </Page>

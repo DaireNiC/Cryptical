@@ -38,9 +38,7 @@ namespace Cryptical.Views
                 // Retreive & add data to each specific coin
                 foreach (Coin c in cryptoCoins)
                 {
-                    //        https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=EUR
                     // HTTP request
-                    //    HttpResponseMessage response = client.GetAsync(String.Format("pricemultifull?fsyms={0}&tsyms=EUR&extraParams=cyptical", c.name)).Result;
                     // Ensure 200 OK
                     HttpResponseMessage response = client.GetAsync(String.Format
                         ("pricemultifull?fsyms={0}&tsyms=EUR", c.name)).Result;
