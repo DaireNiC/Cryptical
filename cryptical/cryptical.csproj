@@ -117,6 +117,8 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="Cryptical_TemporaryKey.pfx" />
+    <PRIResource Include="Strings\ga-IE\Resources.resw" />
+    <PRIResource Include="Strings\en-US\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Images\scale-100\Bitcoin.png" />

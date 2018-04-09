@@ -19,6 +19,7 @@
   </Dependencies>
   <Resources>
     <Resource Language="EN-US" />
+    <Resource Language="GA-IE" />
   </Resources>
   <Applications>
     <Application Id="App" Executable="Cryptical.exe" EntryPoint="Cryptical.App">

@@ -102,7 +102,11 @@ namespace Cryptical.Views
                 //indicates if the point being plotted is the user location
                 Boolean isUser = true;
                 //add the icon to the map to display user locaiton
-                AddMapIcon(mapControl.Center, "Your Location", isUser);
+                var resourceLoader = Windows.ApplicationModel.Resources.ResourceLoader.GetForCurrentView();
+                string locationTitle = resourceLoader.GetString("Map-Location");
+                Debug.WriteLine("string" + locationTitle);
+
+              AddMapIcon(mapControl.Center, locationTitle, isUser);
                 Debug.WriteLine("center to str loc: " + Center.Position.ToString());
 
             }

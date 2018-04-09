@@ -16,7 +16,6 @@ namespace Cryptical.Views
             this.InitializeComponent();
 
             hamburgerMenuControl.ItemsSource = MenuItem.GetMainItems();
-            hamburgerMenuControl.OptionsItemsSource = MenuItem.GetOptionsItems();
             contentFrame.Navigate(typeof(Views.NewsPage));
         }
 
@@ -38,16 +37,17 @@ namespace Cryptical.Views
         public static List<MenuItem> GetMainItems()
         {
             var items = new List<MenuItem>();
-            items.Add(new MenuItem() { Icon = Symbol.Globe, Name = "Crypto Market", PageType = typeof(Views.CurrencyPage) });
-            items.Add(new MenuItem() { Icon = Symbol.BrowsePhotos, Name = "Crypto News", PageType = typeof(Views.NewsPage) });
-            items.Add(new MenuItem() { Icon = Symbol.Map, Name = "Pay with Crypto", PageType = typeof(Views.MapPage) });
-            return items;
-        }
+            //load the language resources
+            var resourceLoader = Windows.ApplicationModel.Resources.ResourceLoader.GetForCurrentView();
 
-        public static List<MenuItem> GetOptionsItems()
-        {
-            var items = new List<MenuItem>();
-            items.Add(new MenuItem() { Icon = Symbol.Setting, Name = "Settings", PageType = typeof(Views.CurrencyPage) });
+            string MenuPrice = resourceLoader.GetString("Menu-Prices");
+            items.Add(new MenuItem() { Icon = Symbol.Globe, Name = MenuPrice, PageType = typeof(Views.CurrencyPage) });
+
+            string MenuNews = resourceLoader.GetString("Menu-News");
+            items.Add(new MenuItem() { Icon = Symbol.BrowsePhotos, Name = MenuNews, PageType = typeof(Views.NewsPage) });
+
+            string MenuPay = resourceLoader.GetString("Menu-Pay");
+            items.Add(new MenuItem() { Icon = Symbol.MapPin, Name = MenuPay, PageType = typeof(Views.MapPage) });
             return items;
         }
 

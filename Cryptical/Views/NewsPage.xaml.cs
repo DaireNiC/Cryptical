@@ -80,17 +80,20 @@ namespace Cryptical.Views
             // REturns top 20 articles relating to bitcoin
             INewsArticles newsArticles = await newsClient.GetEverything(new EverythingBuilder()
             .WithSearchQuery("bitcoin")
+            .WithSearchQuery("cryptocurrency")
             .WithSortOrder(SortOrder.PUBLISHED_AT)
             .WithLanguageQuery(Hassie.NET.API.NewsAPI.API.v2.Language.EN)
             .Build());
 
+
+
                 // The top 20 results
-                foreach (INewsArticle article in newsArticles)
-            {
-                //make sure there is an image to display
-                if (article.ImageURL != null)
+                foreach (INewsArticle article in newsArticles){
+                //Error handling : make sure there is an image to display
+                if ((article.ImageURL != "") && (article.ImageURL != null))
                 {
-                    // Debug.WriteLine(article.ImageURL);
+                    
+                  //  Uri uriImage = new Uri(article.ImageURL);
                     this.newsItems.Add(new NewsItem()
                     {
                         Title = article.Title,

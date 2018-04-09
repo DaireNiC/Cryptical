@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>BDF03A536EEF2E504BF56F2A631E0D33BBA3578767E6C6F26285A6F587E8EBAF</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>AB7B7A066E01B7F46C3EADADA095913F4C22667603CC009E86AD8A32B9FAF6CD</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>77aeef4e-06cd-4639-84b1-971fa7390799_1.0.0.0_x86__4sdaedqydyjdm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>77aeef4e-06cd-4639-84b1-971fa7390799_4sdaedqydyjdm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>77aeef4e-06cd-4639-84b1-971fa7390799</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-09T10:18:14.463</Modified>
+      <Modified>2018-04-09T13:49:43.582</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Cryptical.exe">
       <PackagePath>entrypoint\Cryptical.exe</PackagePath>
-      <Modified>2018-04-09T10:18:12.379</Modified>
+      <Modified>2018-04-09T13:49:39.586</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\colorcode.core\2.0.3\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -840,11 +840,11 @@
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-09T10:18:13.761</Modified>
+      <Modified>2018-04-09T13:49:40.586</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Core\Cryptical.exe">
       <PackagePath>Cryptical.exe</PackagePath>
-      <Modified>2018-04-09T10:18:14.456</Modified>
+      <Modified>2018-04-09T13:49:43.570</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
