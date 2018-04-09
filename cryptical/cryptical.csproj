@@ -119,6 +119,16 @@
     <None Include="Cryptical_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\scale-100\Bitcoin.png" />
+    <Content Include="Assets\Images\scale-100\Bitcoin-map.png" />
+    <Content Include="Assets\Images\scale-100\Ethereum.png" />
+    <Content Include="Assets\Images\scale-100\Litecoin.png" />
+    <Content Include="Assets\Images\scale-200\Bitcoin.png" />
+    <Content Include="Assets\Images\scale-200\Ethereum.png" />
+    <Content Include="Assets\Images\scale-200\Litecoin.png" />
+    <Content Include="Assets\Images\scale-300\Bitcoin.png" />
+    <Content Include="Assets\Images\scale-300\Ethereum.png" />
+    <Content Include="Assets\Images\scale-300\Litecoin.png" />
     <Content Include="Data\locations.txt" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -165,6 +175,7 @@
       <Version>0.5.0</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

@@ -47,7 +47,7 @@ namespace Cryptical.Views
             Unloaded += MapPage_Unloaded;
             _locationService = new LocationService();
             Center = new Geopoint(_defaultPosition);
-            ZoomLevel = DefaultZoomLevel;
+            ZoomLevel = 6;
             InitializeComponent();
         }
         //on page load...
@@ -99,8 +99,10 @@ namespace Cryptical.Views
                 // Set the map location.
                 mapControl.Center = Center;
                 Debug.WriteLine("geo loc: " + mapControl.Center.Position.ToString());
+                //indicates if the point being plotted is the user location
+                Boolean isUser = true;
                 //add the icon to the map to display user locaiton
-                AddMapIcon(mapControl.Center, "Your Location");
+                AddMapIcon(mapControl.Center, "Your Location", isUser);
                 Debug.WriteLine("center to str loc: " + Center.Position.ToString());
 
             }
@@ -108,6 +110,8 @@ namespace Cryptical.Views
         //metho to plot all the locations of business in Ireland that allow for payment in Bitcoin/Cryptocurrencies
         private async Task plotCryptoLocationsAsync()
         {
+            //indicates if the point being plotted is the user location
+            Boolean isUser = false;
             //load in the data from storage
             var locationsFile = await Package.Current.InstalledLocation.GetFileAsync("Data\\locations.txt");
             var fileContents = await FileIO.ReadTextAsync(locationsFile);
@@ -144,7 +148,7 @@ namespace Cryptical.Views
                     }
                     Geopoint cryptoLocation = new Geopoint(poi);
                     //plot on msp for user to view
-                    AddMapIcon(cryptoLocation, poiName);
+                    AddMapIcon(cryptoLocation, poiName, isUser);
                 }
             }
         }
@@ -167,16 +171,18 @@ namespace Cryptical.Views
         }
 
         //using a geopoint & title for poi --> plot it on the map
-        private void AddMapIcon(Geopoint position, string title)
+        private void AddMapIcon(Geopoint position, string title, Boolean isUser)
         {
             MapIcon mapIcon = new MapIcon()
             {
                 Location = position,
-                //NormalizedAnchorPoint = new Point(0.5, 1.0),
                 Title = title,
-                Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/map.png")),
+                Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/Images/Bitcoin-map.png")),
                 ZIndex = 0
             };
+            if (isUser) {
+                mapIcon.Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/map.png"));
+            }
             mapControl.MapElements.Add(mapIcon);
         }
     }

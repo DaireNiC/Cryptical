@@ -439,11 +439,35 @@
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\win2d.uwp\1.21.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Data\locations.txt">
-      <PackagePath>Data\locations.txt</PackagePath>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-100\Bitcoin.png">
+      <PackagePath>Assets\Images\scale-100\Bitcoin.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-100\Bitcoin-map.png">
+      <PackagePath>Assets\Images\scale-100\Bitcoin-map.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-100\Ethereum.png">
+      <PackagePath>Assets\Images\scale-100\Ethereum.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-100\Litecoin.png">
+      <PackagePath>Assets\Images\scale-100\Litecoin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-200\Bitcoin.png">
+      <PackagePath>Assets\Images\scale-200\Bitcoin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-200\Ethereum.png">
+      <PackagePath>Assets\Images\scale-200\Ethereum.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-200\Litecoin.png">
+      <PackagePath>Assets\Images\scale-200\Litecoin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-300\Bitcoin.png">
+      <PackagePath>Assets\Images\scale-300\Bitcoin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-300\Ethereum.png">
+      <PackagePath>Assets\Images\scale-300\Ethereum.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-300\Litecoin.png">
+      <PackagePath>Assets\Images\scale-300\Litecoin.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -471,6 +495,12 @@
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Data\locations.txt">
+      <PackagePath>Data\locations.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Cryptical.xr.xml">
       <PackagePath>Cryptical.xr.xml</PackagePath>

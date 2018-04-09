@@ -41,12 +41,6 @@
 	},
 
 	{
-		"title": "Pheasant Inn",
-		"Latitude": "52.9523187",
-		"Longitude": "-5.6432348"
-	},
-
-	{
 		"title": "Mary's Laundry & Dry Cleaning",
 		"Latitude": "53.77874646",
 		"Longitude": "-7.79342651"

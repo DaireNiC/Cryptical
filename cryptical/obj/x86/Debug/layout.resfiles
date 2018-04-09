@@ -1,4 +1,14 @@
 WinMetadata\Windows.winmd
+Assets\Images\scale-100\Bitcoin.png
+Assets\Images\scale-100\Bitcoin-map.png
+Assets\Images\scale-100\Ethereum.png
+Assets\Images\scale-100\Litecoin.png
+Assets\Images\scale-200\Bitcoin.png
+Assets\Images\scale-200\Ethereum.png
+Assets\Images\scale-200\Litecoin.png
+Assets\Images\scale-300\Bitcoin.png
+Assets\Images\scale-300\Ethereum.png
+Assets\Images\scale-300\Litecoin.png
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png

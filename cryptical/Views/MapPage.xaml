@@ -6,13 +6,29 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:maps="using:Windows.UI.Xaml.Controls.Maps"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d">
 
-    <Grid>
-        <maps:MapControl  MapServiceToken="y17BMedIEL9Y8XkAIHTT~0c72K3B_3x-Ffl7B3K3Otw~AlV5wgF2S4ocZBzmdGrantbUcfOa0p72Bk3zSSmlB10YoDcrPn6OQBo09pDXx7ZT"
+    <Grid x:Name="ContentArea">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="#152951"/>
+
+        <StackPanel Grid.Row="0" >
+            <TextBlock Foreground="White" FontSize="30" Text="Bitcoin Friendly Locations" Margin="10,30,10,0" TextAlignment="Center"/>
+        </StackPanel>
+
+       
+            <maps:MapControl  Grid.Row="1"  MapServiceToken="y17BMedIEL9Y8XkAIHTT~0c72K3B_3x-Ffl7B3K3Otw~AlV5wgF2S4ocZBzmdGrantbUcfOa0p72Bk3zSSmlB10YoDcrPn6OQBo09pDXx7ZT"
             x:Name="mapControl"
             ZoomLevel="{x:Bind ZoomLevel, Mode=OneWay}"
-            Center="{x:Bind Center, Mode=OneWay}"/>
+            Center="{x:Bind Center, Mode=OneWay}" 
+            />
         <TickBar/>
+      
     </Grid>
 </Page>
