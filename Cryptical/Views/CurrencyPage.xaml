@@ -5,6 +5,7 @@
     xmlns:local="using:Cryptical.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:lottie="using:LottieUWP"
     mc:Ignorable="d">
     <Grid
         x:Name="ContentArea">
@@ -14,8 +15,8 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
         <Border Grid.Column ="0" Grid.Row ="0"  Background="#D81159" />
         <Border Grid.Column ="0" Grid.Row ="1"  Background="#218380" />
@@ -51,6 +52,9 @@
             <TextBlock x:Uid="24hourhigh" x:Name="XRPhigh24hr" Foreground="White" FontSize="12" Margin ="10,0,42,10"/>
             <TextBlock x:Uid="24hourlow" x:Name="XRPlow24hr" Foreground="White" FontSize="12" Margin ="10,0,42,10"/>
             </StackPanel>
-        </Grid>
+
+
+
+    </Grid>
 
 </Page>

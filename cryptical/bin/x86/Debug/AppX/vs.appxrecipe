@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>AB7B7A066E01B7F46C3EADADA095913F4C22667603CC009E86AD8A32B9FAF6CD</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>659051435737623BE91FCEE67043014A6DECA367B42B289BF3D59E6943D33D9D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>77aeef4e-06cd-4639-84b1-971fa7390799_1.0.0.0_x86__4sdaedqydyjdm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>77aeef4e-06cd-4639-84b1-971fa7390799_4sdaedqydyjdm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>77aeef4e-06cd-4639-84b1-971fa7390799</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-10T12:13:59.513</Modified>
+      <Modified>2018-04-10T16:40:07.009</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Cryptical.exe">
       <PackagePath>entrypoint\Cryptical.exe</PackagePath>
-      <Modified>2018-04-10T12:13:58.407</Modified>
+      <Modified>2018-04-10T16:40:05.511</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\colorcode.core\2.0.3\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -50,6 +50,10 @@
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\hassie.net.api.newsapi\2.2.1\lib\netstandard1.1\Hassie.NET.API.NewsAPI.dll">
       <PackagePath>Hassie.NET.API.NewsAPI.dll</PackagePath>
       <Modified>2018-04-02T06:24:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\lottieuwp\2.5.2\lib\uap10.0\LottieUWP.dll">
+      <PackagePath>LottieUWP.dll</PackagePath>
+      <Modified>2018-03-20T00:21:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\microsoft.csharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -587,6 +591,56 @@
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
       <Modified>2017-06-26T02:01:44.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.393</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.425</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.463</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.524</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.727</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:08.932</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:08.946</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:08.959</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:08.976</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.013</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-100\Bitcoin.png">
       <PackagePath>Assets\Images\scale-100\Bitcoin.png</PackagePath>
       <Modified>2018-04-09T09:35:20.951</Modified>
@@ -639,6 +693,156 @@
       <PackagePath>Assets\Images\scale-300\Ripple.png</PackagePath>
       <Modified>2018-04-09T23:00:27.151</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.933</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.981</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:10.043</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:10.500</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.033</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.053</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.074</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.163</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.846</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.900</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.868</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.877</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.735</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.744</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.757</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.783</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.791</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.838</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.816</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:10.516</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:10.527</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:10.538</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:10.550</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:10.568</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.182</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.204</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.229</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-10T15:23:09.367</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2018-03-12T16:15:44.597</Modified>
@@ -646,32 +850,31 @@
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-12T16:15:44.597</Modified>
+      <Modified>2018-04-10T15:23:10.141</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-12T16:15:44.597</Modified>
+      <Modified>2018-04-10T15:23:09.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-12T16:15:44.597</Modified>
+      <Modified>2018-04-10T15:23:09.768</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-12T16:15:44.597</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-12T16:15:44.597</Modified>
+      <Modified>2018-04-10T15:23:09.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-12T16:15:44.597</Modified>
+      <Modified>2018-04-10T15:23:09.261</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Splash.json">
+      <PackagePath>Assets\Splash.json</PackagePath>
+      <Modified>2018-04-10T13:56:59.216</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Data\locations.txt">
       <PackagePath>Data\locations.txt</PackagePath>
@@ -683,7 +886,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Cryptical.xr.xml">
       <PackagePath>Cryptical.xr.xml</PackagePath>
-      <Modified>2018-04-10T12:13:58.140</Modified>
+      <Modified>2018-04-10T15:01:17.307</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -852,11 +1055,11 @@
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-10T12:13:58.921</Modified>
+      <Modified>2018-04-10T15:24:14.524</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Core\Cryptical.exe">
       <PackagePath>Cryptical.exe</PackagePath>
-      <Modified>2018-04-10T12:13:59.507</Modified>
+      <Modified>2018-04-10T16:40:06.997</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

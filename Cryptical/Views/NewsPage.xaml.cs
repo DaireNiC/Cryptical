@@ -34,7 +34,6 @@ namespace Cryptical.Views
         public NewsPage()
         {
             this.InitializeComponent();
-            Debug.WriteLine("init componnt executed");
             Loaded += NewsPage_LoadedAsync;
         }
 

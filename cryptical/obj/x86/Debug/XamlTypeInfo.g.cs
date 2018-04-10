@@ -156,75 +156,105 @@ namespace Cryptical.Cryptical_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[33];
-            _typeNameTable[0] = "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[2] = "Windows.UI.Xaml.Media.Brush";
-            _typeNameTable[3] = "Windows.UI.Xaml.DataTemplate";
-            _typeNameTable[4] = "Double";
-            _typeNameTable[5] = "Windows.UI.Xaml.Thickness";
-            _typeNameTable[6] = "Windows.UI.Xaml.Visibility";
-            _typeNameTable[7] = "Object";
-            _typeNameTable[8] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[9] = "Windows.UI.Xaml.Controls.ItemCollection";
-            _typeNameTable[10] = "Int32";
-            _typeNameTable[11] = "Windows.UI.Xaml.Controls.SplitViewPanePlacement";
-            _typeNameTable[12] = "Windows.UI.Xaml.Controls.SplitViewDisplayMode";
-            _typeNameTable[13] = "Boolean";
-            _typeNameTable[14] = "Cryptical.Views.MainPage";
-            _typeNameTable[15] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[16] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[17] = "Cryptical.Views.CurrencyPage";
-            _typeNameTable[18] = "Cryptical.Views.MapPage";
-            _typeNameTable[19] = "Windows.Devices.Geolocation.Geopoint";
-            _typeNameTable[20] = "Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView";
-            _typeNameTable[21] = "Windows.UI.Xaml.Controls.GridView";
-            _typeNameTable[22] = "Windows.UI.Xaml.Controls.ItemsControl";
-            _typeNameTable[23] = "System.Windows.Input.ICommand";
-            _typeNameTable[24] = "Windows.UI.Xaml.Controls.ItemsPanelTemplate";
-            _typeNameTable[25] = "Cryptical.Views.NewsPage";
-            _typeNameTable[26] = "System.Collections.ObjectModel.ObservableCollection`1<Cryptical.NewsItem>";
-            _typeNameTable[27] = "System.Collections.ObjectModel.Collection`1<Cryptical.NewsItem>";
-            _typeNameTable[28] = "Cryptical.NewsItem";
-            _typeNameTable[29] = "String";
-            _typeNameTable[30] = "Windows.UI.Xaml.Controls.Image";
-            _typeNameTable[31] = "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions";
-            _typeNameTable[32] = "Windows.UI.Xaml.Controls.NavigationView";
+            _typeNameTable = new string[48];
+            _typeNameTable[0] = "LottieUWP.LottieAnimationView";
+            _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[2] = "String";
+            _typeNameTable[3] = "Boolean";
+            _typeNameTable[4] = "Int32";
+            _typeNameTable[5] = "LottieUWP.LottieAnimationView.CacheStrategy";
+            _typeNameTable[6] = "System.Enum";
+            _typeNameTable[7] = "System.ValueType";
+            _typeNameTable[8] = "Object";
+            _typeNameTable[9] = "Windows.UI.Color";
+            _typeNameTable[10] = "LottieUWP.FontAssetDelegate";
+            _typeNameTable[11] = "LottieUWP.TextDelegate";
+            _typeNameTable[12] = "Double";
+            _typeNameTable[13] = "LottieUWP.LottieDrawable";
+            _typeNameTable[14] = "LottieUWP.LottieComposition";
+            _typeNameTable[15] = "Single";
+            _typeNameTable[16] = "LottieUWP.RepeatMode";
+            _typeNameTable[17] = "LottieUWP.IImageAssetDelegate";
+            _typeNameTable[18] = "Int64";
+            _typeNameTable[19] = "LottieUWP.PerformanceTracker";
+            _typeNameTable[20] = "Cryptical.ExtendedSplash";
+            _typeNameTable[21] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[22] = "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu";
+            _typeNameTable[23] = "Windows.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[24] = "Windows.UI.Xaml.Media.Brush";
+            _typeNameTable[25] = "Windows.UI.Xaml.DataTemplate";
+            _typeNameTable[26] = "Windows.UI.Xaml.Thickness";
+            _typeNameTable[27] = "Windows.UI.Xaml.Visibility";
+            _typeNameTable[28] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[29] = "Windows.UI.Xaml.Controls.ItemCollection";
+            _typeNameTable[30] = "Windows.UI.Xaml.Controls.SplitViewPanePlacement";
+            _typeNameTable[31] = "Windows.UI.Xaml.Controls.SplitViewDisplayMode";
+            _typeNameTable[32] = "Cryptical.Views.MainPage";
+            _typeNameTable[33] = "Cryptical.Views.CurrencyPage";
+            _typeNameTable[34] = "Cryptical.Views.MapPage";
+            _typeNameTable[35] = "Windows.Devices.Geolocation.Geopoint";
+            _typeNameTable[36] = "Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView";
+            _typeNameTable[37] = "Windows.UI.Xaml.Controls.GridView";
+            _typeNameTable[38] = "Windows.UI.Xaml.Controls.ItemsControl";
+            _typeNameTable[39] = "System.Windows.Input.ICommand";
+            _typeNameTable[40] = "Windows.UI.Xaml.Controls.ItemsPanelTemplate";
+            _typeNameTable[41] = "Cryptical.Views.NewsPage";
+            _typeNameTable[42] = "System.Collections.ObjectModel.ObservableCollection`1<Cryptical.NewsItem>";
+            _typeNameTable[43] = "System.Collections.ObjectModel.Collection`1<Cryptical.NewsItem>";
+            _typeNameTable[44] = "Cryptical.NewsItem";
+            _typeNameTable[45] = "Windows.UI.Xaml.Controls.Image";
+            _typeNameTable[46] = "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions";
+            _typeNameTable[47] = "Windows.UI.Xaml.Controls.NavigationView";
 
-            _typeTable = new global::System.Type[33];
-            _typeTable[0] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Media.Brush);
-            _typeTable[3] = typeof(global::Windows.UI.Xaml.DataTemplate);
-            _typeTable[4] = typeof(global::System.Double);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.Thickness);
-            _typeTable[6] = typeof(global::Windows.UI.Xaml.Visibility);
-            _typeTable[7] = typeof(global::System.Object);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[9] = typeof(global::Windows.UI.Xaml.Controls.ItemCollection);
-            _typeTable[10] = typeof(global::System.Int32);
-            _typeTable[11] = typeof(global::Windows.UI.Xaml.Controls.SplitViewPanePlacement);
-            _typeTable[12] = typeof(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode);
-            _typeTable[13] = typeof(global::System.Boolean);
-            _typeTable[14] = typeof(global::Cryptical.Views.MainPage);
-            _typeTable[15] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[16] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[17] = typeof(global::Cryptical.Views.CurrencyPage);
-            _typeTable[18] = typeof(global::Cryptical.Views.MapPage);
-            _typeTable[19] = typeof(global::Windows.Devices.Geolocation.Geopoint);
-            _typeTable[20] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView);
-            _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.GridView);
-            _typeTable[22] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
-            _typeTable[23] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[24] = typeof(global::Windows.UI.Xaml.Controls.ItemsPanelTemplate);
-            _typeTable[25] = typeof(global::Cryptical.Views.NewsPage);
-            _typeTable[26] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Cryptical.NewsItem>);
-            _typeTable[27] = typeof(global::System.Collections.ObjectModel.Collection<global::Cryptical.NewsItem>);
-            _typeTable[28] = typeof(global::Cryptical.NewsItem);
-            _typeTable[29] = typeof(global::System.String);
-            _typeTable[30] = typeof(global::Windows.UI.Xaml.Controls.Image);
-            _typeTable[31] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions);
-            _typeTable[32] = typeof(global::Windows.UI.Xaml.Controls.NavigationView);
+            _typeTable = new global::System.Type[48];
+            _typeTable[0] = typeof(global::LottieUWP.LottieAnimationView);
+            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[2] = typeof(global::System.String);
+            _typeTable[3] = typeof(global::System.Boolean);
+            _typeTable[4] = typeof(global::System.Int32);
+            _typeTable[5] = typeof(global::LottieUWP.LottieAnimationView.CacheStrategy);
+            _typeTable[6] = typeof(global::System.Enum);
+            _typeTable[7] = typeof(global::System.ValueType);
+            _typeTable[8] = typeof(global::System.Object);
+            _typeTable[9] = typeof(global::Windows.UI.Color);
+            _typeTable[10] = typeof(global::LottieUWP.FontAssetDelegate);
+            _typeTable[11] = typeof(global::LottieUWP.TextDelegate);
+            _typeTable[12] = typeof(global::System.Double);
+            _typeTable[13] = typeof(global::LottieUWP.LottieDrawable);
+            _typeTable[14] = typeof(global::LottieUWP.LottieComposition);
+            _typeTable[15] = typeof(global::System.Single);
+            _typeTable[16] = typeof(global::LottieUWP.RepeatMode);
+            _typeTable[17] = typeof(global::LottieUWP.IImageAssetDelegate);
+            _typeTable[18] = typeof(global::System.Int64);
+            _typeTable[19] = typeof(global::LottieUWP.PerformanceTracker);
+            _typeTable[20] = typeof(global::Cryptical.ExtendedSplash);
+            _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[22] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu);
+            _typeTable[23] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
+            _typeTable[24] = typeof(global::Windows.UI.Xaml.Media.Brush);
+            _typeTable[25] = typeof(global::Windows.UI.Xaml.DataTemplate);
+            _typeTable[26] = typeof(global::Windows.UI.Xaml.Thickness);
+            _typeTable[27] = typeof(global::Windows.UI.Xaml.Visibility);
+            _typeTable[28] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[29] = typeof(global::Windows.UI.Xaml.Controls.ItemCollection);
+            _typeTable[30] = typeof(global::Windows.UI.Xaml.Controls.SplitViewPanePlacement);
+            _typeTable[31] = typeof(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode);
+            _typeTable[32] = typeof(global::Cryptical.Views.MainPage);
+            _typeTable[33] = typeof(global::Cryptical.Views.CurrencyPage);
+            _typeTable[34] = typeof(global::Cryptical.Views.MapPage);
+            _typeTable[35] = typeof(global::Windows.Devices.Geolocation.Geopoint);
+            _typeTable[36] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView);
+            _typeTable[37] = typeof(global::Windows.UI.Xaml.Controls.GridView);
+            _typeTable[38] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
+            _typeTable[39] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[40] = typeof(global::Windows.UI.Xaml.Controls.ItemsPanelTemplate);
+            _typeTable[41] = typeof(global::Cryptical.Views.NewsPage);
+            _typeTable[42] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Cryptical.NewsItem>);
+            _typeTable[43] = typeof(global::System.Collections.ObjectModel.Collection<global::Cryptical.NewsItem>);
+            _typeTable[44] = typeof(global::Cryptical.NewsItem);
+            _typeTable[45] = typeof(global::Windows.UI.Xaml.Controls.Image);
+            _typeTable[46] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions);
+            _typeTable[47] = typeof(global::Windows.UI.Xaml.Controls.NavigationView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -259,23 +289,28 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_HamburgerMenu() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu(); }
-        private object Activate_14_MainPage() { return new global::Cryptical.Views.MainPage(); }
-        private object Activate_17_CurrencyPage() { return new global::Cryptical.Views.CurrencyPage(); }
-        private object Activate_18_MapPage() { return new global::Cryptical.Views.MapPage(); }
-        private object Activate_20_AdaptiveGridView() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView(); }
-        private object Activate_25_NewsPage() { return new global::Cryptical.Views.NewsPage(); }
-        private object Activate_26_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Cryptical.NewsItem>(); }
-        private object Activate_27_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Cryptical.NewsItem>(); }
-        private object Activate_28_NewsItem() { return new global::Cryptical.NewsItem(); }
-        private object Activate_31_NavigationViewExtensions() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions(); }
-        private void VectorAdd_26_ObservableCollection(object instance, object item)
+        private object Activate_0_LottieAnimationView() { return new global::LottieUWP.LottieAnimationView(); }
+        private object Activate_10_FontAssetDelegate() { return new global::LottieUWP.FontAssetDelegate(); }
+        private object Activate_13_LottieDrawable() { return new global::LottieUWP.LottieDrawable(); }
+        private object Activate_14_LottieComposition() { return new global::LottieUWP.LottieComposition(); }
+        private object Activate_19_PerformanceTracker() { return new global::LottieUWP.PerformanceTracker(); }
+        private object Activate_22_HamburgerMenu() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu(); }
+        private object Activate_32_MainPage() { return new global::Cryptical.Views.MainPage(); }
+        private object Activate_33_CurrencyPage() { return new global::Cryptical.Views.CurrencyPage(); }
+        private object Activate_34_MapPage() { return new global::Cryptical.Views.MapPage(); }
+        private object Activate_36_AdaptiveGridView() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView(); }
+        private object Activate_41_NewsPage() { return new global::Cryptical.Views.NewsPage(); }
+        private object Activate_42_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Cryptical.NewsItem>(); }
+        private object Activate_43_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Cryptical.NewsItem>(); }
+        private object Activate_44_NewsItem() { return new global::Cryptical.NewsItem(); }
+        private object Activate_46_NavigationViewExtensions() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions(); }
+        private void VectorAdd_42_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Cryptical.NewsItem>)instance;
             var newItem = (global::Cryptical.NewsItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_27_Collection(object instance, object item)
+        private void VectorAdd_43_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Cryptical.NewsItem>)instance;
             var newItem = (global::Cryptical.NewsItem)item;
@@ -292,9 +327,150 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu
+            case 0:   //  LottieUWP.LottieAnimationView
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_0_LottieAnimationView;
+                userType.AddMemberName("FileName");
+                userType.AddMemberName("AutoPlay");
+                userType.AddMemberName("RepeatCount");
+                userType.AddMemberName("DefaultCacheStrategy");
+                userType.AddMemberName("ImageAssetsFolder");
+                userType.AddMemberName("ColorFilter");
+                userType.AddMemberName("FontAssetDelegate");
+                userType.AddMemberName("TextDelegate");
+                userType.AddMemberName("Scale");
+                userType.AddMemberName("ImageDrawable");
+                userType.AddMemberName("Composition");
+                userType.AddMemberName("MinFrame");
+                userType.AddMemberName("MinProgress");
+                userType.AddMemberName("MaxFrame");
+                userType.AddMemberName("MaxProgress");
+                userType.AddMemberName("Speed");
+                userType.AddMemberName("Loop");
+                userType.AddMemberName("RepeatMode");
+                userType.AddMemberName("FrameRate");
+                userType.AddMemberName("IsAnimating");
+                userType.AddMemberName("ImageAssetDelegate");
+                userType.AddMemberName("Frame");
+                userType.AddMemberName("Progress");
+                userType.AddMemberName("Duration");
+                userType.AddMemberName("PerformanceTrackingEnabled");
+                userType.AddMemberName("PerformanceTracker");
+                xamlType = userType;
+                break;
+
+            case 1:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 2:   //  String
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  Boolean
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 4:   //  Int32
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 5:   //  LottieUWP.LottieAnimationView.CacheStrategy
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("None", global::LottieUWP.LottieAnimationView.CacheStrategy.None);
+                userType.AddEnumValue("Weak", global::LottieUWP.LottieAnimationView.CacheStrategy.Weak);
+                userType.AddEnumValue("Strong", global::LottieUWP.LottieAnimationView.CacheStrategy.Strong);
+                xamlType = userType;
+                break;
+
+            case 6:   //  System.Enum
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                xamlType = userType;
+                break;
+
+            case 7:   //  System.ValueType
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 8:   //  Object
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  Windows.UI.Color
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 10:   //  LottieUWP.FontAssetDelegate
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 11:   //  LottieUWP.TextDelegate
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 12:   //  Double
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 13:   //  LottieUWP.LottieDrawable
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 14:   //  LottieUWP.LottieComposition
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 15:   //  Single
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 16:   //  LottieUWP.RepeatMode
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Restart", global::LottieUWP.RepeatMode.Restart);
+                userType.AddEnumValue("Reverse", global::LottieUWP.RepeatMode.Reverse);
+                xamlType = userType;
+                break;
+
+            case 17:   //  LottieUWP.IImageAssetDelegate
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 18:   //  Int64
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 19:   //  LottieUWP.PerformanceTracker
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 20:   //  Cryptical.ExtendedSplash
+                userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 21:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 22:   //  Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_0_HamburgerMenu;
+                userType.Activator = Activate_22_HamburgerMenu;
                 userType.AddMemberName("PaneBackground");
                 userType.AddMemberName("ItemTemplate");
                 userType.AddMemberName("OptionsItemTemplate");
@@ -324,98 +500,74 @@ namespace Cryptical.Cryptical_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.ContentControl
+            case 23:   //  Windows.UI.Xaml.Controls.ContentControl
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.Media.Brush
+            case 24:   //  Windows.UI.Xaml.Media.Brush
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Windows.UI.Xaml.DataTemplate
+            case 25:   //  Windows.UI.Xaml.DataTemplate
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  Double
+            case 26:   //  Windows.UI.Xaml.Thickness
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  Windows.UI.Xaml.Thickness
+            case 27:   //  Windows.UI.Xaml.Visibility
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  Windows.UI.Xaml.Visibility
+            case 28:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  Object
+            case 29:   //  Windows.UI.Xaml.Controls.ItemCollection
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
+            case 30:   //  Windows.UI.Xaml.Controls.SplitViewPanePlacement
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  Windows.UI.Xaml.Controls.ItemCollection
+            case 31:   //  Windows.UI.Xaml.Controls.SplitViewDisplayMode
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 10:   //  Int32
-                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 11:   //  Windows.UI.Xaml.Controls.SplitViewPanePlacement
-                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 12:   //  Windows.UI.Xaml.Controls.SplitViewDisplayMode
-                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 13:   //  Boolean
-                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 14:   //  Cryptical.Views.MainPage
+            case 32:   //  Cryptical.Views.MainPage
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_MainPage;
+                userType.Activator = Activate_32_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 16:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 17:   //  Cryptical.Views.CurrencyPage
+            case 33:   //  Cryptical.Views.CurrencyPage
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_CurrencyPage;
+                userType.Activator = Activate_33_CurrencyPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  Cryptical.Views.MapPage
+            case 34:   //  Cryptical.Views.MapPage
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_MapPage;
+                userType.Activator = Activate_34_MapPage;
                 userType.AddMemberName("Center");
                 userType.AddMemberName("ZoomLevel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  Windows.Devices.Geolocation.Geopoint
+            case 35:   //  Windows.Devices.Geolocation.Geopoint
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 20:   //  Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView
+            case 36:   //  Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.GridView"));
-                userType.Activator = Activate_20_AdaptiveGridView;
+                userType.Activator = Activate_36_AdaptiveGridView;
                 userType.AddMemberName("ItemHeight");
                 userType.AddMemberName("DesiredWidth");
                 userType.AddMemberName("StretchContentForSingleRow");
@@ -425,49 +577,49 @@ namespace Cryptical.Cryptical_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 21:   //  Windows.UI.Xaml.Controls.GridView
+            case 37:   //  Windows.UI.Xaml.Controls.GridView
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 22:   //  Windows.UI.Xaml.Controls.ItemsControl
+            case 38:   //  Windows.UI.Xaml.Controls.ItemsControl
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 23:   //  System.Windows.Input.ICommand
+            case 39:   //  System.Windows.Input.ICommand
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 24:   //  Windows.UI.Xaml.Controls.ItemsPanelTemplate
+            case 40:   //  Windows.UI.Xaml.Controls.ItemsPanelTemplate
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 25:   //  Cryptical.Views.NewsPage
+            case 41:   //  Cryptical.Views.NewsPage
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_25_NewsPage;
+                userType.Activator = Activate_41_NewsPage;
                 userType.AddMemberName("NewsItems");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 26:   //  System.Collections.ObjectModel.ObservableCollection`1<Cryptical.NewsItem>
+            case 42:   //  System.Collections.ObjectModel.ObservableCollection`1<Cryptical.NewsItem>
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Cryptical.NewsItem>"));
-                userType.CollectionAdd = VectorAdd_26_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_42_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 27:   //  System.Collections.ObjectModel.Collection`1<Cryptical.NewsItem>
+            case 43:   //  System.Collections.ObjectModel.Collection`1<Cryptical.NewsItem>
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_27_Collection;
-                userType.CollectionAdd = VectorAdd_27_Collection;
+                userType.Activator = Activate_43_Collection;
+                userType.CollectionAdd = VectorAdd_43_Collection;
                 xamlType = userType;
                 break;
 
-            case 28:   //  Cryptical.NewsItem
+            case 44:   //  Cryptical.NewsItem
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_28_NewsItem;
+                userType.Activator = Activate_44_NewsItem;
                 userType.AddMemberName("URL");
                 userType.AddMemberName("ImageURL");
                 userType.AddMemberName("Title");
@@ -478,24 +630,20 @@ namespace Cryptical.Cryptical_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 29:   //  String
+            case 45:   //  Windows.UI.Xaml.Controls.Image
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 30:   //  Windows.UI.Xaml.Controls.Image
-                xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 31:   //  Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions
+            case 46:   //  Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_31_NavigationViewExtensions;
+                userType.Activator = Activate_46_NavigationViewExtensions;
                 userType.AddMemberName("SelectedIndex");
                 userType.AddMemberName("CollapseOnClick");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 32:   //  Windows.UI.Xaml.Controls.NavigationView
+            case 47:   //  Windows.UI.Xaml.Controls.NavigationView
                 xamlType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -559,399 +707,609 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             return foundXamlType;
         }
 
-        private object get_0_HamburgerMenu_PaneBackground(object instance)
+        private object get_0_LottieAnimationView_FileName(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.FileName;
+        }
+        private void set_0_LottieAnimationView_FileName(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.FileName = (global::System.String)Value;
+        }
+        private object get_1_LottieAnimationView_AutoPlay(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.AutoPlay;
+        }
+        private void set_1_LottieAnimationView_AutoPlay(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.AutoPlay = (global::System.Boolean)Value;
+        }
+        private object get_2_LottieAnimationView_RepeatCount(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.RepeatCount;
+        }
+        private void set_2_LottieAnimationView_RepeatCount(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.RepeatCount = (global::System.Int32)Value;
+        }
+        private object get_3_LottieAnimationView_DefaultCacheStrategy(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.DefaultCacheStrategy;
+        }
+        private void set_3_LottieAnimationView_DefaultCacheStrategy(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.DefaultCacheStrategy = (global::LottieUWP.LottieAnimationView.CacheStrategy)Value;
+        }
+        private object get_4_LottieAnimationView_ImageAssetsFolder(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.ImageAssetsFolder;
+        }
+        private void set_4_LottieAnimationView_ImageAssetsFolder(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.ImageAssetsFolder = (global::System.String)Value;
+        }
+        private object get_5_LottieAnimationView_ColorFilter(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.ColorFilter;
+        }
+        private void set_5_LottieAnimationView_ColorFilter(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.ColorFilter = (global::Windows.UI.Color)Value;
+        }
+        private void set_6_LottieAnimationView_FontAssetDelegate(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.FontAssetDelegate = (global::LottieUWP.FontAssetDelegate)Value;
+        }
+        private void set_7_LottieAnimationView_TextDelegate(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.TextDelegate = (global::LottieUWP.TextDelegate)Value;
+        }
+        private object get_8_LottieAnimationView_Scale(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.Scale;
+        }
+        private void set_8_LottieAnimationView_Scale(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.Scale = (global::System.Double)Value;
+        }
+        private void set_9_LottieAnimationView_ImageDrawable(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.ImageDrawable = (global::LottieUWP.LottieDrawable)Value;
+        }
+        private object get_10_LottieAnimationView_Composition(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.Composition;
+        }
+        private void set_10_LottieAnimationView_Composition(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.Composition = (global::LottieUWP.LottieComposition)Value;
+        }
+        private object get_11_LottieAnimationView_MinFrame(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.MinFrame;
+        }
+        private void set_11_LottieAnimationView_MinFrame(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.MinFrame = (global::System.Single)Value;
+        }
+        private void set_12_LottieAnimationView_MinProgress(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.MinProgress = (global::System.Single)Value;
+        }
+        private object get_13_LottieAnimationView_MaxFrame(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.MaxFrame;
+        }
+        private void set_13_LottieAnimationView_MaxFrame(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.MaxFrame = (global::System.Single)Value;
+        }
+        private void set_14_LottieAnimationView_MaxProgress(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.MaxProgress = (global::System.Single)Value;
+        }
+        private object get_15_LottieAnimationView_Speed(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.Speed;
+        }
+        private void set_15_LottieAnimationView_Speed(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.Speed = (global::System.Double)Value;
+        }
+        private object get_16_LottieAnimationView_Loop(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.Loop;
+        }
+        private void set_16_LottieAnimationView_Loop(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.Loop = (global::System.Boolean)Value;
+        }
+        private object get_17_LottieAnimationView_RepeatMode(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.RepeatMode;
+        }
+        private void set_17_LottieAnimationView_RepeatMode(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.RepeatMode = (global::LottieUWP.RepeatMode)Value;
+        }
+        private object get_18_LottieAnimationView_FrameRate(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.FrameRate;
+        }
+        private void set_18_LottieAnimationView_FrameRate(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.FrameRate = (global::System.Double)Value;
+        }
+        private object get_19_LottieAnimationView_IsAnimating(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.IsAnimating;
+        }
+        private void set_20_LottieAnimationView_ImageAssetDelegate(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.ImageAssetDelegate = (global::LottieUWP.IImageAssetDelegate)Value;
+        }
+        private object get_21_LottieAnimationView_Frame(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.Frame;
+        }
+        private void set_21_LottieAnimationView_Frame(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.Frame = (global::System.Single)Value;
+        }
+        private object get_22_LottieAnimationView_Progress(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.Progress;
+        }
+        private void set_22_LottieAnimationView_Progress(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.Progress = (global::System.Single)Value;
+        }
+        private object get_23_LottieAnimationView_Duration(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.Duration;
+        }
+        private void set_24_LottieAnimationView_PerformanceTrackingEnabled(object instance, object Value)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            that.PerformanceTrackingEnabled = (global::System.Boolean)Value;
+        }
+        private object get_25_LottieAnimationView_PerformanceTracker(object instance)
+        {
+            var that = (global::LottieUWP.LottieAnimationView)instance;
+            return that.PerformanceTracker;
+        }
+        private object get_26_HamburgerMenu_PaneBackground(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.PaneBackground;
         }
-        private void set_0_HamburgerMenu_PaneBackground(object instance, object Value)
+        private void set_26_HamburgerMenu_PaneBackground(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.PaneBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_1_HamburgerMenu_ItemTemplate(object instance)
+        private object get_27_HamburgerMenu_ItemTemplate(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.ItemTemplate;
         }
-        private void set_1_HamburgerMenu_ItemTemplate(object instance, object Value)
+        private void set_27_HamburgerMenu_ItemTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.ItemTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_2_HamburgerMenu_OptionsItemTemplate(object instance)
+        private object get_28_HamburgerMenu_OptionsItemTemplate(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.OptionsItemTemplate;
         }
-        private void set_2_HamburgerMenu_OptionsItemTemplate(object instance, object Value)
+        private void set_28_HamburgerMenu_OptionsItemTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.OptionsItemTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_3_HamburgerMenu_HamburgerMenuTemplate(object instance)
+        private object get_29_HamburgerMenu_HamburgerMenuTemplate(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.HamburgerMenuTemplate;
         }
-        private void set_3_HamburgerMenu_HamburgerMenuTemplate(object instance, object Value)
+        private void set_29_HamburgerMenu_HamburgerMenuTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.HamburgerMenuTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_4_HamburgerMenu_HamburgerWidth(object instance)
+        private object get_30_HamburgerMenu_HamburgerWidth(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.HamburgerWidth;
         }
-        private void set_4_HamburgerMenu_HamburgerWidth(object instance, object Value)
+        private void set_30_HamburgerMenu_HamburgerWidth(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.HamburgerWidth = (global::System.Double)Value;
         }
-        private object get_5_HamburgerMenu_HamburgerHeight(object instance)
+        private object get_31_HamburgerMenu_HamburgerHeight(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.HamburgerHeight;
         }
-        private void set_5_HamburgerMenu_HamburgerHeight(object instance, object Value)
+        private void set_31_HamburgerMenu_HamburgerHeight(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.HamburgerHeight = (global::System.Double)Value;
         }
-        private object get_6_HamburgerMenu_HamburgerMargin(object instance)
+        private object get_32_HamburgerMenu_HamburgerMargin(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.HamburgerMargin;
         }
-        private void set_6_HamburgerMenu_HamburgerMargin(object instance, object Value)
+        private void set_32_HamburgerMenu_HamburgerMargin(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.HamburgerMargin = (global::Windows.UI.Xaml.Thickness)Value;
         }
-        private object get_7_HamburgerMenu_HamburgerVisibility(object instance)
+        private object get_33_HamburgerMenu_HamburgerVisibility(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.HamburgerVisibility;
         }
-        private void set_7_HamburgerMenu_HamburgerVisibility(object instance, object Value)
+        private void set_33_HamburgerMenu_HamburgerVisibility(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.HamburgerVisibility = (global::Windows.UI.Xaml.Visibility)Value;
         }
-        private object get_8_HamburgerMenu_OptionsItemsSource(object instance)
+        private object get_34_HamburgerMenu_OptionsItemsSource(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.OptionsItemsSource;
         }
-        private void set_8_HamburgerMenu_OptionsItemsSource(object instance, object Value)
+        private void set_34_HamburgerMenu_OptionsItemsSource(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.OptionsItemsSource = (global::System.Object)Value;
         }
-        private object get_9_HamburgerMenu_OptionsItemTemplateSelector(object instance)
+        private object get_35_HamburgerMenu_OptionsItemTemplateSelector(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.OptionsItemTemplateSelector;
         }
-        private void set_9_HamburgerMenu_OptionsItemTemplateSelector(object instance, object Value)
+        private void set_35_HamburgerMenu_OptionsItemTemplateSelector(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.OptionsItemTemplateSelector = (global::Windows.UI.Xaml.Controls.DataTemplateSelector)Value;
         }
-        private object get_10_HamburgerMenu_OptionsItems(object instance)
+        private object get_36_HamburgerMenu_OptionsItems(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.OptionsItems;
         }
-        private object get_11_HamburgerMenu_OptionsVisibility(object instance)
+        private object get_37_HamburgerMenu_OptionsVisibility(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.OptionsVisibility;
         }
-        private void set_11_HamburgerMenu_OptionsVisibility(object instance, object Value)
+        private void set_37_HamburgerMenu_OptionsVisibility(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.OptionsVisibility = (global::Windows.UI.Xaml.Visibility)Value;
         }
-        private object get_12_HamburgerMenu_SelectedOptionsItem(object instance)
+        private object get_38_HamburgerMenu_SelectedOptionsItem(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.SelectedOptionsItem;
         }
-        private void set_12_HamburgerMenu_SelectedOptionsItem(object instance, object Value)
+        private void set_38_HamburgerMenu_SelectedOptionsItem(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.SelectedOptionsItem = (global::System.Object)Value;
         }
-        private object get_13_HamburgerMenu_SelectedOptionsIndex(object instance)
+        private object get_39_HamburgerMenu_SelectedOptionsIndex(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.SelectedOptionsIndex;
         }
-        private void set_13_HamburgerMenu_SelectedOptionsIndex(object instance, object Value)
+        private void set_39_HamburgerMenu_SelectedOptionsIndex(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.SelectedOptionsIndex = (global::System.Int32)Value;
         }
-        private object get_14_HamburgerMenu_OpenPaneLength(object instance)
+        private object get_40_HamburgerMenu_OpenPaneLength(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.OpenPaneLength;
         }
-        private void set_14_HamburgerMenu_OpenPaneLength(object instance, object Value)
+        private void set_40_HamburgerMenu_OpenPaneLength(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.OpenPaneLength = (global::System.Double)Value;
         }
-        private object get_15_HamburgerMenu_PanePlacement(object instance)
+        private object get_41_HamburgerMenu_PanePlacement(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.PanePlacement;
         }
-        private void set_15_HamburgerMenu_PanePlacement(object instance, object Value)
+        private void set_41_HamburgerMenu_PanePlacement(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.PanePlacement = (global::Windows.UI.Xaml.Controls.SplitViewPanePlacement)Value;
         }
-        private object get_16_HamburgerMenu_DisplayMode(object instance)
+        private object get_42_HamburgerMenu_DisplayMode(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.DisplayMode;
         }
-        private void set_16_HamburgerMenu_DisplayMode(object instance, object Value)
+        private void set_42_HamburgerMenu_DisplayMode(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.DisplayMode = (global::Windows.UI.Xaml.Controls.SplitViewDisplayMode)Value;
         }
-        private object get_17_HamburgerMenu_CompactPaneLength(object instance)
+        private object get_43_HamburgerMenu_CompactPaneLength(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.CompactPaneLength;
         }
-        private void set_17_HamburgerMenu_CompactPaneLength(object instance, object Value)
+        private void set_43_HamburgerMenu_CompactPaneLength(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.CompactPaneLength = (global::System.Double)Value;
         }
-        private object get_18_HamburgerMenu_PaneForeground(object instance)
+        private object get_44_HamburgerMenu_PaneForeground(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.PaneForeground;
         }
-        private void set_18_HamburgerMenu_PaneForeground(object instance, object Value)
+        private void set_44_HamburgerMenu_PaneForeground(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.PaneForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_19_HamburgerMenu_IsPaneOpen(object instance)
+        private object get_45_HamburgerMenu_IsPaneOpen(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.IsPaneOpen;
         }
-        private void set_19_HamburgerMenu_IsPaneOpen(object instance, object Value)
+        private void set_45_HamburgerMenu_IsPaneOpen(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.IsPaneOpen = (global::System.Boolean)Value;
         }
-        private object get_20_HamburgerMenu_ItemsSource(object instance)
+        private object get_46_HamburgerMenu_ItemsSource(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.ItemsSource;
         }
-        private void set_20_HamburgerMenu_ItemsSource(object instance, object Value)
+        private void set_46_HamburgerMenu_ItemsSource(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.ItemsSource = (global::System.Object)Value;
         }
-        private object get_21_HamburgerMenu_ItemTemplateSelector(object instance)
+        private object get_47_HamburgerMenu_ItemTemplateSelector(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.ItemTemplateSelector;
         }
-        private void set_21_HamburgerMenu_ItemTemplateSelector(object instance, object Value)
+        private void set_47_HamburgerMenu_ItemTemplateSelector(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.ItemTemplateSelector = (global::Windows.UI.Xaml.Controls.DataTemplateSelector)Value;
         }
-        private object get_22_HamburgerMenu_Items(object instance)
+        private object get_48_HamburgerMenu_Items(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.Items;
         }
-        private object get_23_HamburgerMenu_SelectedItem(object instance)
+        private object get_49_HamburgerMenu_SelectedItem(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.SelectedItem;
         }
-        private void set_23_HamburgerMenu_SelectedItem(object instance, object Value)
+        private void set_49_HamburgerMenu_SelectedItem(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.SelectedItem = (global::System.Object)Value;
         }
-        private object get_24_HamburgerMenu_SelectedIndex(object instance)
+        private object get_50_HamburgerMenu_SelectedIndex(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.SelectedIndex;
         }
-        private void set_24_HamburgerMenu_SelectedIndex(object instance, object Value)
+        private void set_50_HamburgerMenu_SelectedIndex(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.SelectedIndex = (global::System.Int32)Value;
         }
-        private object get_25_HamburgerMenu_UseNavigationViewWhenPossible(object instance)
+        private object get_51_HamburgerMenu_UseNavigationViewWhenPossible(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             return that.UseNavigationViewWhenPossible;
         }
-        private void set_25_HamburgerMenu_UseNavigationViewWhenPossible(object instance, object Value)
+        private void set_51_HamburgerMenu_UseNavigationViewWhenPossible(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu)instance;
             that.UseNavigationViewWhenPossible = (global::System.Boolean)Value;
         }
-        private object get_26_MapPage_Center(object instance)
+        private object get_52_MapPage_Center(object instance)
         {
             var that = (global::Cryptical.Views.MapPage)instance;
             return that.Center;
         }
-        private object get_27_MapPage_ZoomLevel(object instance)
+        private object get_53_MapPage_ZoomLevel(object instance)
         {
             var that = (global::Cryptical.Views.MapPage)instance;
             return that.ZoomLevel;
         }
-        private object get_28_AdaptiveGridView_ItemHeight(object instance)
+        private object get_54_AdaptiveGridView_ItemHeight(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             return that.ItemHeight;
         }
-        private void set_28_AdaptiveGridView_ItemHeight(object instance, object Value)
+        private void set_54_AdaptiveGridView_ItemHeight(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             that.ItemHeight = (global::System.Double)Value;
         }
-        private object get_29_AdaptiveGridView_DesiredWidth(object instance)
+        private object get_55_AdaptiveGridView_DesiredWidth(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             return that.DesiredWidth;
         }
-        private void set_29_AdaptiveGridView_DesiredWidth(object instance, object Value)
+        private void set_55_AdaptiveGridView_DesiredWidth(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             that.DesiredWidth = (global::System.Double)Value;
         }
-        private object get_30_AdaptiveGridView_StretchContentForSingleRow(object instance)
+        private object get_56_AdaptiveGridView_StretchContentForSingleRow(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             return that.StretchContentForSingleRow;
         }
-        private void set_30_AdaptiveGridView_StretchContentForSingleRow(object instance, object Value)
+        private void set_56_AdaptiveGridView_StretchContentForSingleRow(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             that.StretchContentForSingleRow = (global::System.Boolean)Value;
         }
-        private object get_31_AdaptiveGridView_ItemClickCommand(object instance)
+        private object get_57_AdaptiveGridView_ItemClickCommand(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             return that.ItemClickCommand;
         }
-        private void set_31_AdaptiveGridView_ItemClickCommand(object instance, object Value)
+        private void set_57_AdaptiveGridView_ItemClickCommand(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             that.ItemClickCommand = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_32_AdaptiveGridView_OneRowModeEnabled(object instance)
+        private object get_58_AdaptiveGridView_OneRowModeEnabled(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             return that.OneRowModeEnabled;
         }
-        private void set_32_AdaptiveGridView_OneRowModeEnabled(object instance, object Value)
+        private void set_58_AdaptiveGridView_OneRowModeEnabled(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             that.OneRowModeEnabled = (global::System.Boolean)Value;
         }
-        private object get_33_AdaptiveGridView_ItemsPanel(object instance)
+        private object get_59_AdaptiveGridView_ItemsPanel(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             return that.ItemsPanel;
         }
-        private object get_34_NewsPage_NewsItems(object instance)
+        private object get_60_NewsPage_NewsItems(object instance)
         {
             var that = (global::Cryptical.Views.NewsPage)instance;
             return that.NewsItems;
         }
-        private object get_35_NewsItem_URL(object instance)
+        private object get_61_NewsItem_URL(object instance)
         {
             var that = (global::Cryptical.NewsItem)instance;
             return that.URL;
         }
-        private void set_35_NewsItem_URL(object instance, object Value)
+        private void set_61_NewsItem_URL(object instance, object Value)
         {
             var that = (global::Cryptical.NewsItem)instance;
             that.URL = (global::System.String)Value;
         }
-        private object get_36_NewsItem_ImageURL(object instance)
+        private object get_62_NewsItem_ImageURL(object instance)
         {
             var that = (global::Cryptical.NewsItem)instance;
             return that.ImageURL;
         }
-        private void set_36_NewsItem_ImageURL(object instance, object Value)
+        private void set_62_NewsItem_ImageURL(object instance, object Value)
         {
             var that = (global::Cryptical.NewsItem)instance;
             that.ImageURL = (global::System.String)Value;
         }
-        private object get_37_NewsItem_Title(object instance)
+        private object get_63_NewsItem_Title(object instance)
         {
             var that = (global::Cryptical.NewsItem)instance;
             return that.Title;
         }
-        private void set_37_NewsItem_Title(object instance, object Value)
+        private void set_63_NewsItem_Title(object instance, object Value)
         {
             var that = (global::Cryptical.NewsItem)instance;
             that.Title = (global::System.String)Value;
         }
-        private object get_38_NewsItem_Subtitle(object instance)
+        private object get_64_NewsItem_Subtitle(object instance)
         {
             var that = (global::Cryptical.NewsItem)instance;
             return that.Subtitle;
         }
-        private void set_38_NewsItem_Subtitle(object instance, object Value)
+        private void set_64_NewsItem_Subtitle(object instance, object Value)
         {
             var that = (global::Cryptical.NewsItem)instance;
             that.Subtitle = (global::System.String)Value;
         }
-        private object get_39_NewsItem_Description(object instance)
+        private object get_65_NewsItem_Description(object instance)
         {
             var that = (global::Cryptical.NewsItem)instance;
             return that.Description;
         }
-        private void set_39_NewsItem_Description(object instance, object Value)
+        private void set_65_NewsItem_Description(object instance, object Value)
         {
             var that = (global::Cryptical.NewsItem)instance;
             that.Description = (global::System.String)Value;
         }
-        private object get_40_NewsItem_ThumbImage(object instance)
+        private object get_66_NewsItem_ThumbImage(object instance)
         {
             var that = (global::Cryptical.NewsItem)instance;
             return that.ThumbImage;
         }
-        private void set_40_NewsItem_ThumbImage(object instance, object Value)
+        private void set_66_NewsItem_ThumbImage(object instance, object Value)
         {
             var that = (global::Cryptical.NewsItem)instance;
             that.ThumbImage = (global::Windows.UI.Xaml.Controls.Image)Value;
         }
-        private object get_41_NavigationViewExtensions_SelectedIndex(object instance)
+        private object get_67_NavigationViewExtensions_SelectedIndex(object instance)
         {
             return global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.GetSelectedIndex((global::Windows.UI.Xaml.Controls.NavigationView)instance);
         }
-        private void set_41_NavigationViewExtensions_SelectedIndex(object instance, object Value)
+        private void set_67_NavigationViewExtensions_SelectedIndex(object instance, object Value)
         {
             global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.SetSelectedIndex((global::Windows.UI.Xaml.Controls.NavigationView)instance, (global::System.Int32)Value);
         }
-        private object get_42_NavigationViewExtensions_CollapseOnClick(object instance)
+        private object get_68_NavigationViewExtensions_CollapseOnClick(object instance)
         {
             return global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.GetCollapseOnClick((global::Windows.UI.Xaml.Controls.NavigationView)instance);
         }
-        private void set_42_NavigationViewExtensions_CollapseOnClick(object instance, object Value)
+        private void set_68_NavigationViewExtensions_CollapseOnClick(object instance, object Value)
         {
             global::Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.SetCollapseOnClick((global::Windows.UI.Xaml.Controls.NavigationView)instance, (global::System.Boolean)Value);
         }
@@ -963,296 +1321,456 @@ namespace Cryptical.Cryptical_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "LottieUWP.LottieAnimationView.FileName":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "FileName", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_0_LottieAnimationView_FileName;
+                xamlMember.Setter = set_0_LottieAnimationView_FileName;
+                break;
+            case "LottieUWP.LottieAnimationView.AutoPlay":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "AutoPlay", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_1_LottieAnimationView_AutoPlay;
+                xamlMember.Setter = set_1_LottieAnimationView_AutoPlay;
+                break;
+            case "LottieUWP.LottieAnimationView.RepeatCount":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "RepeatCount", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_2_LottieAnimationView_RepeatCount;
+                xamlMember.Setter = set_2_LottieAnimationView_RepeatCount;
+                break;
+            case "LottieUWP.LottieAnimationView.DefaultCacheStrategy":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "DefaultCacheStrategy", "LottieUWP.LottieAnimationView.CacheStrategy");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_3_LottieAnimationView_DefaultCacheStrategy;
+                xamlMember.Setter = set_3_LottieAnimationView_DefaultCacheStrategy;
+                break;
+            case "LottieUWP.LottieAnimationView.ImageAssetsFolder":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ImageAssetsFolder", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_4_LottieAnimationView_ImageAssetsFolder;
+                xamlMember.Setter = set_4_LottieAnimationView_ImageAssetsFolder;
+                break;
+            case "LottieUWP.LottieAnimationView.ColorFilter":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ColorFilter", "Windows.UI.Color");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_5_LottieAnimationView_ColorFilter;
+                xamlMember.Setter = set_5_LottieAnimationView_ColorFilter;
+                break;
+            case "LottieUWP.LottieAnimationView.FontAssetDelegate":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "FontAssetDelegate", "LottieUWP.FontAssetDelegate");
+                xamlMember.Setter = set_6_LottieAnimationView_FontAssetDelegate;
+                break;
+            case "LottieUWP.LottieAnimationView.TextDelegate":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "TextDelegate", "LottieUWP.TextDelegate");
+                xamlMember.Setter = set_7_LottieAnimationView_TextDelegate;
+                break;
+            case "LottieUWP.LottieAnimationView.Scale":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Scale", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_8_LottieAnimationView_Scale;
+                xamlMember.Setter = set_8_LottieAnimationView_Scale;
+                break;
+            case "LottieUWP.LottieAnimationView.ImageDrawable":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ImageDrawable", "LottieUWP.LottieDrawable");
+                xamlMember.Setter = set_9_LottieAnimationView_ImageDrawable;
+                break;
+            case "LottieUWP.LottieAnimationView.Composition":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Composition", "LottieUWP.LottieComposition");
+                xamlMember.Getter = get_10_LottieAnimationView_Composition;
+                xamlMember.Setter = set_10_LottieAnimationView_Composition;
+                break;
+            case "LottieUWP.LottieAnimationView.MinFrame":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "MinFrame", "Single");
+                xamlMember.Getter = get_11_LottieAnimationView_MinFrame;
+                xamlMember.Setter = set_11_LottieAnimationView_MinFrame;
+                break;
+            case "LottieUWP.LottieAnimationView.MinProgress":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "MinProgress", "Single");
+                xamlMember.Setter = set_12_LottieAnimationView_MinProgress;
+                break;
+            case "LottieUWP.LottieAnimationView.MaxFrame":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "MaxFrame", "Single");
+                xamlMember.Getter = get_13_LottieAnimationView_MaxFrame;
+                xamlMember.Setter = set_13_LottieAnimationView_MaxFrame;
+                break;
+            case "LottieUWP.LottieAnimationView.MaxProgress":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "MaxProgress", "Single");
+                xamlMember.Setter = set_14_LottieAnimationView_MaxProgress;
+                break;
+            case "LottieUWP.LottieAnimationView.Speed":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Speed", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_15_LottieAnimationView_Speed;
+                xamlMember.Setter = set_15_LottieAnimationView_Speed;
+                break;
+            case "LottieUWP.LottieAnimationView.Loop":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Loop", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_16_LottieAnimationView_Loop;
+                xamlMember.Setter = set_16_LottieAnimationView_Loop;
+                break;
+            case "LottieUWP.LottieAnimationView.RepeatMode":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "RepeatMode", "LottieUWP.RepeatMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_17_LottieAnimationView_RepeatMode;
+                xamlMember.Setter = set_17_LottieAnimationView_RepeatMode;
+                break;
+            case "LottieUWP.LottieAnimationView.FrameRate":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "FrameRate", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_18_LottieAnimationView_FrameRate;
+                xamlMember.Setter = set_18_LottieAnimationView_FrameRate;
+                break;
+            case "LottieUWP.LottieAnimationView.IsAnimating":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "IsAnimating", "Boolean");
+                xamlMember.Getter = get_19_LottieAnimationView_IsAnimating;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "LottieUWP.LottieAnimationView.ImageAssetDelegate":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ImageAssetDelegate", "LottieUWP.IImageAssetDelegate");
+                xamlMember.Setter = set_20_LottieAnimationView_ImageAssetDelegate;
+                break;
+            case "LottieUWP.LottieAnimationView.Frame":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Frame", "Single");
+                xamlMember.Getter = get_21_LottieAnimationView_Frame;
+                xamlMember.Setter = set_21_LottieAnimationView_Frame;
+                break;
+            case "LottieUWP.LottieAnimationView.Progress":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Progress", "Single");
+                xamlMember.Getter = get_22_LottieAnimationView_Progress;
+                xamlMember.Setter = set_22_LottieAnimationView_Progress;
+                break;
+            case "LottieUWP.LottieAnimationView.Duration":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Duration", "Int64");
+                xamlMember.Getter = get_23_LottieAnimationView_Duration;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "LottieUWP.LottieAnimationView.PerformanceTrackingEnabled":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "PerformanceTrackingEnabled", "Boolean");
+                xamlMember.Setter = set_24_LottieAnimationView_PerformanceTrackingEnabled;
+                break;
+            case "LottieUWP.LottieAnimationView.PerformanceTracker":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LottieUWP.LottieAnimationView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "PerformanceTracker", "LottieUWP.PerformanceTracker");
+                xamlMember.Getter = get_25_LottieAnimationView_PerformanceTracker;
+                xamlMember.SetIsReadOnly();
+                break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.PaneBackground":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "PaneBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_0_HamburgerMenu_PaneBackground;
-                xamlMember.Setter = set_0_HamburgerMenu_PaneBackground;
+                xamlMember.Getter = get_26_HamburgerMenu_PaneBackground;
+                xamlMember.Setter = set_26_HamburgerMenu_PaneBackground;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.ItemTemplate":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ItemTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_1_HamburgerMenu_ItemTemplate;
-                xamlMember.Setter = set_1_HamburgerMenu_ItemTemplate;
+                xamlMember.Getter = get_27_HamburgerMenu_ItemTemplate;
+                xamlMember.Setter = set_27_HamburgerMenu_ItemTemplate;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OptionsItemTemplate":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "OptionsItemTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_HamburgerMenu_OptionsItemTemplate;
-                xamlMember.Setter = set_2_HamburgerMenu_OptionsItemTemplate;
+                xamlMember.Getter = get_28_HamburgerMenu_OptionsItemTemplate;
+                xamlMember.Setter = set_28_HamburgerMenu_OptionsItemTemplate;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.HamburgerMenuTemplate":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "HamburgerMenuTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_3_HamburgerMenu_HamburgerMenuTemplate;
-                xamlMember.Setter = set_3_HamburgerMenu_HamburgerMenuTemplate;
+                xamlMember.Getter = get_29_HamburgerMenu_HamburgerMenuTemplate;
+                xamlMember.Setter = set_29_HamburgerMenu_HamburgerMenuTemplate;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.HamburgerWidth":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "HamburgerWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_4_HamburgerMenu_HamburgerWidth;
-                xamlMember.Setter = set_4_HamburgerMenu_HamburgerWidth;
+                xamlMember.Getter = get_30_HamburgerMenu_HamburgerWidth;
+                xamlMember.Setter = set_30_HamburgerMenu_HamburgerWidth;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.HamburgerHeight":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "HamburgerHeight", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_5_HamburgerMenu_HamburgerHeight;
-                xamlMember.Setter = set_5_HamburgerMenu_HamburgerHeight;
+                xamlMember.Getter = get_31_HamburgerMenu_HamburgerHeight;
+                xamlMember.Setter = set_31_HamburgerMenu_HamburgerHeight;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.HamburgerMargin":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "HamburgerMargin", "Windows.UI.Xaml.Thickness");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_HamburgerMenu_HamburgerMargin;
-                xamlMember.Setter = set_6_HamburgerMenu_HamburgerMargin;
+                xamlMember.Getter = get_32_HamburgerMenu_HamburgerMargin;
+                xamlMember.Setter = set_32_HamburgerMenu_HamburgerMargin;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.HamburgerVisibility":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "HamburgerVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_7_HamburgerMenu_HamburgerVisibility;
-                xamlMember.Setter = set_7_HamburgerMenu_HamburgerVisibility;
+                xamlMember.Getter = get_33_HamburgerMenu_HamburgerVisibility;
+                xamlMember.Setter = set_33_HamburgerMenu_HamburgerVisibility;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OptionsItemsSource":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "OptionsItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_HamburgerMenu_OptionsItemsSource;
-                xamlMember.Setter = set_8_HamburgerMenu_OptionsItemsSource;
+                xamlMember.Getter = get_34_HamburgerMenu_OptionsItemsSource;
+                xamlMember.Setter = set_34_HamburgerMenu_OptionsItemsSource;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OptionsItemTemplateSelector":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "OptionsItemTemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_HamburgerMenu_OptionsItemTemplateSelector;
-                xamlMember.Setter = set_9_HamburgerMenu_OptionsItemTemplateSelector;
+                xamlMember.Getter = get_35_HamburgerMenu_OptionsItemTemplateSelector;
+                xamlMember.Setter = set_35_HamburgerMenu_OptionsItemTemplateSelector;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OptionsItems":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "OptionsItems", "Windows.UI.Xaml.Controls.ItemCollection");
-                xamlMember.Getter = get_10_HamburgerMenu_OptionsItems;
+                xamlMember.Getter = get_36_HamburgerMenu_OptionsItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OptionsVisibility":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "OptionsVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_11_HamburgerMenu_OptionsVisibility;
-                xamlMember.Setter = set_11_HamburgerMenu_OptionsVisibility;
+                xamlMember.Getter = get_37_HamburgerMenu_OptionsVisibility;
+                xamlMember.Setter = set_37_HamburgerMenu_OptionsVisibility;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.SelectedOptionsItem":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "SelectedOptionsItem", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_12_HamburgerMenu_SelectedOptionsItem;
-                xamlMember.Setter = set_12_HamburgerMenu_SelectedOptionsItem;
+                xamlMember.Getter = get_38_HamburgerMenu_SelectedOptionsItem;
+                xamlMember.Setter = set_38_HamburgerMenu_SelectedOptionsItem;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.SelectedOptionsIndex":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "SelectedOptionsIndex", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_HamburgerMenu_SelectedOptionsIndex;
-                xamlMember.Setter = set_13_HamburgerMenu_SelectedOptionsIndex;
+                xamlMember.Getter = get_39_HamburgerMenu_SelectedOptionsIndex;
+                xamlMember.Setter = set_39_HamburgerMenu_SelectedOptionsIndex;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.OpenPaneLength":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "OpenPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_14_HamburgerMenu_OpenPaneLength;
-                xamlMember.Setter = set_14_HamburgerMenu_OpenPaneLength;
+                xamlMember.Getter = get_40_HamburgerMenu_OpenPaneLength;
+                xamlMember.Setter = set_40_HamburgerMenu_OpenPaneLength;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.PanePlacement":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "PanePlacement", "Windows.UI.Xaml.Controls.SplitViewPanePlacement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_HamburgerMenu_PanePlacement;
-                xamlMember.Setter = set_15_HamburgerMenu_PanePlacement;
+                xamlMember.Getter = get_41_HamburgerMenu_PanePlacement;
+                xamlMember.Setter = set_41_HamburgerMenu_PanePlacement;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.DisplayMode":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "DisplayMode", "Windows.UI.Xaml.Controls.SplitViewDisplayMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_16_HamburgerMenu_DisplayMode;
-                xamlMember.Setter = set_16_HamburgerMenu_DisplayMode;
+                xamlMember.Getter = get_42_HamburgerMenu_DisplayMode;
+                xamlMember.Setter = set_42_HamburgerMenu_DisplayMode;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.CompactPaneLength":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "CompactPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_17_HamburgerMenu_CompactPaneLength;
-                xamlMember.Setter = set_17_HamburgerMenu_CompactPaneLength;
+                xamlMember.Getter = get_43_HamburgerMenu_CompactPaneLength;
+                xamlMember.Setter = set_43_HamburgerMenu_CompactPaneLength;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.PaneForeground":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "PaneForeground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_18_HamburgerMenu_PaneForeground;
-                xamlMember.Setter = set_18_HamburgerMenu_PaneForeground;
+                xamlMember.Getter = get_44_HamburgerMenu_PaneForeground;
+                xamlMember.Setter = set_44_HamburgerMenu_PaneForeground;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.IsPaneOpen":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "IsPaneOpen", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_19_HamburgerMenu_IsPaneOpen;
-                xamlMember.Setter = set_19_HamburgerMenu_IsPaneOpen;
+                xamlMember.Getter = get_45_HamburgerMenu_IsPaneOpen;
+                xamlMember.Setter = set_45_HamburgerMenu_IsPaneOpen;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.ItemsSource":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_20_HamburgerMenu_ItemsSource;
-                xamlMember.Setter = set_20_HamburgerMenu_ItemsSource;
+                xamlMember.Getter = get_46_HamburgerMenu_ItemsSource;
+                xamlMember.Setter = set_46_HamburgerMenu_ItemsSource;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.ItemTemplateSelector":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ItemTemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_HamburgerMenu_ItemTemplateSelector;
-                xamlMember.Setter = set_21_HamburgerMenu_ItemTemplateSelector;
+                xamlMember.Getter = get_47_HamburgerMenu_ItemTemplateSelector;
+                xamlMember.Setter = set_47_HamburgerMenu_ItemTemplateSelector;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.Items":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Items", "Windows.UI.Xaml.Controls.ItemCollection");
-                xamlMember.Getter = get_22_HamburgerMenu_Items;
+                xamlMember.Getter = get_48_HamburgerMenu_Items;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.SelectedItem":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_23_HamburgerMenu_SelectedItem;
-                xamlMember.Setter = set_23_HamburgerMenu_SelectedItem;
+                xamlMember.Getter = get_49_HamburgerMenu_SelectedItem;
+                xamlMember.Setter = set_49_HamburgerMenu_SelectedItem;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.SelectedIndex":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_24_HamburgerMenu_SelectedIndex;
-                xamlMember.Setter = set_24_HamburgerMenu_SelectedIndex;
+                xamlMember.Getter = get_50_HamburgerMenu_SelectedIndex;
+                xamlMember.Setter = set_50_HamburgerMenu_SelectedIndex;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu.UseNavigationViewWhenPossible":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.HamburgerMenu");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "UseNavigationViewWhenPossible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_25_HamburgerMenu_UseNavigationViewWhenPossible;
-                xamlMember.Setter = set_25_HamburgerMenu_UseNavigationViewWhenPossible;
+                xamlMember.Getter = get_51_HamburgerMenu_UseNavigationViewWhenPossible;
+                xamlMember.Setter = set_51_HamburgerMenu_UseNavigationViewWhenPossible;
                 break;
             case "Cryptical.Views.MapPage.Center":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.Views.MapPage");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Center", "Windows.Devices.Geolocation.Geopoint");
-                xamlMember.Getter = get_26_MapPage_Center;
+                xamlMember.Getter = get_52_MapPage_Center;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Cryptical.Views.MapPage.ZoomLevel":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.Views.MapPage");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ZoomLevel", "Double");
-                xamlMember.Getter = get_27_MapPage_ZoomLevel;
+                xamlMember.Getter = get_53_MapPage_ZoomLevel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemHeight":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ItemHeight", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_28_AdaptiveGridView_ItemHeight;
-                xamlMember.Setter = set_28_AdaptiveGridView_ItemHeight;
+                xamlMember.Getter = get_54_AdaptiveGridView_ItemHeight;
+                xamlMember.Setter = set_54_AdaptiveGridView_ItemHeight;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.DesiredWidth":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "DesiredWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_AdaptiveGridView_DesiredWidth;
-                xamlMember.Setter = set_29_AdaptiveGridView_DesiredWidth;
+                xamlMember.Getter = get_55_AdaptiveGridView_DesiredWidth;
+                xamlMember.Setter = set_55_AdaptiveGridView_DesiredWidth;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.StretchContentForSingleRow":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "StretchContentForSingleRow", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_30_AdaptiveGridView_StretchContentForSingleRow;
-                xamlMember.Setter = set_30_AdaptiveGridView_StretchContentForSingleRow;
+                xamlMember.Getter = get_56_AdaptiveGridView_StretchContentForSingleRow;
+                xamlMember.Setter = set_56_AdaptiveGridView_StretchContentForSingleRow;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemClickCommand":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ItemClickCommand", "System.Windows.Input.ICommand");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_AdaptiveGridView_ItemClickCommand;
-                xamlMember.Setter = set_31_AdaptiveGridView_ItemClickCommand;
+                xamlMember.Getter = get_57_AdaptiveGridView_ItemClickCommand;
+                xamlMember.Setter = set_57_AdaptiveGridView_ItemClickCommand;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.OneRowModeEnabled":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "OneRowModeEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_32_AdaptiveGridView_OneRowModeEnabled;
-                xamlMember.Setter = set_32_AdaptiveGridView_OneRowModeEnabled;
+                xamlMember.Getter = get_58_AdaptiveGridView_OneRowModeEnabled;
+                xamlMember.Setter = set_58_AdaptiveGridView_OneRowModeEnabled;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemsPanel":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ItemsPanel", "Windows.UI.Xaml.Controls.ItemsPanelTemplate");
-                xamlMember.Getter = get_33_AdaptiveGridView_ItemsPanel;
+                xamlMember.Getter = get_59_AdaptiveGridView_ItemsPanel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Cryptical.Views.NewsPage.NewsItems":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.Views.NewsPage");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "NewsItems", "System.Collections.ObjectModel.ObservableCollection`1<Cryptical.NewsItem>");
-                xamlMember.Getter = get_34_NewsPage_NewsItems;
+                xamlMember.Getter = get_60_NewsPage_NewsItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Cryptical.NewsItem.URL":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.NewsItem");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "URL", "String");
-                xamlMember.Getter = get_35_NewsItem_URL;
-                xamlMember.Setter = set_35_NewsItem_URL;
+                xamlMember.Getter = get_61_NewsItem_URL;
+                xamlMember.Setter = set_61_NewsItem_URL;
                 break;
             case "Cryptical.NewsItem.ImageURL":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.NewsItem");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ImageURL", "String");
-                xamlMember.Getter = get_36_NewsItem_ImageURL;
-                xamlMember.Setter = set_36_NewsItem_ImageURL;
+                xamlMember.Getter = get_62_NewsItem_ImageURL;
+                xamlMember.Setter = set_62_NewsItem_ImageURL;
                 break;
             case "Cryptical.NewsItem.Title":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.NewsItem");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Title", "String");
-                xamlMember.Getter = get_37_NewsItem_Title;
-                xamlMember.Setter = set_37_NewsItem_Title;
+                xamlMember.Getter = get_63_NewsItem_Title;
+                xamlMember.Setter = set_63_NewsItem_Title;
                 break;
             case "Cryptical.NewsItem.Subtitle":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.NewsItem");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Subtitle", "String");
-                xamlMember.Getter = get_38_NewsItem_Subtitle;
-                xamlMember.Setter = set_38_NewsItem_Subtitle;
+                xamlMember.Getter = get_64_NewsItem_Subtitle;
+                xamlMember.Setter = set_64_NewsItem_Subtitle;
                 break;
             case "Cryptical.NewsItem.Description":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.NewsItem");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "Description", "String");
-                xamlMember.Getter = get_39_NewsItem_Description;
-                xamlMember.Setter = set_39_NewsItem_Description;
+                xamlMember.Getter = get_65_NewsItem_Description;
+                xamlMember.Setter = set_65_NewsItem_Description;
                 break;
             case "Cryptical.NewsItem.ThumbImage":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Cryptical.NewsItem");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ThumbImage", "Windows.UI.Xaml.Controls.Image");
-                xamlMember.Getter = get_40_NewsItem_ThumbImage;
-                xamlMember.Setter = set_40_NewsItem_ThumbImage;
+                xamlMember.Getter = get_66_NewsItem_ThumbImage;
+                xamlMember.Setter = set_66_NewsItem_ThumbImage;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.SelectedIndex":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.Controls.NavigationView");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_41_NavigationViewExtensions_SelectedIndex;
-                xamlMember.Setter = set_41_NavigationViewExtensions_SelectedIndex;
+                xamlMember.Getter = get_67_NavigationViewExtensions_SelectedIndex;
+                xamlMember.Setter = set_67_NavigationViewExtensions_SelectedIndex;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions.CollapseOnClick":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.NavigationViewExtensions");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "CollapseOnClick", "Boolean");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.Controls.NavigationView");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_42_NavigationViewExtensions_CollapseOnClick;
-                xamlMember.Setter = set_42_NavigationViewExtensions_CollapseOnClick;
+                xamlMember.Getter = get_68_NavigationViewExtensions_CollapseOnClick;
+                xamlMember.Setter = set_68_NavigationViewExtensions_CollapseOnClick;
                 break;
             }
             return xamlMember;

@@ -40,6 +40,19 @@
           "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
         }
       },
+      "LottieUWP/2.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "Win2D.uwp": "1.21.0"
+        },
+        "compile": {
+          "lib/uap10.0/LottieUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LottieUWP.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2719,6 +2732,19 @@
           "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
         }
       },
+      "LottieUWP/2.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "Win2D.uwp": "1.21.0"
+        },
+        "compile": {
+          "lib/uap10.0/LottieUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LottieUWP.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -5389,6 +5415,19 @@
         },
         "runtime": {
           "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        }
+      },
+      "LottieUWP/2.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "Win2D.uwp": "1.21.0"
+        },
+        "compile": {
+          "lib/uap10.0/LottieUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LottieUWP.dll": {}
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -8099,6 +8138,19 @@
           "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
         }
       },
+      "LottieUWP/2.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "Win2D.uwp": "1.21.0"
+        },
+        "compile": {
+          "lib/uap10.0/LottieUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LottieUWP.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -10778,6 +10830,19 @@
         },
         "runtime": {
           "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        }
+      },
+      "LottieUWP/2.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "Win2D.uwp": "1.21.0"
+        },
+        "compile": {
+          "lib/uap10.0/LottieUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LottieUWP.dll": {}
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -13497,6 +13562,19 @@
           "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
         }
       },
+      "LottieUWP/2.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "Win2D.uwp": "1.21.0"
+        },
+        "compile": {
+          "lib/uap10.0/LottieUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LottieUWP.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -16176,6 +16254,19 @@
         },
         "runtime": {
           "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll": {}
+        }
+      },
+      "LottieUWP/2.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "Win2D.uwp": "1.21.0"
+        },
+        "compile": {
+          "lib/uap10.0/LottieUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LottieUWP.dll": {}
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -18889,6 +18980,17 @@
         "hassie.net.api.newsapi.2.2.1.nupkg.sha512",
         "hassie.net.api.newsapi.nuspec",
         "lib/netstandard1.1/Hassie.NET.API.NewsAPI.dll"
+      ]
+    },
+    "LottieUWP/2.5.2": {
+      "sha512": "52IMB4puH92cGKX0kYk0oda9zg+p3dU0/V7YkN93Sh//OD4jqC+kEnSybdNP0gXMpXEr+WlWSiZ7vFZmdEigNg==",
+      "type": "package",
+      "path": "lottieuwp/2.5.2",
+      "files": [
+        "lib/uap10.0/LottieUWP.dll",
+        "lib/uap10.0/LottieUWP.pri",
+        "lottieuwp.2.5.2.nupkg.sha512",
+        "lottieuwp.nuspec"
       ]
     },
     "Microsoft.CSharp/4.3.0": {
@@ -28993,6 +29095,7 @@
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.10586": [
       "Hassie.NET.API.NewsAPI >= 2.2.1",
+      "LottieUWP >= 2.5.2",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.8",
       "Microsoft.Toolkit.Uwp.UI.Controls >= 2.2.0",
       "NewsAPI >= 0.5.0"
@@ -29041,6 +29144,10 @@
           "Hassie.NET.API.NewsAPI": {
             "target": "Package",
             "version": "[2.2.1, )"
+          },
+          "LottieUWP": {
+            "target": "Package",
+            "version": "[2.5.2, )"
           },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
