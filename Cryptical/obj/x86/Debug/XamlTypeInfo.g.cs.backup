@@ -416,10 +416,10 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             case 20:   //  Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView
                 userType = new global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.GridView"));
                 userType.Activator = Activate_20_AdaptiveGridView;
-                userType.AddMemberName("ItemHeight");
                 userType.AddMemberName("DesiredWidth");
                 userType.AddMemberName("StretchContentForSingleRow");
                 userType.AddMemberName("ItemClickCommand");
+                userType.AddMemberName("ItemHeight");
                 userType.AddMemberName("OneRowModeEnabled");
                 userType.AddMemberName("ItemsPanel");
                 xamlType = userType;
@@ -819,45 +819,45 @@ namespace Cryptical.Cryptical_XamlTypeInfo
             var that = (global::Cryptical.Views.MapPage)instance;
             return that.ZoomLevel;
         }
-        private object get_28_AdaptiveGridView_ItemHeight(object instance)
-        {
-            var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
-            return that.ItemHeight;
-        }
-        private void set_28_AdaptiveGridView_ItemHeight(object instance, object Value)
-        {
-            var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
-            that.ItemHeight = (global::System.Double)Value;
-        }
-        private object get_29_AdaptiveGridView_DesiredWidth(object instance)
+        private object get_28_AdaptiveGridView_DesiredWidth(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             return that.DesiredWidth;
         }
-        private void set_29_AdaptiveGridView_DesiredWidth(object instance, object Value)
+        private void set_28_AdaptiveGridView_DesiredWidth(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             that.DesiredWidth = (global::System.Double)Value;
         }
-        private object get_30_AdaptiveGridView_StretchContentForSingleRow(object instance)
+        private object get_29_AdaptiveGridView_StretchContentForSingleRow(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             return that.StretchContentForSingleRow;
         }
-        private void set_30_AdaptiveGridView_StretchContentForSingleRow(object instance, object Value)
+        private void set_29_AdaptiveGridView_StretchContentForSingleRow(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             that.StretchContentForSingleRow = (global::System.Boolean)Value;
         }
-        private object get_31_AdaptiveGridView_ItemClickCommand(object instance)
+        private object get_30_AdaptiveGridView_ItemClickCommand(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             return that.ItemClickCommand;
         }
-        private void set_31_AdaptiveGridView_ItemClickCommand(object instance, object Value)
+        private void set_30_AdaptiveGridView_ItemClickCommand(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
             that.ItemClickCommand = (global::System.Windows.Input.ICommand)Value;
+        }
+        private object get_31_AdaptiveGridView_ItemHeight(object instance)
+        {
+            var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
+            return that.ItemHeight;
+        }
+        private void set_31_AdaptiveGridView_ItemHeight(object instance, object Value)
+        {
+            var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView)instance;
+            that.ItemHeight = (global::System.Double)Value;
         }
         private object get_32_AdaptiveGridView_OneRowModeEnabled(object instance)
         {
@@ -1155,33 +1155,33 @@ namespace Cryptical.Cryptical_XamlTypeInfo
                 xamlMember.Getter = get_27_MapPage_ZoomLevel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemHeight":
-                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView");
-                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ItemHeight", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_28_AdaptiveGridView_ItemHeight;
-                xamlMember.Setter = set_28_AdaptiveGridView_ItemHeight;
-                break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.DesiredWidth":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "DesiredWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_AdaptiveGridView_DesiredWidth;
-                xamlMember.Setter = set_29_AdaptiveGridView_DesiredWidth;
+                xamlMember.Getter = get_28_AdaptiveGridView_DesiredWidth;
+                xamlMember.Setter = set_28_AdaptiveGridView_DesiredWidth;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.StretchContentForSingleRow":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "StretchContentForSingleRow", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_30_AdaptiveGridView_StretchContentForSingleRow;
-                xamlMember.Setter = set_30_AdaptiveGridView_StretchContentForSingleRow;
+                xamlMember.Getter = get_29_AdaptiveGridView_StretchContentForSingleRow;
+                xamlMember.Setter = set_29_AdaptiveGridView_StretchContentForSingleRow;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemClickCommand":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView");
                 xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ItemClickCommand", "System.Windows.Input.ICommand");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_AdaptiveGridView_ItemClickCommand;
-                xamlMember.Setter = set_31_AdaptiveGridView_ItemClickCommand;
+                xamlMember.Getter = get_30_AdaptiveGridView_ItemClickCommand;
+                xamlMember.Setter = set_30_AdaptiveGridView_ItemClickCommand;
+                break;
+            case "Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemHeight":
+                userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView");
+                xamlMember = new global::Cryptical.Cryptical_XamlTypeInfo.XamlMember(this, "ItemHeight", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_31_AdaptiveGridView_ItemHeight;
+                xamlMember.Setter = set_31_AdaptiveGridView_ItemHeight;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.OneRowModeEnabled":
                 userType = (global::Cryptical.Cryptical_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView");

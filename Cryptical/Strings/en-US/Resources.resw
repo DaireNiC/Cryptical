@@ -117,7 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Map-Header" xml:space="preserve">
+  <data name="24hourhigh.Text" xml:space="preserve">
+    <value>24 hour high</value>
+    <comment>24 hour high value for currency</comment>
+  </data>
+  <data name="24hourlow.Text" xml:space="preserve">
+    <value>24 hour low</value>
+    <comment>24 hour low value for currency</comment>
+  </data>
+  <data name="Map-Header.Text" xml:space="preserve">
     <value>Bitcoin Friendly Locations</value>
     <comment>Header on the map page</comment>
   </data>
@@ -136,5 +144,9 @@
   <data name="Menu-Prices" xml:space="preserve">
     <value>Market Prices</value>
     <comment>menu item for currency page</comment>
+  </data>
+  <data name="News-Header.Text" xml:space="preserve">
+    <value>Latest Bitcoin News</value>
+    <comment>news header</comment>
   </data>
 </root>

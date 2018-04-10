@@ -25,7 +25,6 @@ namespace Cryptical.Views
     {
         // Setting map Zoom level & default (best practice according to dev docs)
         private const double DefaultZoomLevel = 17;
-        private double _zoomLevel;
 
         //Adding the location service for cleaner code 
         private readonly LocationService _locationService;
@@ -106,7 +105,7 @@ namespace Cryptical.Views
                 string locationTitle = resourceLoader.GetString("Map-Location");
                 Debug.WriteLine("string" + locationTitle);
 
-              AddMapIcon(mapControl.Center, locationTitle, isUser);
+                 AddMapIcon(mapControl.Center, locationTitle, isUser);
                 Debug.WriteLine("center to str loc: " + Center.Position.ToString());
 
             }
@@ -151,8 +150,12 @@ namespace Cryptical.Views
                             break;
                     }
                     Geopoint cryptoLocation = new Geopoint(poi);
-                    //plot on msp for user to view
-                    AddMapIcon(cryptoLocation, poiName, isUser);
+                    //plot on map for user to view once object has been fully populated
+                    if (poi.Longitude !=0 && poi.Latitude !=0) {
+                        //add the icon to the map with loaded geo location
+                        AddMapIcon(cryptoLocation, poiName, isUser);
+                    }
+                   
                 }
             }
         }
@@ -177,12 +180,13 @@ namespace Cryptical.Views
         //using a geopoint & title for poi --> plot it on the map
         private void AddMapIcon(Geopoint position, string title, Boolean isUser)
         {
+            Debug.WriteLine("plotting lat: " + position.Position.Latitude + "      long: " + position.Position.Longitude + "  title: " +  title );
             MapIcon mapIcon = new MapIcon()
             {
                 Location = position,
                 Title = title,
                 Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/Images/Bitcoin-map.png")),
-                ZIndex = 0
+
             };
             if (isUser) {
                 mapIcon.Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/map.png"));

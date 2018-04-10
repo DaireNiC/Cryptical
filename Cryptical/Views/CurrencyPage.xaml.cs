@@ -20,12 +20,14 @@ namespace Cryptical.Views
             this.InitializeComponent();
             //initialise 
             List<Coin> cryptoCoins = initCoins();
-            cryptoCoins = getCoinData(cryptoCoins);
+
+            //get the crypto api data 
+            getCoinData(cryptoCoins);
         }
 
 
-        /* Sends request to API for latest cryptocurrency values
-  * Refreshes & gets katest vals every minute
+   /* Sends request to API for latest cryptocurrency values
+  * Refreshes & when user pulls down action
   * Returns the list of coins populated with the most recent data from API */
         private List<Coin> getCoinData(List<Coin> cryptoCoins)
         {
@@ -66,10 +68,10 @@ namespace Cryptical.Views
                             BTChigh24hr.Text = String.Format("24 Hour High: {0:0.00}", c.high24hr);
                             BTClow24hr.Text = String.Format("24 Hour Low: {0:0.00}", c.low24hr);
                             break;
-                        case "BCH":
-                            BCHPriceText.Text = String.Format("{0:0.00}", c.price);
-                            BCHhigh24hr.Text = String.Format("24 Hour High: {0:0.00}", c.high24hr);
-                            BCHlow24hr.Text = String.Format("24 Hour Low: {0:0.00}", c.low24hr);
+                        case "XRP":
+                            XRPPriceText.Text = String.Format("{0:0.00}", c.price);
+                            XRPhigh24hr.Text = String.Format("24 Hour High: {0:0.00}", c.high24hr);
+                            XRPlow24hr.Text = String.Format("24 Hour Low: {0:0.00}", c.low24hr);
                             break;
                         case "LTC":
                             LTCPriceText.Text = String.Format("{0:0.00}", c.price);
@@ -98,12 +100,14 @@ namespace Cryptical.Views
             cryptoCoins.Add(BTC);
             Coin ETH = new Coin("ETH", 0.0, 0.0, 0.0);
             cryptoCoins.Add(ETH);
-            Coin BCH = new Coin("BCH", 0.0, 0.0, 0.0);
-            cryptoCoins.Add(BCH);
+            Coin XRP = new Coin("XRP", 0.0, 0.0, 0.0);
+            cryptoCoins.Add(XRP);
             Coin LTC = new Coin("LTC", 0.0, 0.0, 0.0);
             cryptoCoins.Add(LTC);
 
             return cryptoCoins;
         }
+
+
     }
 }

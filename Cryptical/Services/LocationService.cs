@@ -1,35 +1,35 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Threading.Tasks;
-
-
-
 using Windows.Devices.Geolocation;
 
 namespace Cryptical.Services
 {
+    //Helper service to extract user's location
     public class LocationService
     {
+        // geolocation object for tracking user location
         private Geolocator _geolocator;
 
+        // handle user changing location
         public event EventHandler<Geoposition> PositionChanged;
 
+        //users current location
         public Geoposition CurrentPosition { get; private set; }
 
         public Task<bool> InitializeAsync()
         {
-            return InitializeAsync(100);
+            return InitializeAsync(1);
         }
 
+        // The level of accuracy of the user's location
         public Task<bool> InitializeAsync(uint desiredAccuracyInMeters)
         {
-            return InitializeAsync(desiredAccuracyInMeters, (double)desiredAccuracyInMeters / 2);
+            return InitializeAsync(desiredAccuracyInMeters, (double)desiredAccuracyInMeters);
         }
 
+        // request user's location & begin monitoring
         public async Task<bool> InitializeAsync(uint desiredAccuracyInMeters, double movementThreshold)
         {
-            Debug.WriteLine("SHOUSKSKSl");
-            // to find out more about getting location, go to https://docs.microsoft.com/en-us/windows/uwp/maps-and-location/get-location
             if (_geolocator != null)
             {
                 _geolocator.PositionChanged -= Geolocator_PositionChanged;
@@ -38,13 +38,13 @@ namespace Cryptical.Services
 
             //request permision for location data
             var access = await Geolocator.RequestAccessAsync();
-
+            //result retured by user choice
             bool result;
-
+            // cover cases of location allowed/not
             switch (access)
             {
+                // user allows location access
                 case GeolocationAccessStatus.Allowed:
-                    Debug.WriteLine("allowed geo");
                     _geolocator = new Geolocator
                     {
                         DesiredAccuracyInMeters = desiredAccuracyInMeters,
@@ -53,8 +53,8 @@ namespace Cryptical.Services
 
                     result = true;
                     break;
-                case GeolocationAccessStatus.Unspecified:
-                case GeolocationAccessStatus.Denied:
+                case GeolocationAccessStatus.Unspecified: // user does not specify
+                case GeolocationAccessStatus.Denied: //user denies location access
                 default:
                     result = false;
                     break;
@@ -63,6 +63,7 @@ namespace Cryptical.Services
             return result;
         }
 
+        //start monitoring user's location
         public async Task StartListeningAsync()
         {
             if (_geolocator == null)
@@ -77,6 +78,8 @@ namespace Cryptical.Services
             CurrentPosition = await _geolocator.GetGeopositionAsync();
         }
 
+
+        //stop monitoring location & wind down gracefully
         public void StopListening()
         {
             if (_geolocator == null)
@@ -87,6 +90,7 @@ namespace Cryptical.Services
             _geolocator.PositionChanged -= Geolocator_PositionChanged;
         }
 
+        // if the users location changes
         private async void Geolocator_PositionChanged(Geolocator sender, PositionChangedEventArgs args)
         {
             if (args == null)
@@ -96,6 +100,7 @@ namespace Cryptical.Services
 
             CurrentPosition = args.Position;
 
+            // update changed locations
             await Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
             {
                 PositionChanged?.Invoke(this, CurrentPosition);

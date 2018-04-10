@@ -15,22 +15,22 @@
                     <ColumnDefinition Width="48" />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <SymbolIcon Grid.Column="0" Symbol="{x:Bind Icon, Mode=OneWay}" Foreground="White" />
-                <TextBlock Grid.Column="1" Text="{x:Bind Name, Mode=OneWay}" FontSize="16" VerticalAlignment="Center" Foreground="White" />
+                <SymbolIcon Grid.Column="0" Symbol="{x:Bind Icon, Mode=OneWay}" Foreground="#D81159" />
+                <TextBlock Grid.Column="1" Text="{x:Bind Name, Mode=OneWay}" FontSize="16" VerticalAlignment="Center" Foreground="#8F2D56" />
             </Grid>
         </DataTemplate>
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <controls:HamburgerMenu x:Name="hamburgerMenuControl"
-            PaneBackground="Black"
-            Foreground="White"
+            PaneBackground="White"
+            Foreground="#8F2D56"
             ItemTemplate="{StaticResource DefaultTemplate}"
             ItemClick="OnMenuItemClick"
             OptionsItemTemplate="{StaticResource DefaultTemplate}"
             OptionsItemClick="OnMenuItemClick">
 
-            <Frame x:Name="contentFrame" Foreground="Black"/>
+            <Frame x:Name="contentFrame" Foreground="#8F2D56"/>
         </controls:HamburgerMenu>
     </Grid>
 </Page>

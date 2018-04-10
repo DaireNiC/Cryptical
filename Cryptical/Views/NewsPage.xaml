@@ -6,24 +6,39 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:cryptical="using:Cryptical"
+    xmlns:Controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
-        <GridView ItemsSource="{x:Bind NewsItems}" ItemClick="NewsItem_clickAsync" IsItemClickEnabled="True">
-            <GridView.ItemTemplate>
-                <DataTemplate x:Name="ImageOverlayDataTemplate"  x:DataType="cryptical:NewsItem">
-                    <Grid Height="180" Width="320" AutomationProperties.Name="{x:Bind Title}">
-                        <Image Source="{Binding ThumbImage.Source}" Stretch="UniformToFill">
-                            
-                        </Image>
-                        <StackPanel Orientation="Vertical" Height="60" VerticalAlignment="Bottom" Background="{ThemeResource SystemBaseLowColor}" Padding="12">
-                            <TextBlock Text="{x:Bind Title}"/>
-                            <TextBlock Text="{x:Bind Subtitle}" x:Phase="1" Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseMediumBrush}"/>
-                        </StackPanel>
-                    </Grid>
-                </DataTemplate>
-            </GridView.ItemTemplate>
-        </GridView>
-    </Grid>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="#218380"/>
+
+        <StackPanel Grid.Row="0" >
+            <TextBlock x:Uid="News-Header" Foreground="White" FontSize="30"  Margin="10,30,10,0" TextAlignment="Center"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1" >
+            <Controls:AdaptiveGridView ItemsSource="{x:Bind NewsItems}" ItemClick="NewsItem_clickAsync" IsItemClickEnabled="True"  ItemHeight="200"
+    DesiredWidth="300">
+
+                <GridView.ItemTemplate>
+                    <DataTemplate x:Name="ImageOverlayDataTemplate"  x:DataType="cryptical:NewsItem" >
+                        <Grid  AutomationProperties.Name="{x:Bind Title}">
+                            <Image Source="{Binding ThumbImage.Source}" Stretch="UniformToFill"></Image>
+                            <StackPanel Name="news" Orientation="Vertical" Height="60" VerticalAlignment="Bottom" Background="{ThemeResource SystemBaseLowColor}" Padding="12">
+                                <TextBlock Text="{x:Bind Title}" Foreground="#FFBC42" />
+                                <TextBlock Text="{x:Bind Subtitle}" x:Phase="1" Style="{ThemeResource CaptionTextBlockStyle}" Foreground="#FFBC42"  />
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </Controls:AdaptiveGridView>
+        </StackPanel>
+    </Grid>
+   
 </Page>

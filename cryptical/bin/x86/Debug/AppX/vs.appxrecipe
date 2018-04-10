@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-09T13:49:43.582</Modified>
+      <Modified>2018-04-10T12:13:59.513</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Cryptical.exe">
       <PackagePath>entrypoint\Cryptical.exe</PackagePath>
-      <Modified>2018-04-09T13:49:39.586</Modified>
+      <Modified>2018-04-10T12:13:58.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\colorcode.core\2.0.3\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -603,6 +603,10 @@
       <PackagePath>Assets\Images\scale-100\Litecoin.png</PackagePath>
       <Modified>2018-04-09T09:35:20.967</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-100\Ripple.png">
+      <PackagePath>Assets\Images\scale-100\Ripple.png</PackagePath>
+      <Modified>2018-04-09T22:59:46.428</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-200\Bitcoin.png">
       <PackagePath>Assets\Images\scale-200\Bitcoin.png</PackagePath>
       <Modified>2018-04-09T09:35:50.682</Modified>
@@ -615,6 +619,10 @@
       <PackagePath>Assets\Images\scale-200\Litecoin.png</PackagePath>
       <Modified>2018-04-09T09:35:50.696</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-200\Ripple.png">
+      <PackagePath>Assets\Images\scale-200\Ripple.png</PackagePath>
+      <Modified>2018-04-09T23:00:02.560</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-300\Bitcoin.png">
       <PackagePath>Assets\Images\scale-300\Bitcoin.png</PackagePath>
       <Modified>2018-04-09T09:36:15.612</Modified>
@@ -626,6 +634,10 @@
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-300\Litecoin.png">
       <PackagePath>Assets\Images\scale-300\Litecoin.png</PackagePath>
       <Modified>2018-04-09T09:36:15.626</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-300\Ripple.png">
+      <PackagePath>Assets\Images\scale-300\Ripple.png</PackagePath>
+      <Modified>2018-04-09T23:00:27.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -671,7 +683,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Cryptical.xr.xml">
       <PackagePath>Cryptical.xr.xml</PackagePath>
-      <Modified>2018-04-09T10:10:12.298</Modified>
+      <Modified>2018-04-10T12:13:58.140</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -840,11 +852,11 @@
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-09T13:49:40.586</Modified>
+      <Modified>2018-04-10T12:13:58.921</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\bin\x86\Debug\Core\Cryptical.exe">
       <PackagePath>Cryptical.exe</PackagePath>
-      <Modified>2018-04-09T13:49:43.570</Modified>
+      <Modified>2018-04-10T12:13:59.507</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

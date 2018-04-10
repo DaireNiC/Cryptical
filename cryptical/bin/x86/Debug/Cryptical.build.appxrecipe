@@ -451,6 +451,9 @@
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-100\Litecoin.png">
       <PackagePath>Assets\Images\scale-100\Litecoin.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-100\Ripple.png">
+      <PackagePath>Assets\Images\scale-100\Ripple.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-200\Bitcoin.png">
       <PackagePath>Assets\Images\scale-200\Bitcoin.png</PackagePath>
     </AppxPackagedFile>
@@ -460,6 +463,9 @@
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-200\Litecoin.png">
       <PackagePath>Assets\Images\scale-200\Litecoin.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-200\Ripple.png">
+      <PackagePath>Assets\Images\scale-200\Ripple.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-300\Bitcoin.png">
       <PackagePath>Assets\Images\scale-300\Bitcoin.png</PackagePath>
     </AppxPackagedFile>
@@ -468,6 +474,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-300\Litecoin.png">
       <PackagePath>Assets\Images\scale-300\Litecoin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\Images\scale-300\Ripple.png">
+      <PackagePath>Assets\Images\scale-300\Ripple.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\Cryptical\Cryptical\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>

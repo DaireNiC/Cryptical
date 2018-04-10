@@ -16,10 +16,10 @@
             <RowDefinition Height="6*"/>
         </Grid.RowDefinitions>
 
-        <Border Grid.Row="0" Background="#152951"/>
+        <Border Grid.Row="0" Background="#D81159"/>
 
         <StackPanel Grid.Row="0" >
-            <TextBlock Foreground="White" FontSize="30" Text="Bitcoin Friendly Locations" Margin="10,30,10,0" TextAlignment="Center"/>
+            <TextBlock x:Uid="Map-Header" Foreground="White" FontSize="30" Margin="10,30,10,0" TextAlignment="Center"/>
         </StackPanel>
 
        
