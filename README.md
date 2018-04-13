@@ -5,11 +5,17 @@
 A Windows Universal Platform App to view the latest cryptocurrency exchange rates, news and businesses that accept cryptocurrency in Ireland.
 
 ![cover](https://github.com/DaireNiC/Cryptical/blob/master/media/cover_logo.png)
-Cryptical, the fun way to dabble in the world of all things cryptocurrency.
 
-Want the latest values of the hottest Cryptocurrencies? Ever tried to look up the latest Bitcoin value and been bombarded with graphs and whacky figures dating back to its creation?
 
-You're not alone. Cryptical is designed with clarity at its core. Presenting a quirky, fun - but most importantly, user-focused experience. Don't get bogged down with heavy figures and cryptic values. Get what's critical - Get Cryptical.
+> Cryptical, the fun way to dabble in the world of all things
+> cryptocurrency. Want the latest values of the hottest
+> Cryptocurrencies? Ever tried to look up the latest Bitcoin value and
+> been bombarded with graphs and whacky figures dating back to its
+> creation? You're not alone. Cryptical is designed with clarity at its
+> core. Presenting a quirky, fun - but most importantly, user-focused
+> experience. Don't get bogged down with heavy figures and cryptic
+> values. Get what's critical - Get Cryptical.
+
 
 # Contents
 	1. App Design & Code 
@@ -20,6 +26,9 @@ You're not alone. Cryptical is designed with clarity at its core. Presenting a q
 
 
 ![overview](https://github.com/DaireNiC/Cryptical/blob/master/media/app_overview.png)
+
+
+
 # App Design & Code
 
 ## Navigation
@@ -67,7 +76,7 @@ From the app logo to the default colours, this colour scheme is consistent throu
 ## Fluent design
 Microsoft's Fluent design system was also incorporated into the app through the use of acrylics. This is most evident in the menu bar when it overlaps content. The densely translucent menu lets the background and windows behind the current focus blur through.
 
-![enter image description here](https://github.com/DaireNiC/Cryptical/blob/master/media/menu.JPG)
+![enter image description here](https://github.com/DaireNiC/Cryptical/blob/master/media/menu.JPG =280x400)
 
 Guidance on Windows Universal App design and example code was adapted from from [Microsoft developer's website](https://developer.microsoft.com/en-us/windows/apps/design) . 
 
