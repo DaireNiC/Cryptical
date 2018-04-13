@@ -4,8 +4,7 @@
 # Cryptical
 A Windows Universal Platform App to view the latest cryptocurrency exchange rates, news and businesses that accept cryptocurrency in Ireland.
 
-COVER IMAGE
-
+![cover](https://ibb.co/dqdoxS)
 Cryptical, the fun way to dabble in the world of all things cryptocurrency.
 
 Want the latest values of the hottest Cryptocurrencies? Ever tried to look up the latest Bitcoin value and been bombarded with graphs and whacky figures dating back to its creation?
@@ -15,11 +14,12 @@ You're not alone. Cryptical is designed with clarity at its core. Presenting a q
 # Contents
 	1. App Design & Code 
 	2. User Interface
-	3. Requirements
-	4. Development
+	3. Development
+	4. Testing & Certification
+	5. Issues Encountered
 
 
-IMAGE oF OVERVIEW
+![overview](https://ibb.co/jHyXP7%20https://ibb.co/dqdoxS%20https://ibb.co/csmacS%20https://ibb.co/hYoXP7%20https://ibb.co/gVJXP7%20https://ibb.co/cvvOWn)
 # App Design & Code
 
 ## Navigation
@@ -29,14 +29,11 @@ Following the Microsoft documentation on splashscreen generation, the default sp
 
 An animation was then added for a smoother UX as the app loads in the background. The animation was created using the [LottieAnimations Package](https://www.nuget.org/packages/LottieUWP/) available on NuGet. The colours of the animation were adapted to fit with the colour scheme of the app.
 
-GIF OF START UP
-
 ## Currency Values
 The main page of the application is the Market Values Page. This page pulls the latest information on Bitcoin, Litecoin, Ethereum & Ripple values. The [CryptoCompare API](https://www.cryptocompare.com/) was used to fetch this data. 
 
 Error Handling is covered in the case of loss of internet connection as shown below. 
-
-IMAGE OF NO INTERNT POPUP
+![error](https://github.com/DaireNiC/Cryptical/upload.JPG/)
 
 This was achieved using the [Message Dialogue Component](https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/dialogs) which allows the user to resend the API request  or ignore and continue using the application.
 
@@ -55,13 +52,12 @@ The News page allows users to view the latest news in relation to Bitcoin/crypto
 Articles are displayed is a responsive, adaptive card-like fashion. All news articles are clickable. Doing so will bring the user to the source website to read the article in full.
 
 
-
 # User Interface
 
 Creating a clear UI was of the utmost importance in the design of Cryptical.  The layout of the app is adptive and responsive from top to toe. This was achieved through the use of  adaptive XAML components. The AdaptiveGridView Control presents items in a evenly-spaced set of columns to fill the total available display space. It reacts to changes in the layout as well as the content, allowing for adaption to different form factors automatically.
 
- *This can be viewed on the NewsPage where the content &layout will adapt dynamically with page resizing*.
-ADD GIF HERE OF SQUISHING APP
+ *This can be viewed on the NewsPage where the content &l ayout will adapt dynamically with page resizing*.
+
 
 ### Colour Scheme
 Cryptical is marketed as a simple and fun app to guide & introduce users to the world of cryptocurrencies.  In keeping with this, a bright and cheerful colour scheme was chosen for the app. 
@@ -71,7 +67,7 @@ From the app logo to the default colours, this colour scheme is consistent throu
 ## Fluent design
 Microsoft's Fluent design system was also incorporated into the app through the use of acrylics. This is most evident in the menu bar when it overlaps content. The densely translucent menu lets the background and windows behind the current focus blur through.
 
-IMAGE OF MENU 
+![enter image description here](https://github.com/DaireNiC/Cryptical/blob/master/media/menu.JPG)
 
 Guidance on Windows Universal App design and example code was adapted from from [Microsoft developer's website](https://developer.microsoft.com/en-us/windows/apps/design) . 
 
@@ -90,3 +86,18 @@ I initially aimed to support the [locations.txt]() file, holding all the geoloca
 # Testing & Certification 
 Cryptical has passed all tests required for submission to the Windows App Store. The certification process is currently underway by the Microsoft Developers Team.
 
+#  Issues Encountered 
+## News API Error
+ -  News API error when creating request. Recieved  the following error:
+ - `News API HTTP Exception - parametersMissing: Required parameters are missing, the scope of your search is too broad. Please set any of the following required parameters and try again: q, sources, domains.` 
+ - I posted an isssue on the NewsApi.Net Wrapper Github [here](https://github.com/hassie-dash/NewsAPI.NET/issues/1).
+ - Turned out to be a bug in their code, which they subsequently fixed and my request then worked. 
+## Microsoft Devloper Account Creation
+ - Recieved an error on every attempt to create a developer account with Student Promo code. 
+ - Microsoft Support Team verified it was a global issue.
+ - 2 weeks from first support request, issue was resolved. However this resulted in a delay of my submission to the Windows app Store. 
+## Git Upload
+ - After application was packaged for the Windows store, I tried to push latest local commits.
+ - Package generation resulted in the local repo being 1.5GB in size & git refusing to push due to size.
+ - Deleted uneccesary files and retried push but deleted files were still tracked.
+ - Created a .gitignore file, removed all tracked files, added all files again &  issue remains unresolved.
