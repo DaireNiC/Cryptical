@@ -4,5 +4,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Cryptical"
     RequestedTheme="Light">
+    
+    <Application.Resources>
+    <ResourceDictionary>
+        <AcrylicBrush x:Key="NavigationViewDefaultPaneBackground"
+        BackgroundSource="Backdrop" TintColor="White" TintOpacity=".4"/>
+            <AcrylicBrush x:Key="NavigationViewExpandedPaneBackground"
+        BackgroundSource="Backdrop" TintColor="white" TintOpacity=".4"/>
+        </ResourceDictionary>
+</Application.Resources>
 
 </Application>

@@ -8,13 +8,12 @@ using Windows.UI.Core;
 using Cryptical.Views;
 using System.Threading.Tasks;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/p/?LinkID=234238
-
 namespace Cryptical
 {
     /// <summary>
     /// Refernces for Splash screen code: https://docs.microsoft.com/en-us/windows/uwp/launch-resume/add-a-splash-screen
     /// Info on using the Lottin Splash animations : https://xamlbrewer.wordpress.com/2018/02/26/an-extended-splash-screen-with-lottie-animations-in-uwp/
+    /// Free logo : https://www.flaticon.com/authors/turkkub
     /// </summary>
     partial class ExtendedSplash : Page
     {

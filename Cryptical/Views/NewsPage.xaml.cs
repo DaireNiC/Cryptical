@@ -28,7 +28,13 @@ namespace Cryptical.Views
     {
         // News items are created using the repsonse from the news api request
         private ObservableCollection<NewsItem> newsItems = new ObservableCollection<NewsItem>();
-        public ObservableCollection<NewsItem> NewsItems { get { return this.newsItems; } }
+        public ObservableCollection<NewsItem> NewsItems
+        {
+            get
+            {
+                return this.newsItems;
+            }
+        }
 
 
         public NewsPage()
@@ -46,11 +52,12 @@ namespace Cryptical.Views
                 //load news articles 
                 await InitializeAsync();
             }
-            catch(Exception ex) {
+            catch (Exception ex)
+            {
                 //write the exception
-               Debug.WriteLine(ex);
-            // Let user know articles failed to load
-               ContentDialog articleloadFailure = new ContentDialog
+                Debug.WriteLine(ex);
+                // Let user know articles failed to load
+                ContentDialog articleloadFailure = new ContentDialog
                 {
                     Title = "Error Loading News",
                     Content = "Check your internet connection and try again.",
@@ -66,33 +73,34 @@ namespace Cryptical.Views
                 }
             }
         }
-            
+
         public async Task InitializeAsync()
         {
             // API key for NewsAPI
             INewsClient newsClient = new ClientBuilder()
             {
-                ApiKey = "5fe4eb7f64af4875a48ab4ea5e50e875" 
+                ApiKey = "5fe4eb7f64af4875a48ab4ea5e50e875"
             }.Build();
 
             //News Query sent to NewsAPI
             // REturns top 20 articles relating to bitcoin
             INewsArticles newsArticles = await newsClient.GetEverything(new EverythingBuilder()
-            .WithSearchQuery("bitcoin")
-            .WithSearchQuery("cryptocurrency")
-            .WithSortOrder(SortOrder.PUBLISHED_AT)
-            .WithLanguageQuery(Hassie.NET.API.NewsAPI.API.v2.Language.EN)
-            .Build());
+             .WithSearchQuery("bitcoin")
+             .WithSearchQuery("cryptocurrency")
+             .WithSortOrder(SortOrder.PUBLISHED_AT)
+             .WithLanguageQuery(Hassie.NET.API.NewsAPI.API.v2.Language.EN)
+             .Build());
 
 
 
-                // The top 20 results
-                foreach (INewsArticle article in newsArticles){
+            // The top 20 results
+            foreach (INewsArticle article in newsArticles)
+            {
                 //Error handling : make sure there is an image to display
                 if ((article.ImageURL != "") && (article.ImageURL != null))
                 {
-                    
-                  //  Uri uriImage = new Uri(article.ImageURL);
+
+                    //  Uri uriImage = new Uri(article.ImageURL);
                     this.newsItems.Add(new NewsItem()
                     {
                         Title = article.Title,
@@ -108,7 +116,7 @@ namespace Cryptical.Views
 
                     });
                 }
-               
+
 
             }
         }

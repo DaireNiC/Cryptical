@@ -110,7 +110,7 @@ namespace Cryptical.Views
 
             }
         }
-        //metho to plot all the locations of business in Ireland that allow for payment in Bitcoin/Cryptocurrencies
+        //method to plot all the locations of businesses in Ireland that allow for payment in Bitcoin/Cryptocurrencies
         private async Task plotCryptoLocationsAsync()
         {
             //indicates if the point being plotted is the user location
@@ -120,6 +120,7 @@ namespace Cryptical.Views
             var fileContents = await FileIO.ReadTextAsync(locationsFile);
             var locationsJSON = JsonArray.Parse(fileContents);
 
+            //read every location from file
             foreach (var item in locationsJSON)
             {
 
@@ -127,6 +128,7 @@ namespace Cryptical.Views
                 var obj = item.GetObject();
                 BasicGeoposition poi = new BasicGeoposition();
                 String poiName = "";
+
                 foreach (var key in obj.Keys)
                 {
                     IJsonValue value;
@@ -168,7 +170,7 @@ namespace Cryptical.Views
                 _locationService.StopListening();
             }
         }
-
+        //If the user's location has changed, update 
         private void LocationService_PositionChanged(object sender, Geoposition geoposition)
         {
             if (geoposition != null)

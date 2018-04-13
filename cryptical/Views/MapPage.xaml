@@ -11,24 +11,24 @@
 
     <Grid x:Name="ContentArea">
 
+
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="6*"/>
         </Grid.RowDefinitions>
-
+        
         <Border Grid.Row="0" Background="#D81159"/>
-
+        
         <StackPanel Grid.Row="0" >
             <TextBlock x:Uid="Map-Header" Foreground="White" FontSize="30" Margin="10,30,10,0" TextAlignment="Center"/>
         </StackPanel>
-
-       
-            <maps:MapControl  Grid.Row="1"  MapServiceToken="y17BMedIEL9Y8XkAIHTT~0c72K3B_3x-Ffl7B3K3Otw~AlV5wgF2S4ocZBzmdGrantbUcfOa0p72Bk3zSSmlB10YoDcrPn6OQBo09pDXx7ZT"
+        
+        <maps:MapControl  Grid.Row="1"  MapServiceToken="y17BMedIEL9Y8XkAIHTT~0c72K3B_3x-Ffl7B3K3Otw~AlV5wgF2S4ocZBzmdGrantbUcfOa0p72Bk3zSSmlB10YoDcrPn6OQBo09pDXx7ZT"
             x:Name="mapControl"
             ZoomLevel="{x:Bind ZoomLevel, Mode=OneWay}"
             Center="{x:Bind Center, Mode=OneWay}" 
             />
         <TickBar/>
-      
+        
     </Grid>
 </Page>

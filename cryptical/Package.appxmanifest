@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="77aeef4e-06cd-4639-84b1-971fa7390799" Publisher="CN=User" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="77aeef4e-06cd-4639-84b1-971fa7390799" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="46457DaireNChathin.Cryptical" Publisher="CN=A8F20661-F87A-4F31-A699-3FAADE2E1765" Version="1.1.3.0" />
+  <mp:PhoneIdentity PhoneProductId="4632f07f-61c6-40de-8683-c47c698632c6" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Cryptical</DisplayName>
-    <PublisherDisplayName>User</PublisherDisplayName>
+    <PublisherDisplayName>Daire Ní Chatháin</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>

@@ -117,13 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="24hourhigh.Text" xml:space="preserve">
-    <value>24 hour high</value>
+  <data name="24hourhigh" xml:space="preserve">
+    <value>Buachphointe 24hr</value>
     <comment>24 hour high value for currency</comment>
   </data>
-  <data name="24hourlow.Text" xml:space="preserve">
-    <value>24 hour low</value>
+  <data name="24hourlow" xml:space="preserve">
+    <value>Íosphointe 24hr</value>
     <comment>24 hour low value for currency</comment>
+  </data>
+  <data name="DevDetails.Text" xml:space="preserve">
+    <value>Réalóir: Daire Ní Chatháin (dairenichat@gmail.com)</value>
   </data>
   <data name="Map-Header.Text" xml:space="preserve">
     <value>Íoc le Bitcoin</value>
@@ -133,20 +136,30 @@
     <value>Do Shuíomh</value>
     <comment>Users Location</comment>
   </data>
-  <data name="Menu-News" xml:space="preserve">
+  <data name="Menu-News.Content" xml:space="preserve">
     <value>Nuacht</value>
     <comment>menu item for news page</comment>
   </data>
-  <data name="Menu-Pay" xml:space="preserve">
+  <data name="Menu-Pay.Content" xml:space="preserve">
     <value>Íoc le Bitcoin</value>
     <comment>menu item for map page</comment>
   </data>
-  <data name="Menu-Prices" xml:space="preserve">
+  <data name="Menu-Prices.Content" xml:space="preserve">
     <value>Praghas Margaidh</value>
     <comment>menu item for currency page</comment>
   </data>
   <data name="News-Header.Text" xml:space="preserve">
     <value>Nuacht Bitcoin</value>
     <comment>news header</comment>
+  </data>
+  <data name="PrivacyPolicy.Text" xml:space="preserve">
+    <value>Ní roineann agus ní stóráileann Cryptical aon eolais suíomh ná aon eolais pearsanta.</value>
+    <comment>privacy policy</comment>
+  </data>
+  <data name="PrivacyPolicyWebsite.Content" xml:space="preserve">
+    <value>Polasaí Príomháideachas Cryptical</value>
+  </data>
+  <data name="Settings-Header.Text" xml:space="preserve">
+    <value>Socruithe</value>
   </data>
 </root>

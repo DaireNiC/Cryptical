@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+/// <summary>
+/// The Coin object is used to format data recieved from the Crypto currency api.
+/// Stores values for 24hr/high/low & name & current value
+/// </summary>
 
 namespace Cryptical
 {

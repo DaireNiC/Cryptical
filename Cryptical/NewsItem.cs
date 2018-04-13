@@ -1,7 +1,10 @@
 ﻿using Microsoft.Toolkit.Uwp.UI.Controls;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
-
+/// <summary>
+/// The News Item object is modled to the News Api response
+/// Holds data on articles from api request 
+/// </summary>
 namespace Cryptical
 {
     public class NewsItem
