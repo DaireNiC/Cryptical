@@ -21,6 +21,7 @@ x64/
 x86/
 bld/
 bin/
+bin/*
 obj/
 [Ll]og/
 
@@ -52,7 +53,7 @@ artifacts/
 *_p.c
 *_i.h
 *.ilk
-*.meta
+*.meta 
 *.obj
 *.pch
 *.pdb
@@ -255,7 +256,7 @@ typings/
 **/*.Server/GeneratedArtifacts
 **/*.Server/ModelManifest.xml
 _Pvt_Extensions
-
+**/bin
 # Paket dependency manager
 .paket/paket.exe
 paket-files/
