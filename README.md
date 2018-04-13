@@ -65,18 +65,18 @@ Articles are displayed is a responsive, adaptive card-like fashion. All news art
 
 Creating a clear UI was of the utmost importance in the design of Cryptical.  The layout of the app is adptive and responsive from top to toe. This was achieved through the use of  adaptive XAML components. The AdaptiveGridView Control presents items in a evenly-spaced set of columns to fill the total available display space. It reacts to changes in the layout as well as the content, allowing for adaption to different form factors automatically.
 
- *This can be viewed on the NewsPage where the content &l ayout will adapt dynamically with page resizing*.
+ *This can be viewed on the NewsPage where the content & layout will adapt dynamically with page resizing*.
 
 
 ### Colour Scheme
 Cryptical is marketed as a simple and fun app to guide & introduce users to the world of cryptocurrencies.  In keeping with this, a bright and cheerful colour scheme was chosen for the app. 
-IMAGE OF COLOUR SCHEME
+
+![colors](https://github.com/DaireNiC/Cryptical/blob/master/media/colour_scheme.JPG)
+
 From the app logo to the default colours, this colour scheme is consistent throughout Cryptical. 
 
 ## Fluent design
 Microsoft's Fluent design system was also incorporated into the app through the use of acrylics. This is most evident in the menu bar when it overlaps content. The densely translucent menu lets the background and windows behind the current focus blur through.
-
-![enter image description here](https://github.com/DaireNiC/Cryptical/blob/master/media/menu.JPG =280x400)
 
 Guidance on Windows Universal App design and example code was adapted from from [Microsoft developer's website](https://developer.microsoft.com/en-us/windows/apps/design) . 
 
@@ -90,7 +90,7 @@ Cryptical has full support in both the English and Irrish language. As a native 
 # Development
 In the beginning of developing the application, I considered using templates such as the popular [Template 10 Package](https://github.com/Windows-XAML/Template10/wiki) or the [Windows Template Studio](https://marketplace.visualstudio.com/items?itemName=WASTeamAccount.WindowsTemplateStudio) provided by Microsoft. I researched their implementation, however did not use any templates in an effort to maximise the learing outcomes of this project. 
 
-I initially aimed to support the [locations.txt]() file, holding all the geolocations of bitcoin friendly locations, in a remote server. I atempted to use the Azure Mobile Storage however this proved more complicated than expected with CosmosDB. I also researched using the popular DBaas Firebase , however, it does not support UWP. 
+I initially aimed to support the [locations.txt](https://github.com/DaireNiC/Cryptical/blob/master/cryptical/Data/locations.txt) file, holding all the geolocations of bitcoin friendly locations, in a remote server. I atempted to use the Azure Mobile Storage however this proved more complicated than expected with CosmosDB. I also researched using the popular DBaas Firebase , however, it does not support UWP. 
 
 # Testing & Certification 
 Cryptical has passed all tests required for submission to the Windows App Store. The certification process is currently underway by the Microsoft Developers Team.
