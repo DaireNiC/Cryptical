@@ -4,7 +4,7 @@
 # Cryptical
 A Windows Universal Platform App to view the latest cryptocurrency exchange rates, news and businesses that accept cryptocurrency in Ireland.
 
-![cover](https://ibb.co/dqdoxS)
+![cover](https://github.com/DaireNiC/Cryptical/blob/master/media/cover_logo.png)
 Cryptical, the fun way to dabble in the world of all things cryptocurrency.
 
 Want the latest values of the hottest Cryptocurrencies? Ever tried to look up the latest Bitcoin value and been bombarded with graphs and whacky figures dating back to its creation?
@@ -19,7 +19,7 @@ You're not alone. Cryptical is designed with clarity at its core. Presenting a q
 	5. Issues Encountered
 
 
-![overview](https://ibb.co/jHyXP7%20https://ibb.co/dqdoxS%20https://ibb.co/csmacS%20https://ibb.co/hYoXP7%20https://ibb.co/gVJXP7%20https://ibb.co/cvvOWn)
+![overview](https://github.com/DaireNiC/Cryptical/blob/master/media/app_overview.png)
 # App Design & Code
 
 ## Navigation
@@ -33,7 +33,7 @@ An animation was then added for a smoother UX as the app loads in the background
 The main page of the application is the Market Values Page. This page pulls the latest information on Bitcoin, Litecoin, Ethereum & Ripple values. The [CryptoCompare API](https://www.cryptocompare.com/) was used to fetch this data. 
 
 Error Handling is covered in the case of loss of internet connection as shown below. 
-![error](https://github.com/DaireNiC/Cryptical/upload.JPG/)
+![error](https://github.com/DaireNiC/Cryptical/blob/master/media/error.JPG)
 
 This was achieved using the [Message Dialogue Component](https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/dialogs) which allows the user to resend the API request  or ignore and continue using the application.
 
