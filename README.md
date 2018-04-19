@@ -93,7 +93,7 @@ In the beginning of developing the application, I considered using templates suc
 I initially aimed to support the [locations.txt](https://github.com/DaireNiC/Cryptical/blob/master/cryptical/Data/locations.txt) file, holding all the geolocations of bitcoin friendly locations, in a remote server. I atempted to use the Azure Mobile Storage however this proved more complicated than expected with CosmosDB. I also researched using the popular DBaas Firebase , however, it does not support UWP. 
 
 # Testing & Certification 
-Cryptical has passed all tests required for submission to the Windows App Store. The certification process is currently underway by the Microsoft Developers Team.
+Cryptical is available on the Windows App store! 
 
 #  Issues Encountered 
 ## News API Error
